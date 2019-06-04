@@ -11,4 +11,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/TheGame/Scenes/Start.unity
     guid: 6613cd82a66450347891d4054e55c94a
+  - enabled: 1
+    path: Assets/TheGame/Scenes/Foyer_Exit.unity
+    guid: f53a17ebd6c822a47ad43fce4b7a98ef
+  - enabled: 1
+    path: Assets/TheGame/Scenes/Foyer_Rooms.unity
+    guid: 21c8ce7668d58f7419d109329322328a
+  - enabled: 1
+    path: Assets/TheGame/Scenes/Room1.unity
+    guid: 5d0e1288084869648a8681c29cda8f69
+  - enabled: 1
+    path: Assets/TheGame/Scenes/Room2.unity
+    guid: 15fcfd0dd94e85e43a509b534ff70afc
+  - enabled: 1
+    path: Assets/TheGame/Scenes/Room3.unity
+    guid: c7aaa4f3f8d61cc4cb24205ec7add587
   m_configObjects: {}
