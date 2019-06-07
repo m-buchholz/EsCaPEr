@@ -5,13 +5,17 @@ using UnityEngine;
 public class CollisionControllerForAssignment : MonoBehaviour
 {
     private bool correct = false;
-    public string assignCollision;
+    public GameObject box;
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == assignCollision)
+        if (collision.gameObject.tag == box.tag)
             {
                 transform.position = collision.gameObject.transform.position;
+            if (collision.gameObject.Equals(box))
+            {
                 correct = true;
+            }
+                
             }
         else
         {
