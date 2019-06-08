@@ -392,7 +392,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "M. Buchholz\r\nN. Senechal\r\nF. M\xFCnch\r\nK. Rimpler\r\nE. Adler"
+  m_Text: "E. Adler\nM. Buchholz\r\nF. M\xFCnch\r\nK. Rimpler\r\nN. Senechal\r"
 --- !u!222 &916583917
 CanvasRenderer:
   m_ObjectHideFlags: 0
