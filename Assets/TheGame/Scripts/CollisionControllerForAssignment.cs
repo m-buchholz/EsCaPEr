@@ -5,12 +5,15 @@ using UnityEngine;
 public class CollisionControllerForAssignment : MonoBehaviour
 {
     private bool correct = false;
+    private bool assign = false;
     public GameObject box;
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.tag == box.tag)
             {
-                transform.position = collision.gameObject.transform.position;
+            Debug.Log("Collision!");
+                transform.position = new Vector3(collision.transform.position.x, collision.transform.position.y, collision.transform.position.z);
+                assign = true;
             if (collision.gameObject.Equals(box))
             {
                 correct = true;
@@ -26,5 +29,20 @@ public class CollisionControllerForAssignment : MonoBehaviour
     public bool isCorrect()
     {
         return correct;
+    }
+
+    public bool isAssign()
+    {
+        return assign;
+    }
+
+    public void OnCollisionExit2D(Collision2D collision)
+    {
+        assign = false;
+        correct = false;
+    }
+    private void Update()
+    {
+        Debug.Log("Correct = " + correct + " Assign = " + assign  + " Name: "+ name);
     }
 }
