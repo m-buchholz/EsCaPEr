@@ -2,22 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
-public class ChangeScene : MonoBehaviour
+public class CreditsAction : MonoBehaviour
 {
 
     public Button button;
-    public string scene;
+    public Text text;
 
     // Start is called before the first frame update
     void Start()
     {
-        button.onClick.AddListener(changeScene);
+        button.onClick.AddListener(credit);
     }
 
-    private void changeScene()
+    public void credit()
     {
-        SceneManager.LoadScene(scene);
+        text.text = "\nDanke fürs Spielen\n\n- euer EsCaPEr Team";
     }
 }
