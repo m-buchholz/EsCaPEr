@@ -635,8 +635,8 @@ GameObject:
   - component: {fileID: 1045246896}
   - component: {fileID: 1045246900}
   - component: {fileID: 1045246899}
-  - component: {fileID: 1045246898}
   - component: {fileID: 1045246897}
+  - component: {fileID: 1045246898}
   m_Layer: 5
   m_Name: Door to Exit Button
   m_TagString: Untagged
@@ -717,7 +717,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1045246895}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8c95ac31bef37046a157c32a77f5aaa, type: 3}
+  m_Script: {fileID: 11500000, guid: 11c1498d54f841f4d8e2e63bd9f683ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1045246897}

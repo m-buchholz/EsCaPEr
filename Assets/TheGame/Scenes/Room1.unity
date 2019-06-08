@@ -491,8 +491,8 @@ GameObject:
   - component: {fileID: 356803047}
   - component: {fileID: 356803051}
   - component: {fileID: 356803050}
-  - component: {fileID: 356803049}
   - component: {fileID: 356803048}
+  - component: {fileID: 356803049}
   m_Layer: 5
   m_Name: Door to Room2 Button
   m_TagString: Untagged
@@ -573,7 +573,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 356803046}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8c95ac31bef37046a157c32a77f5aaa, type: 3}
+  m_Script: {fileID: 11500000, guid: 11c1498d54f841f4d8e2e63bd9f683ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 356803048}
@@ -1212,8 +1212,8 @@ GameObject:
   - component: {fileID: 883149316}
   - component: {fileID: 883149320}
   - component: {fileID: 883149319}
-  - component: {fileID: 883149318}
   - component: {fileID: 883149317}
+  - component: {fileID: 883149318}
   m_Layer: 5
   m_Name: Shelf Button
   m_TagString: Untagged
@@ -1294,7 +1294,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 883149315}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8c95ac31bef37046a157c32a77f5aaa, type: 3}
+  m_Script: {fileID: 11500000, guid: 11c1498d54f841f4d8e2e63bd9f683ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 883149317}
@@ -1347,8 +1347,8 @@ GameObject:
   - component: {fileID: 952140090}
   - component: {fileID: 952140094}
   - component: {fileID: 952140093}
-  - component: {fileID: 952140092}
   - component: {fileID: 952140091}
+  - component: {fileID: 952140092}
   m_Layer: 5
   m_Name: Lock Button
   m_TagString: Untagged
@@ -1429,7 +1429,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 952140089}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8c95ac31bef37046a157c32a77f5aaa, type: 3}
+  m_Script: {fileID: 11500000, guid: 11c1498d54f841f4d8e2e63bd9f683ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 952140091}
