@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5f931010494cd634f9d393d7c1561d64
+guid: db7c135f62c784f478686826f216e25a
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,9 +8,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Abril Fatface
+  fontName: Fredericka the Great
   fontNames:
-  - Abril Fatface
+  - Fredericka the Great
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
