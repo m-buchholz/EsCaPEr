@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/TheGame/Scenes/Start.unity
     guid: 6613cd82a66450347891d4054e55c94a
   - enabled: 1
+    path: Assets/TheGame/Scenes/Pause.unity
+    guid: bc0a884830a4d304f9d3647fdea81ce2
+  - enabled: 1
     path: Assets/TheGame/Scenes/Credits.unity
     guid: 695fb9898e7d04842b6ebc742d100628
   - enabled: 1
