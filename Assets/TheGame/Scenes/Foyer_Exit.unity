@@ -549,7 +549,6 @@ GameObject:
   - component: {fileID: 1270513117}
   - component: {fileID: 1270513121}
   - component: {fileID: 1270513120}
-  - component: {fileID: 1270513119}
   - component: {fileID: 1270513118}
   m_Layer: 5
   m_Name: Exit Door Button
@@ -622,20 +621,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &1270513119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1270513116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11c1498d54f841f4d8e2e63bd9f683ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  button: {fileID: 1270513118}
-  scene: Start
 --- !u!114 &1270513120
 MonoBehaviour:
   m_ObjectHideFlags: 0
