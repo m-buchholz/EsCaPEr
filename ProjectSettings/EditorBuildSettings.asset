@@ -33,6 +33,27 @@ EditorBuildSettings:
     path: Assets/TheGame/Scenes/Room3.unity
     guid: c7aaa4f3f8d61cc4cb24205ec7add587
   - enabled: 1
-    path: Assets/TheGame/Scenes/Minigame_Room1.unity
+    path: Assets/TheGame/Scenes/Room1_Minigame1.unity
     guid: 8eee811cf3ac0914bb1b912fbf1d70ee
+  - enabled: 1
+    path: Assets/TheGame/Scenes/Room1_Minigame2.unity
+    guid: 26d95590d6c6b6a48bde6d3fffb9bec3
+  - enabled: 1
+    path: Assets/TheGame/Scenes/Room1_Minigame3.unity
+    guid: d34d92083a721724c9501194c87f0bdb
+  - enabled: 1
+    path: Assets/TheGame/Scenes/Room2_Minigame1.unity
+    guid: 43c0df7ab721d15489bb16f5e62cf76d
+  - enabled: 1
+    path: Assets/TheGame/Scenes/Room2_Minigame2.unity
+    guid: 1bb1c5826d309be4ead6c8b69e355109
+  - enabled: 1
+    path: Assets/TheGame/Scenes/Room2_Minigame3.unity
+    guid: 006f8cb8c31b25a498dab423ab260974
+  - enabled: 1
+    path: Assets/TheGame/Scenes/Room3_Minigame1.unity
+    guid: acadb25b7f6017743b1ebdacfdaf5450
+  - enabled: 1
+    path: Assets/TheGame/Scenes/Room3_Minigame2.unity
+    guid: 5a16d28b38f2e1f4fabee515fc19e23a
   m_configObjects: {}
