@@ -9,7 +9,7 @@ public class InitializeText : MonoBehaviour
         // SMOKINGFOX INSTRUCTIONS
 
          // Introduction + Foyer_Exit
-        PlayerPrefs.SetString("F_E_T", "Willkommen im Labor!\nEs scheint, als hätte uns hier jemand eingesperrt! Ich glaube, wir muessen die fehlenden Elemente aus dem Periodensystems finden.");
+        PlayerPrefs.SetString("F_E_T", "Willkommen im Labor!\nEs scheint, als hätte uns hier jemand eingesperrt! Ich glaube, wir müssen die fehlenden Elemente aus dem Periodensystems finden.");
 
         // Foyer_Rooms
         PlayerPrefs.SetString("F_R_T", "Hier sind mehrere Räume. Vielleicht ist ja einer davon offen?");

@@ -462,6 +462,7 @@ GameObject:
   - component: {fileID: 318589157}
   - component: {fileID: 318589155}
   - component: {fileID: 318589156}
+  - component: {fileID: 318589159}
   m_Layer: 5
   m_Name: Room3 Button
   m_TagString: Untagged
@@ -583,6 +584,147 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 318589153}
   m_CullTransparentMesh: 0
+--- !u!114 &318589159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318589153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db7d01bc933f27143a65ab22c43e8d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioSource: {fileID: 348120310}
+  ClickSound: {fileID: 8300000, guid: 7c28010b3d75c134b8433efe965f8d0b, type: 3}
+--- !u!1 &348120309
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 348120311}
+  - component: {fileID: 348120310}
+  m_Layer: 0
+  m_Name: ButtonsAudioSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &348120310
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348120309}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &348120311
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348120309}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &392449838
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,6 +738,7 @@ GameObject:
   - component: {fileID: 392449842}
   - component: {fileID: 392449840}
   - component: {fileID: 392449841}
+  - component: {fileID: 392449844}
   m_Layer: 5
   m_Name: Room2 Button
   m_TagString: Untagged
@@ -717,6 +860,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 392449838}
   m_CullTransparentMesh: 0
+--- !u!114 &392449844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392449838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db7d01bc933f27143a65ab22c43e8d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioSource: {fileID: 348120310}
+  ClickSound: {fileID: 8300000, guid: 7c28010b3d75c134b8433efe965f8d0b, type: 3}
 --- !u!1 &558539128
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,6 +1147,7 @@ GameObject:
   - component: {fileID: 1267017589}
   - component: {fileID: 1267017588}
   - component: {fileID: 1267017587}
+  - component: {fileID: 1267017591}
   m_Layer: 5
   m_Name: Foyer Exit Button
   m_TagString: Untagged
@@ -1111,6 +1269,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1267017585}
   m_CullTransparentMesh: 0
+--- !u!114 &1267017591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267017585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db7d01bc933f27143a65ab22c43e8d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioSource: {fileID: 348120310}
+  ClickSound: {fileID: 8300000, guid: 7c28010b3d75c134b8433efe965f8d0b, type: 3}
 --- !u!1001 &1518645526
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1235,6 +1407,66 @@ PrefabInstance:
       objectReference: {fileID: 27827400}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfd84433eab1e354c96561166765132d, type: 3}
+--- !u!1 &1518645527 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1755627314881443242, guid: bfd84433eab1e354c96561166765132d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1518645526}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1518645528 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5986656194236354581, guid: bfd84433eab1e354c96561166765132d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1518645526}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1518645529 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5283946501170643161, guid: bfd84433eab1e354c96561166765132d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1518645526}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1518645530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518645527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db7d01bc933f27143a65ab22c43e8d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioSource: {fileID: 348120310}
+  ClickSound: {fileID: 8300000, guid: 7c28010b3d75c134b8433efe965f8d0b, type: 3}
+--- !u!114 &1518645531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518645528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db7d01bc933f27143a65ab22c43e8d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioSource: {fileID: 348120310}
+  ClickSound: {fileID: 8300000, guid: 7c28010b3d75c134b8433efe965f8d0b, type: 3}
+--- !u!114 &1518645532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518645529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db7d01bc933f27143a65ab22c43e8d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioSource: {fileID: 348120310}
+  ClickSound: {fileID: 8300000, guid: 7c28010b3d75c134b8433efe965f8d0b, type: 3}
 --- !u!1 &1530402828
 GameObject:
   m_ObjectHideFlags: 0
@@ -1248,6 +1480,7 @@ GameObject:
   - component: {fileID: 1530402832}
   - component: {fileID: 1530402830}
   - component: {fileID: 1530402831}
+  - component: {fileID: 1530402834}
   m_Layer: 5
   m_Name: Room1 Button
   m_TagString: Untagged
@@ -1369,6 +1602,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1530402828}
   m_CullTransparentMesh: 0
+--- !u!114 &1530402834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530402828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db7d01bc933f27143a65ab22c43e8d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioSource: {fileID: 348120310}
+  ClickSound: {fileID: 8300000, guid: 7c28010b3d75c134b8433efe965f8d0b, type: 3}
 --- !u!1 &2008932844
 GameObject:
   m_ObjectHideFlags: 0

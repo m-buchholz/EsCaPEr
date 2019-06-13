@@ -38,12 +38,14 @@ public class SoundOnOff : MonoBehaviour
 
     private void soundOn()
     {
+        AudioListener.volume = 1f;
         button.GetComponent<Image>().sprite = soundOnImage;
         PlayerPrefs.SetInt("Sound", 1);
     }
 
     private void soundOff()
     {
+        AudioListener.volume = 0f;
         button.GetComponent<Image>().sprite = soundOffImage;
         PlayerPrefs.SetInt("Sound", 0);
     }

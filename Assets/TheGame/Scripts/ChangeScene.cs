@@ -19,10 +19,10 @@ public class ChangeScene : MonoBehaviour
 
     private void changeScene()
     {
-        if (scene == "") scene = PlayerPrefs.GetString("last_Scene");
+        if (scene == "Last_Scene") scene = PlayerPrefs.GetString("Last_Scene");
         Initiate.Fade(scene, Color.black, 10f);
         // SceneManager.LoadScene(scene);
 
-        PlayerPrefs.SetString("last_Scene", SceneManager.GetActiveScene().name);        
+        PlayerPrefs.SetString("Last_Scene", SceneManager.GetActiveScene().name);        
     }
 }
