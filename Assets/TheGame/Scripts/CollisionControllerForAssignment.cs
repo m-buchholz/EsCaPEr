@@ -7,6 +7,11 @@ public class CollisionControllerForAssignment : MonoBehaviour
     private bool correct = false;
     private bool assign = false;
     public GameObject box;
+
+    /// <summary>
+    /// Catch the colliding gameObject
+    /// </summary>
+    /// <param name="collision"></param>
     private void OnTriggerStay2D(Collider2D collision)
     {
 
@@ -30,16 +35,28 @@ public class CollisionControllerForAssignment : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// return a boolean
+    /// </summary>
+    /// <returns></returns>
     public bool isCorrect()
     {
         return correct;
     }
 
+    /// <summary>
+    /// return a boolean
+    /// </summary>
+    /// <returns></returns>
     public bool isAssign()
     {
         return assign;
     }
 
+    /// <summary>
+    /// reset the booleans on exit the collision
+    /// </summary>
+    /// <param name="collision"></param>
     private void OnTriggerExit2D(Collider2D collision)
     {
             assign = false;
@@ -52,4 +69,6 @@ public class CollisionControllerForAssignment : MonoBehaviour
         Debug.Log("Correct = " + correct + " Assign = " + assign  + " Name: "+ name);
 
     }
+
+
 }

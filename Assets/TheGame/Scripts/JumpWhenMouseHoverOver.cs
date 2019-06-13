@@ -7,6 +7,10 @@ public class JumpWhenMouseHoverOver : MonoBehaviour
     public float jump = 0.1f;
     private bool col = false;
 
+    /// <summary>
+    /// Set a boolean true in an collision
+    /// </summary>
+    /// <param name="collision"></param>
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Wall"))
@@ -15,6 +19,10 @@ public class JumpWhenMouseHoverOver : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// set a boolean false on exit a collision
+    /// </summary>
+    /// <param name="collision"></param>
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Wall"))
@@ -22,6 +30,10 @@ public class JumpWhenMouseHoverOver : MonoBehaviour
             col = false;
         }
     }
+
+    /// <summary>
+    /// Transform the y-coordinate of an gameObject when the mouse hover over
+    /// </summary>
     private void OnMouseEnter()
     {
         if (col == true)
