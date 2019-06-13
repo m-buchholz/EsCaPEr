@@ -19,6 +19,10 @@ public class ChangeScene : MonoBehaviour
 
     private void changeScene()
     {
-        SceneManager.LoadScene(scene);
+        if (scene == "") scene = PlayerPrefs.GetString("last_Scene");
+        Initiate.Fade(scene, Color.black, 10f);
+        // SceneManager.LoadScene(scene);
+
+        PlayerPrefs.SetString("last_Scene", SceneManager.GetActiveScene().name);        
     }
 }

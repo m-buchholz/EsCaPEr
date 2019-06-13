@@ -545,7 +545,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11c1498d54f841f4d8e2e63bd9f683ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 318589155}
   scene: Room3
 --- !u!114 &318589157
 MonoBehaviour:
@@ -680,7 +679,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11c1498d54f841f4d8e2e63bd9f683ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 392449840}
   scene: Room2
 --- !u!114 &392449842
 MonoBehaviour:
@@ -1030,7 +1028,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11c1498d54f841f4d8e2e63bd9f683ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1267017588}
   scene: Foyer_Exit
 --- !u!114 &1267017588
 MonoBehaviour:
@@ -1334,7 +1331,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11c1498d54f841f4d8e2e63bd9f683ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1530402830}
   scene: Room1
 --- !u!114 &1530402832
 MonoBehaviour:

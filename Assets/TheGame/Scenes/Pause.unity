@@ -235,12 +235,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 565643376}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89e99da3eec680542a54f09693f68d00, type: 3}
+  m_Script: {fileID: 11500000, guid: 11c1498d54f841f4d8e2e63bd9f683ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 565643379}
-  unloadScene: Pause
-  loadScene: 
+  scene: 
 --- !u!114 &565643379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -438,7 +436,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1a46dcc0cef1d24e9da0321b463d117, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 711246531}
   soundOnImage: {fileID: 21300000, guid: 090dacba6ca7284498dffd8849726254, type: 3}
   soundOffImage: {fileID: 21300000, guid: a88bf836f01d12d499cd0bd3868dee56, type: 3}
 --- !u!114 &711246533
@@ -568,8 +565,8 @@ GameObject:
   - component: {fileID: 1471446339}
   - component: {fileID: 1471446343}
   - component: {fileID: 1471446342}
-  - component: {fileID: 1471446341}
   - component: {fileID: 1471446340}
+  - component: {fileID: 1471446341}
   m_Layer: 5
   m_Name: Exit Button
   m_TagString: Untagged
@@ -650,12 +647,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1471446338}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89e99da3eec680542a54f09693f68d00, type: 3}
+  m_Script: {fileID: 11500000, guid: 11c1498d54f841f4d8e2e63bd9f683ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1471446340}
-  unloadScene: Pause
-  loadScene: Start
+  scene: Start
 --- !u!114 &1471446342
 MonoBehaviour:
   m_ObjectHideFlags: 0

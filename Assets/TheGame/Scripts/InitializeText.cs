@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TextInitialization : MonoBehaviour
+public class InitializeText : MonoBehaviour
 {
     void Start()
     {
         // SMOKINGFOX INSTRUCTIONS
 
          // Introduction + Foyer_Exit
-        PlayerPrefs.SetString("F_E_T", "Willkommen im Labor!\nEs scheint, als haette uns hier jemand eingesperrt! Ich glaube, wir muessen die fehlenden Elemente aus dem Periodensystems finden.");
+        PlayerPrefs.SetString("F_E_T", "Willkommen im Labor!\nEs scheint, als hätte uns hier jemand eingesperrt! Ich glaube, wir muessen die fehlenden Elemente aus dem Periodensystems finden.");
 
         // Foyer_Rooms
-        PlayerPrefs.SetString("F_R_T", "Hier sind mehrere Raeume. Vielleicht ist ja einer davon offen?");
+        PlayerPrefs.SetString("F_R_T", "Hier sind mehrere Räume. Vielleicht ist ja einer davon offen?");
 
         // Room1
         PlayerPrefs.SetString("R1_T", "Schau dir mal den Labortisch an, dort liegt irgendetwas!");
@@ -46,30 +46,5 @@ public class TextInitialization : MonoBehaviour
 
         // Room3_Minigame2
         PlayerPrefs.SetString("R3M2_T", "");
-
-        // READING STATUS
-
-        // 0 - not readed, 1 - readed
-        PlayerPrefs.SetInt("F_E", 0);
-        PlayerPrefs.SetInt("F_R", 0);
-        PlayerPrefs.SetInt("R1", 0);
-        PlayerPrefs.SetInt("R1M1", 0);
-        PlayerPrefs.SetInt("R1M2", 0);
-        PlayerPrefs.SetInt("R1M3", 0);
-        PlayerPrefs.SetInt("R2", 0);
-        PlayerPrefs.SetInt("R2M1", 0);
-        PlayerPrefs.SetInt("R2M2", 0);
-        PlayerPrefs.SetInt("R2M3", 0);
-        PlayerPrefs.SetInt("R3", 0);
-        PlayerPrefs.SetInt("R3M1", 0);
-        PlayerPrefs.SetInt("R3M2", 0);
-
-        // PROGRESS
-
-        // collected elements
-        PlayerPrefs.SetInt("Elements", 0);
-
-        // SETTINGS
-        PlayerPrefs.SetInt("Sound", 1);
     }
 }

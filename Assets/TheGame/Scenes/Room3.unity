@@ -850,7 +850,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11c1498d54f841f4d8e2e63bd9f683ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1045246897}
   scene: Foyer_Exit
 --- !u!114 &1045246899
 MonoBehaviour:
@@ -1006,7 +1005,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11c1498d54f841f4d8e2e63bd9f683ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1366499980}
   scene: Foyer_Rooms
 --- !u!114 &1366499980
 MonoBehaviour:
