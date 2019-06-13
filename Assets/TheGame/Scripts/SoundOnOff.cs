@@ -5,36 +5,46 @@ using UnityEngine.UI;
 
 public class SoundOnOff : MonoBehaviour
 {
-    public Button button;
+    private Button button;
     public Sprite soundOnImage;
     public Sprite soundOffImage;
 
     void Start()
     {
+        button = GetComponent<Button>();
         button.onClick.AddListener(changeSound);
+
+        if (PlayerPrefs.GetInt("Sound") == 0)
+        {
+            soundOff();
+        }
+        else if (PlayerPrefs.GetInt("Sound") == 1)
+        {
+            soundOn();
+        }
     }
 
     private void changeSound()
     {
-        if (button.GetComponent<Image>().sprite == soundOnImage)
+        if (PlayerPrefs.GetInt("Sound") == 1)
         {
-            button.GetComponent<Image>().sprite = soundOffImage;
             soundOff();
         }
-        else if (button.GetComponent<Image>().sprite == soundOffImage)
+        else if (PlayerPrefs.GetInt("Sound") == 0)
         {
-            button.GetComponent<Image>().sprite = soundOnImage;
             soundOn();
         }
     }
 
     private void soundOn()
     {
-
+        button.GetComponent<Image>().sprite = soundOnImage;
+        PlayerPrefs.SetInt("Sound", 1);
     }
 
     private void soundOff()
     {
-
+        button.GetComponent<Image>().sprite = soundOffImage;
+        PlayerPrefs.SetInt("Sound", 0);
     }
 }

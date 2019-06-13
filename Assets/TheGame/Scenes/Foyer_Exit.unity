@@ -709,7 +709,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11c1498d54f841f4d8e2e63bd9f683ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1525681595}
   scene: Foyer_Rooms
 --- !u!114 &1525681595
 MonoBehaviour:
@@ -1240,10 +1239,55 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5283946501267509402, guid: bfd84433eab1e354c96561166765132d,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5283946501267509402, guid: bfd84433eab1e354c96561166765132d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5283946501267509402, guid: bfd84433eab1e354c96561166765132d,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5283946501267509397, guid: bfd84433eab1e354c96561166765132d,
         type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1638827573}
+    - target: {fileID: 5677209872841805282, guid: bfd84433eab1e354c96561166765132d,
+        type: 3}
+      propertyPath: fox
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2915257301206761779, guid: bfd84433eab1e354c96561166765132d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2915257299747119059, guid: bfd84433eab1e354c96561166765132d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2915257299747119063, guid: bfd84433eab1e354c96561166765132d,
+        type: 3}
+      propertyPath: m_PixelPerfect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2915257299747119063, guid: bfd84433eab1e354c96561166765132d,
+        type: 3}
+      propertyPath: m_OverridePixelPerfect
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2915257301515787246, guid: bfd84433eab1e354c96561166765132d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfd84433eab1e354c96561166765132d, type: 3}

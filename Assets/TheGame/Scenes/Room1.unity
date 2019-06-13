@@ -242,6 +242,31 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1351884934}
+    - target: {fileID: 2915257301206761779, guid: bfd84433eab1e354c96561166765132d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2915257301620967141, guid: bfd84433eab1e354c96561166765132d,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4492776766036263107, guid: bfd84433eab1e354c96561166765132d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5901974349842730372, guid: bfd84433eab1e354c96561166765132d,
+        type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4690845945294738736, guid: bfd84433eab1e354c96561166765132d,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfd84433eab1e354c96561166765132d, type: 3}
 --- !u!224 &176777515 stripped
@@ -706,7 +731,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11c1498d54f841f4d8e2e63bd9f683ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 356803048}
   scene: Room2
 --- !u!114 &356803050
 MonoBehaviour:
@@ -1463,7 +1487,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11c1498d54f841f4d8e2e63bd9f683ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 883149317}
   scene: Room1_Minigame1
 --- !u!114 &883149319
 MonoBehaviour:
@@ -1598,7 +1621,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11c1498d54f841f4d8e2e63bd9f683ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 952140091}
   scene: Room2
 --- !u!114 &952140093
 MonoBehaviour:
@@ -1808,7 +1830,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11c1498d54f841f4d8e2e63bd9f683ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 1095141803}
   scene: Foyer_Rooms
 --- !u!114 &1095141803
 MonoBehaviour:
