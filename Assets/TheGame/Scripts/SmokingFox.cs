@@ -118,6 +118,8 @@ public class SmokingFox : MonoBehaviour
             default:
                 break;
         }
+        if (GetComponent<Image>().sprite == smokingFoxTalking) GetComponent<Animator>().SetBool("Blink", true);
+        if (GetComponent<Image>().sprite == smokingFox) GetComponent<Animator>().SetBool("Blink", false);
     }
 
     private void openFox()
@@ -125,6 +127,7 @@ public class SmokingFox : MonoBehaviour
         fox.SetActive(true);
         foxText.text = foxSay;
         changeFoxImage(smokingFox);
+
         // switch tip in relation to active scene
         switch (SceneManager.GetActiveScene().name)
         {
@@ -175,5 +178,7 @@ public class SmokingFox : MonoBehaviour
     private void changeFoxImage(Sprite image)
     {
         GetComponent<Image>().sprite = image;
+        if (GetComponent<Image>().sprite == smokingFoxTalking) GetComponent<Animator>().SetBool("Blink", true);
+        if (GetComponent<Image>().sprite == smokingFox) GetComponent<Animator>().SetBool("Blink", false);
     }
 }
