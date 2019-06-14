@@ -522,6 +522,7 @@ GameObject:
   - component: {fileID: 1229504298499087028}
   - component: {fileID: 7468555894550991742}
   - component: {fileID: 7733071214895741811}
+  - component: {fileID: 5425306475029019925}
   m_Layer: 5
   m_Name: Fox Help Button
   m_TagString: Untagged
@@ -646,6 +647,25 @@ MonoBehaviour:
   smokingFoxTalking: {fileID: 21300000, guid: d5cccb17abac6a14fa35be2b6bc5d551, type: 3}
   fox: {fileID: 7767809028615827615}
   foxText: {fileID: 1397422891415493412}
+--- !u!95 &5425306475029019925
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6692299955396257539}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d366ee88df653e7489baf009972e18ee, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1206507706706810776
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -768,10 +788,15 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 7689593394957172459, guid: 9ce98ca49dab63c4d9b8fdf3d2ba9779,
+    - target: {fileID: 7689593396279811945, guid: 9ce98ca49dab63c4d9b8fdf3d2ba9779,
         type: 3}
       propertyPath: m_SortingOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689593394957172459, guid: 9ce98ca49dab63c4d9b8fdf3d2ba9779,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ce98ca49dab63c4d9b8fdf3d2ba9779, type: 3}
