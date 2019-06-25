@@ -51,9 +51,9 @@ public class AutoGenUtensils : MonoBehaviour
         GameObject check = GameObject.Find("Completion Button");
 
         text.transform.parent = parentOfText.transform;
-        text.transform.position = new Vector2(boxObject.transform.position.x, boxObject.transform.position.y - 1);
+        text.transform.position = new Vector2(boxObject.transform.position.x, boxObject.transform.position.y - 0.7f);
         text.transform.localScale = new Vector3(1, 1, 1);
-        text.transform.GetComponent<Text>().text = utensil.name;
+        text.transform.GetComponent<Text>().text = uten;
         utensil.transform.position = UtensilPos[i];
         spawn.transform.position = UtensilPos[i];
 
