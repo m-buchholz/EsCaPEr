@@ -1359,6 +1359,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AudioSource: {fileID: 1725305107}
   ClickSound: {fileID: 8300000, guid: 7c28010b3d75c134b8433efe965f8d0b, type: 3}
+--- !u!114 &1615030486 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4690845945294738736, guid: bfd84433eab1e354c96561166765132d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1615030478}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1615030487 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4157194194394939019, guid: bfd84433eab1e354c96561166765132d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1615030478}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1725305106
 GameObject:
   m_ObjectHideFlags: 0
@@ -1761,9 +1779,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1896787658}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11c1498d54f841f4d8e2e63bd9f683ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 262d4bc393ef8a742bc64a8b8c9522c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  foxOverlay: {fileID: 1615030487}
+  foxText: {fileID: 1615030486}
   scene: Room3
 --- !u!114 &1896787662
 MonoBehaviour:

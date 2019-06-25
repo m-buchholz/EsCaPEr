@@ -124,8 +124,8 @@ public class SmokingFox : MonoBehaviour
 
     private void openFox()
     {
-        fox.SetActive(true);
         foxText.text = foxSay;
+        fox.SetActive(true);
         changeFoxImage(smokingFox);
 
         // switch tip in relation to active scene

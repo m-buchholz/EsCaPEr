@@ -41,10 +41,21 @@ public class InitializeText : MonoBehaviour
         // Room3
         PlayerPrefs.SetString("R3_T", "R3 Tipp");
 
+        // Room3 Professor - if not all Quests are finished
+        PlayerPrefs.SetString("Prof", "Hey, da bist du ja endlich!\nAber was ist das?\nScheinbar fehlen dir noch einige Kenntnisse.\nSchau dich nochmal in den Räumen um!");
+
+        // Room3 Professor - if all Quests are finished
+        PlayerPrefs.SetString("Prof_End", "Unglaublich, du hast alle Aufgaben bewältigt!\nDoch nun musst du noch meine Prüfung bestehen!\nMuhahahahaha...");
+
         // Room3_Minigame1
         PlayerPrefs.SetString("R3M1_T", "");
 
         // Room3_Minigame2
         PlayerPrefs.SetString("R3M2_T", "");
+
+        // OTHER
+
+        // Door is locked
+        PlayerPrefs.SetString("Door_locked", "Oh, die Tür ist verschlossen.\nDu brauchst wohl einen Schlüssel!\nVielleicht findest du ihn in einem offenen Raum?");
     }
 }

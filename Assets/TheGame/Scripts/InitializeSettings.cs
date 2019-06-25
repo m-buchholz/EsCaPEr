@@ -8,7 +8,7 @@ public class InitializeSettings : MonoBehaviour
     {
         // READING STATUS
 
-        // 0 - not readed, 1 - readed
+        // Tip: 0 - not readed, 1 - readed
         PlayerPrefs.SetInt("F_E", 0);
         PlayerPrefs.SetInt("F_R", 0);
         PlayerPrefs.SetInt("R1", 0);
@@ -24,6 +24,11 @@ public class InitializeSettings : MonoBehaviour
         PlayerPrefs.SetInt("R3M2", 0);
 
         // PROGRESS
+
+        // Door: 0 - closed, 1 - opened
+        PlayerPrefs.SetInt("Room2", 0);
+        PlayerPrefs.SetInt("Room3", 0);
+        PlayerPrefs.SetInt("Exit", 0);
 
         // collected elements
         PlayerPrefs.SetInt("Elements", 0);
