@@ -27,7 +27,7 @@ public class InitializeText : MonoBehaviour
         PlayerPrefs.SetString("R1M3_T", "");
 
         // Room2
-        PlayerPrefs.SetString("R2_T", "R2 Tipp");
+        PlayerPrefs.SetString("R2_T", "Du hast es in den nächsten Raum geschafft, klasse!");
 
         // Room2_Minigame1
         PlayerPrefs.SetString("R2M1_T", "");
@@ -39,19 +39,19 @@ public class InitializeText : MonoBehaviour
         PlayerPrefs.SetString("R2M3_T", "");
 
         // Room3
-        PlayerPrefs.SetString("R3_T", "R3 Tipp");
+        PlayerPrefs.SetString("R3_T", "Du bist im letzten Raum!\nSchau dir mal die Tafel an!\nWas wohl der Professor hier möchte?");
 
         // Room3 Professor - if not all Quests are finished
         PlayerPrefs.SetString("Prof", "Hey, da bist du ja endlich!\nAber was ist das?\nScheinbar fehlen dir noch einige Kenntnisse.\nSchau dich nochmal in den Räumen um!");
 
         // Room3 Professor - if all Quests are finished
-        PlayerPrefs.SetString("Prof_End", "Unglaublich, du hast alle Aufgaben bewältigt!\nDoch nun musst du noch meine Prüfung bestehen!\nMuhahahahaha...");
+        PlayerPrefs.SetString("Prof_End", "Du hast alle Aufgaben bewältigt?\nDoch nun musst du noch meine Prüfung bestehen!\nMuhahahahaha...");
 
         // Room3_Minigame1
         PlayerPrefs.SetString("R3M1_T", "");
 
         // Room3_Minigame2
-        PlayerPrefs.SetString("R3M2_T", "");
+        PlayerPrefs.SetString("R3M2_T", "Deine Prüfung!\nStell dich dem Professor und seinen Fragen");
 
         // OTHER
 
