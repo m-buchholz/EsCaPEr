@@ -37,36 +37,36 @@ public class InitializeText : MonoBehaviour
         // Room3_Minigame1
         PlayerPrefs.SetString("R3M1_T", "");
         // Room3_Minigame2
-        PlayerPrefs.SetString("R3M2_T", "Hast du etwa jemand anderes erwartet?\nHier kann dir niemand helfen!\nNun los, zieg mir was du kannst!");
+        PlayerPrefs.SetString("R3M2_T", "Hast du etwa jemand anderes erwartet?\nHier kann dir niemand helfen!\nNun los, zeig mir was du kannst!");
         // Failure
         PlayerPrefs.SetString("Fail_T", "Ups, da ist etwas schief gelaufen...");
 
         // MINIGAMES
 
-        // Room3_Minigame2 - Format: Question//Right Answer//Answer2//Answer3
+        // Room3_Minigame2 - Format: Type(Q-Question or P-Picture)/Question/Right Answer/Answer2/Answer3
         // Text Questions - Q0-Q15
-        PlayerPrefs.SetString("Q0", "Welches Element ist Sauerstoff?/O2/NaOH/O3,");
-        PlayerPrefs.SetString("Q1", "?/1/2/3");
-        PlayerPrefs.SetString("Q2", "?/1/2/3");
-        PlayerPrefs.SetString("Q3", "?/1/2/3");
-        PlayerPrefs.SetString("Q4", "?/1/2/3");
-        PlayerPrefs.SetString("Q5", "?/1/2/3");
-        PlayerPrefs.SetString("Q6", "?/1/2/3");
-        PlayerPrefs.SetString("Q7", "?/1/2/3");
-        PlayerPrefs.SetString("Q8", "?/1/2/3");
-        PlayerPrefs.SetString("Q9", "?/1/2/3");
-        PlayerPrefs.SetString("Q10", "?/1/2/3");
-        PlayerPrefs.SetString("Q11", "?/1/2/3");
-        PlayerPrefs.SetString("Q12", "?/1/2/3");
-        PlayerPrefs.SetString("Q13", "?/1/2/3");
-        PlayerPrefs.SetString("Q14", "?/1/2/3");
-        PlayerPrefs.SetString("Q15", "?/1/2/3");
+        PlayerPrefs.SetString("Q0", "T/Welches Element ist Sauerstoff?/O2/NaOH/O3,");
+        PlayerPrefs.SetString("Q1", "T/?/1/2/3");
+        PlayerPrefs.SetString("Q2", "T/?/1/2/3");
+        PlayerPrefs.SetString("Q3", "T/?/1/2/3");
+        PlayerPrefs.SetString("Q4", "T/?/1/2/3");
+        PlayerPrefs.SetString("Q5", "T/?/1/2/3");
+        PlayerPrefs.SetString("Q6", "T/?/1/2/3");
+        PlayerPrefs.SetString("Q7", "T/?/1/2/3");
+        PlayerPrefs.SetString("Q8", "T/?/1/2/3");
+        PlayerPrefs.SetString("Q9", "T/?/1/2/3");
+        PlayerPrefs.SetString("Q10", "T/?/1/2/3");
+        PlayerPrefs.SetString("Q11", "T/?/1/2/3");
+        PlayerPrefs.SetString("Q12", "T/?/1/2/3");
+        PlayerPrefs.SetString("Q13", "T/?/1/2/3");
+        PlayerPrefs.SetString("Q14", "T/?/1/2/3");
+        PlayerPrefs.SetString("Q15", "T/?/1/2/3");
         // Image Questions - Q16-Q20
-        PlayerPrefs.SetString("Q16", "Welches Utensil ist das?/Erlenmeyerkolben/Reagenzglas/Stopfen");
-        PlayerPrefs.SetString("Q17", "?/1/2/3");
-        PlayerPrefs.SetString("Q18", "?/1/2/3");
-        PlayerPrefs.SetString("Q19", "?/1/2/3");
-        PlayerPrefs.SetString("Q20", "?/1/2/3");
+        PlayerPrefs.SetString("Q16", "erlenmeyerkolben/Welches Utensil ist das?/Erlenmeyerkolben/Reagenzglas/Messzylinder");
+        PlayerPrefs.SetString("Q17", "spatellöffel/Welches Utensil ist das?/Spatellöffel/Pipette/Stopfen");
+        PlayerPrefs.SetString("Q18", "stehkolben/Welches Utensil ist das?/Stehkolben/Erlenmeyerkolben/Rundkolben");
+        PlayerPrefs.SetString("Q19", "pipette/Welches Utensil ist das?/Pipette/Stopfen/Reagenzglas");
+        PlayerPrefs.SetString("Q20", "stopfen/Welches Utensil ist das?/Stopfen/Messbecher/Rundkolben");
 
         // OTHER
 
