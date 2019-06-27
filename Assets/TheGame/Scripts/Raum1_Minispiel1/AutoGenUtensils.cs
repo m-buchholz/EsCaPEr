@@ -32,11 +32,12 @@ public class AutoGenUtensils : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GenerateObj("Stopfen");
         GenerateObj("Messzylinder");
-        GenerateObj("ErlenMyer");
+        GenerateObj("Erlenmeyerkolben");
         GenerateObj("Reagenzglas");
         GenerateObj("Bunsenbrenner");
-        GenerateObj("Stopfen");
+
     }
 
     private void GenerateObj(string uten)

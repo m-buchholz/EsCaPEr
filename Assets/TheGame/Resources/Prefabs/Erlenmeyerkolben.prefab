@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2269306095787755108}
   m_Layer: 0
-  m_Name: Erlen_myer
+  m_Name: Erlenmeyerkolben
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50,7 +50,7 @@ GameObject:
   - component: {fileID: 2269306096025902437}
   - component: {fileID: 2269306096025902434}
   m_Layer: 0
-  m_Name: erlen_myer
+  m_Name: Erlenmeyerkolben
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
