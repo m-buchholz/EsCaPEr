@@ -9,13 +9,20 @@ public class Level : MonoBehaviour
 {
 
     public Text text;
+    public Text text2;
+    public Text text3;
     public EnemyManager EM;
     public GameObject obj;
     public GameObject greenLight;
+
+    public AudioSource pling;
+    public AudioSource badum;
+    public bool alreadyPlayed = false;
+
     public float lightTime = 2f;
     public float time;
 
-    
+    public int i;
 
     private int count;
 
@@ -44,6 +51,8 @@ public class Level : MonoBehaviour
         countH = 0;
         countNa = 0;
         countPt = 0;
+        text2.text = "";
+        text3.text = "";
         //EM = GetComponent<EnemyManager>();
         //text.text = "Sauerstoff";
         setCountTextO();
@@ -53,58 +62,228 @@ public class Level : MonoBehaviour
 
     }
 
-    
+    void rightCircle()
+    {
+        if (!alreadyPlayed)
+        {
+            pling.Play();
+            alreadyPlayed = true;
+        }
+    }
+
+    void unplay()
+    {
+        alreadyPlayed = false;
+    }
+
+    void wrongCircle()
+    {
+        badum.Play();
+    }
+
+    //sets all counters to Zero
+    void setToZero()
+    {
+        text2.text = "";
+        count = 0;
+        countH = 0;
+        countNa = 0;
+        countPt = 0;
+    }
+    //Destroys all exsting circles 
+    void DestroyAllMolecules()
+    {
+        DestroyAllO();
+        DestroyAllH();
+        DestroyAllNa();
+        DestroyAllPt();
+    }
+
+    //wait for 2 seconds after lvl
+    IEnumerator wait1()
+    {
+        yield return new WaitForSeconds(2);
+        setName2();
+        text2.text = "";
+        obj.SetActive(true);
+
+    }
+
+    IEnumerator wait2()
+    {
+        yield return new WaitForSeconds(3);
+        setName3();
+        text2.text = "";
+        obj.SetActive(true);
+    }
+
+    IEnumerator wait3()
+    {
+        yield return new WaitForSeconds(3);
+        setName4();
+        text2.text = "";
+        obj.SetActive(true);
+    }
+
+    IEnumerator wait4()
+    {
+        yield return new WaitForSeconds(3);
+        text.text = "";
+        text2.text = "";
+        text3.text = end;
+    }
+
 
     // Update is called once per frame
     void Update()
     {
-        
-        //swtitch lvl, sets counters to 0
-        if (text.text.Equals(lvl1) && count == 2)
+        //LVL1
+        //sets all xcounters to zero if wrong/too many molecule is picked up
+        if (text.text.Equals(lvl1))
         {
-            setName2();
-         
-            DestroyAllO();
-            DestroyAllH();
-            DestroyAllNa();
-            DestroyAllPt();
+
+            if (count == 1)
+            {
+                text2.text = "O";
+                rightCircle();
+                
+                
+            }
+
+            if (countH >0 || countNa >0 || countPt> 0)
+            {
+                setToZero();
+                wrongCircle();
+                
+            }
+            //checks for lvl completion
+            if (count == 2)
+            {
+                text2.text = "O2";
+                rightCircle();
+                
+                DestroyAllMolecules();
+                obj.SetActive(false);
+                StartCoroutine(wait1()); 
+            }
+
+        }
+        //LVL2
+        if (text.text.Equals(lvl2))
+        {
+            if(countH == 1 && count == 0)
+            {
+                rightCircle();
+                text2.text = "H";
+            }
+
+            if(countH ==2 && count == 0)
+            {            
+                text2.text = "H2";
+                rightCircle();
+            }
             
+            if(count == 1 && (countH == 0 || countH == 1))
+            {
+                setToZero();
+                wrongCircle();
+                
+                
+            }
+
+            if (countH > 2 || countNa > 0 || countPt > 0 || count > 1)
+            {
+                setToZero();
+                wrongCircle();
+                
+                
+            }
+
+            if (countH == 2 && count == 1 && countNa == 0 && countPt == 0)
+            {
+              
+                rightCircle();
+                text2.text = "H2O";
+                DestroyAllMolecules();
+                obj.SetActive(false);
+                StartCoroutine(wait2());
+                
+            }
+
         }
 
-        if (text.text.Equals(lvl2) && countH >= 2 && count >= 1)
+        //LVL3
+        if (text.text.Equals(lvl3))
         {
-            setName3();
-            DestroyAllO();
-            DestroyAllH();
-            DestroyAllNa();
-            DestroyAllPt();
-            
+            if (countH > 0 || countNa > 0 || countPt > 1 || count > 0)
+            {
+                setToZero();
+                wrongCircle();
+                
+            }
+
+            if (countPt == 1)
+            {
+             
+                rightCircle();
+                DestroyAllMolecules();
+                text2.text = "Pt";
+                obj.SetActive(false);
+                StartCoroutine(wait3());
+                
+                
+            }
         }
 
-        if(text.text.Equals(lvl3) && countPt >=1)
+        //LVL4
+        if (text.text.Equals(lvl4))
         {
-            setName4();
-            DestroyAllO();
-            DestroyAllH();
-            DestroyAllNa();
-            DestroyAllPt();
-            
-        }
+            if (countH > 1 || countNa > 1 || countPt > 0 || count > 1)
+            {
+                setToZero();
+                wrongCircle();
+                
+            }
 
-        if (text.text.Equals(lvl4) && countNa >= 1 && count >= 1 && countH >= 1)
-        {
-            setName5();
-            DestroyAllO();
-            DestroyAllH();
-            DestroyAllNa();
-            DestroyAllPt();
-           //makes sure no more molecules are comin by destroying game object with enemy manager script
-            Destroy(obj);
-        }
+            if(countNa == 1 && count == 0 && countH == 0)
+            {
+                
+                rightCircle();
+                text2.text = "Na";
+            }
 
-        //Debug.Log("counter " + count);
-       // Debug.Log("part 1 " + text.text.Equals(lvl1));
-       // Debug.Log("part2 " + text.text.Equals(lvl));
+            if (countNa == 1 && count == 1 && countH == 0)
+            {
+                
+                rightCircle();
+                text2.text = "NaO";
+            }
+
+            if ((countNa == 1 && count == 0 && countH == 1) || (countNa == 0 && (count ==1 || countH ==1)) ){
+                setToZero();
+                wrongCircle();
+               
+            }
+
+
+            if (countNa == 1 && count == 1 && countH == 1)
+            {
+               
+                rightCircle();
+                DestroyAllMolecules();
+                text2.text = "NaOH";
+                //makes sure no more molecules are comin by destroying game object with enemy manager script
+                Destroy(obj);
+                StartCoroutine(wait4());
+                
+                
+                
+            }
+        }
+        Debug.Log("counter " + count);
+        Debug.Log("counterH " + countH);
+        // Debug.Log("part 1 " + text.text.Equals(lvl1));
+        // Debug.Log("part2 " + text.text.Equals(lvl));
     }
 
 
@@ -112,8 +291,10 @@ public class Level : MonoBehaviour
     //Checking for TAGS, counting molecules
     void OnTriggerEnter2D(Collider2D other)
     {
+        unplay();
+
         if (other.gameObject.CompareTag("O"))
-        {
+        {   //a try to signal you did smth right
             if(text.text.Equals(lvl1) &&count <=2)
             {
                 blinkGreen();
