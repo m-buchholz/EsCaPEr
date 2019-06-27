@@ -6,6 +6,10 @@ TagManager:
   tags:
   - AssignmentBox
   - Wall
+  - H
+  - O
+  - Na
+  - Pt
   layers:
   - Default
   - TransparentFX
@@ -42,4 +46,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: above
+    uniqueID: 1287486283
     locked: 0
