@@ -22,16 +22,17 @@ public class InitializeSettings : MonoBehaviour
         PlayerPrefs.SetInt("R3", 0);
         PlayerPrefs.SetInt("R3M1", 0);
         PlayerPrefs.SetInt("R3M2", 0);
+        PlayerPrefs.SetInt("Fail", 0);
 
         // PROGRESS
 
         // Door: 0 - closed, 1 - opened
-        PlayerPrefs.SetInt("Room2", 0);
-        PlayerPrefs.SetInt("Room3", 0);
+        PlayerPrefs.SetInt("Room2", 1);
+        PlayerPrefs.SetInt("Room3", 1);
         PlayerPrefs.SetInt("Exit", 0);
 
         // collected elements
-        PlayerPrefs.SetInt("Elements", 0);
+        PlayerPrefs.SetInt("Elements", 5);
 
         // SETTINGS
         PlayerPrefs.SetInt("Sound", 1);

@@ -11,6 +11,7 @@ public class SmokingFox : MonoBehaviour
     public Text foxText;
     private Button button;
     private string foxSay;
+    private string tip;
 
     void Start()
     {
@@ -25,101 +26,57 @@ public class SmokingFox : MonoBehaviour
         switch (SceneManager.GetActiveScene().name)
         {
             case "Foyer_Exit":
-                if (PlayerPrefs.GetInt("F_E") == 0)
-                {
-                    changeFoxImage(smokingFoxTalking);
-                }
-                foxSay = PlayerPrefs.GetString("F_E_T");
+                tip = "F_E";
                 break;
             case "Foyer_Rooms":
-                if (PlayerPrefs.GetInt("F_R") == 0)
-                {
-                    changeFoxImage(smokingFoxTalking);
-                }
-                foxSay = PlayerPrefs.GetString("F_R_T");
+                tip = "F_R";
                 break;
             case "Room1":
-                if (PlayerPrefs.GetInt("R1") == 0)
-                {
-                    changeFoxImage(smokingFoxTalking);
-                }
-                foxSay = PlayerPrefs.GetString("R1_T");
+                tip = "R1";
                 break;
             case "Room1_Minigame1":
-                if (PlayerPrefs.GetInt("R1M1") == 0)
-                {
-                    changeFoxImage(smokingFoxTalking);
-                }
-                foxSay = PlayerPrefs.GetString("R1M1_T");
+                tip = "R1M1";
                 break;
             case "Room1_Minigame2":
-                if (PlayerPrefs.GetInt("R1M2") == 0)
-                {
-                    changeFoxImage(smokingFoxTalking);
-                }
-                foxSay = PlayerPrefs.GetString("R1M2_T");
+                tip = "R1M2";
                 break;
             case "Room1_Minigame3":
-                if (PlayerPrefs.GetInt("R1M3") == 0)
-                {
-                    changeFoxImage(smokingFoxTalking);
-                }
-                foxSay = PlayerPrefs.GetString("R1M3_T");
+                tip = "R1M3";
                 break;
             case "Room2":
-                if (PlayerPrefs.GetInt("R2") == 0)
-                {
-                    changeFoxImage(smokingFoxTalking);
-                }
-                foxSay = PlayerPrefs.GetString("R2_T");
+                tip = "R2";
                 break;
             case "Room2_Minigame1":
-                if (PlayerPrefs.GetInt("R2M1") == 0)
-                {
-                    changeFoxImage(smokingFoxTalking);
-                }
-                foxSay = PlayerPrefs.GetString("R2M1_T");
+                tip = "R2M1";
                 break;
             case "Room2_Minigame2":
-                if (PlayerPrefs.GetInt("R2M2") == 0)
-                {
-                    changeFoxImage(smokingFoxTalking);
-                }
-                foxSay = PlayerPrefs.GetString("R2M2_T");
+                tip = "R2M2";
                 break;
             case "Room2_Minigame3":
-                if (PlayerPrefs.GetInt("R2M3") == 0)
-                {
-                    changeFoxImage(smokingFoxTalking);
-                }
-                foxSay = PlayerPrefs.GetString("R2M3_T");
+                tip = "R2M3";
                 break;
             case "Room3":
-                if (PlayerPrefs.GetInt("R3") == 0)
-                {
-                    changeFoxImage(smokingFoxTalking);
-                }
-                foxSay = PlayerPrefs.GetString("R3_T");
+                tip = "R3";
                 break;
             case "Room3_Minigame1":
-                if (PlayerPrefs.GetInt("R3M1") == 0)
-                {
-                    changeFoxImage(smokingFoxTalking);
-                }
-                foxSay = PlayerPrefs.GetString("R3M1_T");
+                tip = "R3M1";
                 break;
             case "Room3_Minigame2":
-                if (PlayerPrefs.GetInt("R3M2") == 0)
-                {
-                    changeFoxImage(smokingFoxTalking);
-                }
-                foxSay = PlayerPrefs.GetString("R3M2_T");
+                tip = "R3M2";
                 break;
             default:
+                tip = "Fail";
                 break;
         }
-        if (GetComponent<Image>().sprite == smokingFoxTalking) GetComponent<Animator>().SetBool("Blink", true);
-        if (GetComponent<Image>().sprite == smokingFox) GetComponent<Animator>().SetBool("Blink", false);
+
+        if (PlayerPrefs.GetInt(tip) == 0)
+        {
+            changeFoxImage(smokingFoxTalking);
+        }
+        foxSay = PlayerPrefs.GetString(tip+"_T");
+
+        if (PlayerPrefs.GetInt(tip) == 0) GetComponent<Animator>().SetBool("Blink", true);
+        if (PlayerPrefs.GetInt(tip) == 1) GetComponent<Animator>().SetBool("Blink", false);
     }
 
     private void openFox()
@@ -132,53 +89,57 @@ public class SmokingFox : MonoBehaviour
         switch (SceneManager.GetActiveScene().name)
         {
             case "Foyer_Exit":
-                PlayerPrefs.SetInt("F_E", 1);
+                tip = "F_E";
                 break;
             case "Foyer_Rooms":
-                PlayerPrefs.SetInt("F_R", 1);
+                tip = "F_R";
                 break;
             case "Room1":
-                PlayerPrefs.SetInt("R1", 1);
+                tip = "R1";
                 break;
             case "Room1_Minigame1":
-                PlayerPrefs.SetInt("R1M1", 1);
+                tip = "R1M1";
                 break;
             case "Room1_Minigame2":
-                PlayerPrefs.SetInt("R1M2", 1);
+                tip = "R1M2";
                 break;
             case "Room1_Minigame3":
-                PlayerPrefs.SetInt("R1M3", 1);
+                tip = "R1M3";
                 break;
             case "Room2":
-                PlayerPrefs.SetInt("R2", 1);
+                tip = "R2";
                 break;
             case "Room2_Minigame1":
-                PlayerPrefs.SetInt("R2M1", 1);
+                tip = "R2M1";
                 break;
             case "Room2_Minigame2":
-                PlayerPrefs.SetInt("R2M2", 1);
+                tip = "R2M2";
                 break;
             case "Room2_Minigame3":
-                PlayerPrefs.SetInt("R2M3", 1);
+                tip = "R2M3";
                 break;
             case "Room3":
-                PlayerPrefs.SetInt("R3", 1);
+                tip = "R3";
                 break;
             case "Room3_Minigame1":
-                PlayerPrefs.SetInt("R3M1", 1);
+                tip = "R3M1";
                 break;
             case "Room3_Minigame2":
-                PlayerPrefs.SetInt("R3M2", 1);
+                tip = "R3M2";
                 break;
             default:
+                tip = "Fail";
                 break;
         }
+
+        PlayerPrefs.SetInt(tip, 1);
+        GetComponent<Animator>().SetBool("Blink", false);
     }
 
     private void changeFoxImage(Sprite image)
     {
         GetComponent<Image>().sprite = image;
-        if (GetComponent<Image>().sprite == smokingFoxTalking) GetComponent<Animator>().SetBool("Blink", true);
-        if (GetComponent<Image>().sprite == smokingFox) GetComponent<Animator>().SetBool("Blink", false);
+        if (PlayerPrefs.GetInt(tip) == 0) GetComponent<Animator>().SetBool("Blink", true);
+        if (PlayerPrefs.GetInt(tip) == 1) GetComponent<Animator>().SetBool("Blink", false);
     }
 }
