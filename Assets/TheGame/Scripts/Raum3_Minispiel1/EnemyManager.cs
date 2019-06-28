@@ -5,12 +5,19 @@ using UnityEngine;
 public class EnemyManager : MonoBehaviour
 {
     public GameObject[] enemy;
-    public float spawnTime = 2f;
+    public float spawnTime = 1.3f;
     public Transform[] spawnPoints;
-    // Start is called before the first frame update
-    void Start()
+
+    IEnumerator wait()
     {
+        yield return new WaitForSeconds(3);
         InvokeRepeating("Spawn", spawnTime, spawnTime);
+    }
+        // Start is called before the first frame update
+        void Start()
+    {
+        StartCoroutine(wait());
+        
     }
 
     void Spawn ()
