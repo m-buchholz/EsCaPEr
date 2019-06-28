@@ -7,38 +7,35 @@ using System;
 
 public class Level : MonoBehaviour
 {
+    private Rigidbody rb;
 
     public Text text;
     public Text text2;
     public Text text3;
-    public EnemyManager EM;
+    
     public GameObject obj;
-    public GameObject greenLight;
+    public GameObject player;
+    
 
     public AudioSource pling;
     public AudioSource badum;
     public bool alreadyPlayed = false;
 
-    public float lightTime = 2f;
-    public float time;
-
+ 
     public int i;
 
     private int count;
-
     private int countH;
     private int countNa;
-    private int countPt;
-    private Rigidbody rb;
-
-
+    private int countCl;
+    
 
     public string lvl = "lvl";
 
     public string lvl1 = "Sauerstoff"; //O2 
     public string lvl2 = "Wasser"; //H2O
-    public string lvl3 = "Platin" ; //NaOH
-    public string lvl4 = "Natriumhydroxid"; //Pt
+    public string lvl3 = "Salzsäure" ; //HCl
+    public string lvl4 = "Natriumhydroxid"; //NaOH
     public string end = "WELL DONE!";
 
 
@@ -50,13 +47,13 @@ public class Level : MonoBehaviour
         count = 0;
         countH = 0;
         countNa = 0;
-        countPt = 0;
+        countCl = 0;
         text2.text = "";
         text3.text = "";
-        //EM = GetComponent<EnemyManager>();
+      
         //text.text = "Sauerstoff";
         setCountTextO();
-        greenLight.SetActive(false);
+        //greenLight.SetActive(false);
         
 
 
@@ -88,7 +85,7 @@ public class Level : MonoBehaviour
         count = 0;
         countH = 0;
         countNa = 0;
-        countPt = 0;
+        countCl = 0;
     }
     //Destroys all exsting circles 
     void DestroyAllMolecules()
@@ -96,7 +93,7 @@ public class Level : MonoBehaviour
         DestroyAllO();
         DestroyAllH();
         DestroyAllNa();
-        DestroyAllPt();
+        DestroyAllCl();
     }
 
     //wait for 2 seconds after lvl
@@ -131,6 +128,7 @@ public class Level : MonoBehaviour
         text.text = "";
         text2.text = "";
         text3.text = end;
+        player.SetActive(false);
     }
 
 
@@ -150,7 +148,7 @@ public class Level : MonoBehaviour
                 
             }
 
-            if (countH >0 || countNa >0 || countPt> 0)
+            if (countH >0 || countNa >0 || countCl >0)
             {
                 setToZero();
                 wrongCircle();
@@ -191,7 +189,7 @@ public class Level : MonoBehaviour
                 
             }
 
-            if (countH > 2 || countNa > 0 || countPt > 0 || count > 1)
+            if (countH > 2 || countNa > 0 || countCl > 0 || count > 1)
             {
                 setToZero();
                 wrongCircle();
@@ -199,7 +197,7 @@ public class Level : MonoBehaviour
                 
             }
 
-            if (countH == 2 && count == 1 && countNa == 0 && countPt == 0)
+            if (countH == 2 && count == 1 && countNa == 0 && countCl == 0)
             {
               
                 rightCircle();
@@ -215,19 +213,31 @@ public class Level : MonoBehaviour
         //LVL3
         if (text.text.Equals(lvl3))
         {
-            if (countH > 0 || countNa > 0 || countPt > 1 || count > 0)
+            if (countH > 1 || countNa > 0 || count > 0 || countCl > 1)
             {
                 setToZero();
                 wrongCircle();
                 
             }
 
-            if (countPt == 1)
+            if(countH == 0 && countCl == 1)
+            {
+                setToZero();
+                wrongCircle();
+            }
+
+            if(countH == 1 && countCl == 0)
+            {
+                rightCircle();
+                text2.text = "H";
+            }
+
+            if (countH == 1 && countCl ==1)
             {
              
                 rightCircle();
                 DestroyAllMolecules();
-                text2.text = "Pt";
+                text2.text = "HCl";
                 obj.SetActive(false);
                 StartCoroutine(wait3());
                 
@@ -238,7 +248,7 @@ public class Level : MonoBehaviour
         //LVL4
         if (text.text.Equals(lvl4))
         {
-            if (countH > 1 || countNa > 1 || countPt > 0 || count > 1)
+            if (countH > 1 || countNa > 1 || countCl > 0 || count > 1)
             {
                 setToZero();
                 wrongCircle();
@@ -280,8 +290,8 @@ public class Level : MonoBehaviour
                 
             }
         }
-        Debug.Log("counter " + count);
-        Debug.Log("counterH " + countH);
+        //Debug.Log("counter " + count);
+        //Debug.Log("counterH " + countH);
         // Debug.Log("part 1 " + text.text.Equals(lvl1));
         // Debug.Log("part2 " + text.text.Equals(lvl));
     }
@@ -294,11 +304,7 @@ public class Level : MonoBehaviour
         unplay();
 
         if (other.gameObject.CompareTag("O"))
-        {   //a try to signal you did smth right
-            if(text.text.Equals(lvl1) &&count <=2)
-            {
-                blinkGreen();
-            }
+        {   
             
             count = count + 1;
             
@@ -310,14 +316,14 @@ public class Level : MonoBehaviour
             
         }
 
-        if (other.gameObject.CompareTag("Pt"))
-        {
-            countPt = countPt + 1;
-        }
-
         if (other.gameObject.CompareTag("Na"))
         {
             countNa = countNa + 1;
+        }
+
+        if (other.gameObject.CompareTag("Cl"))
+        {
+            countCl = countCl + 1;
         }
 
     }
@@ -346,11 +352,11 @@ public class Level : MonoBehaviour
 
     }
 
-    private void DestroyAllPt()
+    private void DestroyAllCl()
     {
-        GameObject[] enemiesP = GameObject.FindGameObjectsWithTag("Pt");
-        foreach (GameObject enemyP in enemiesP)
-            GameObject.Destroy(enemyP);
+        GameObject[] enemiesC = GameObject.FindGameObjectsWithTag("Cl");
+        foreach (GameObject enemyC in enemiesC)
+            GameObject.Destroy(enemyC);
 
     }
 
@@ -371,53 +377,31 @@ public class Level : MonoBehaviour
           //if (text.text.Equals(lvl1) && count == 2)
           //{
         text.text = lvl2;
-        count = 0;
-        countH = 0;
-        countNa = 0;
-        countPt = 0;
+        setToZero();
         //}
     }
 
     void setName3()
     {
         text.text = lvl3;
-        count = 0;
-        countH = 0;
-        countNa = 0;
-        countPt = 0;
+        setToZero();
+
     }
 
     void setName4()
     {
         text.text = lvl4;
-        count = 0;
-        countH = 0;
-        countNa = 0;
-        countPt = 0;
+        setToZero();
     }
 
 
     void setName5()
     {
         text.text = end;
-        count = 0;
-        countH = 0;
-        countNa = 0;
-        countPt = 0;
+        setToZero();
     }
 
 
-    void blinkGreen()
-    {
-        time = 0;
-        while(time < lightTime)
-        {
-            greenLight.SetActive(true);
-            time += Time.deltaTime;
-            //System.Threading.Thread.Sleep(5000);
-            greenLight.SetActive(false);
-        }
-        //greenLight.SetActive(false);
-    }
+   
 
 }
