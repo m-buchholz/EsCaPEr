@@ -38,29 +38,33 @@ public class InitializeText : MonoBehaviour
         PlayerPrefs.SetString("R3M1_T", "");
         // Room3_Minigame2
         PlayerPrefs.SetString("R3M2_T", "Hast du etwa jemand anderes erwartet?\nHier kann dir niemand helfen!\nNun los, zeig mir was du kannst!");
+        // Room3_Minigame2 Win
+        PlayerPrefs.SetString("R3M2_W", "Gibt's nicht!\nDu hast es tatsächlich gemeistert.\nDu hast dir das letzte Element verdient!");
+        // Room3_Minigame2 Lose
+        PlayerPrefs.SetString("R3M2_L", "Hahahaha, das war nichts!\nVielleicht schaffst du es beim nächsten mal? Also falls du dich anstrengst!");
         // Failure
         PlayerPrefs.SetString("Fail_T", "Ups, da ist etwas schief gelaufen...");
 
         // MINIGAMES
 
-        // Room3_Minigame2 - Format: Type(Q-Question or P-Picture)/Question/Right Answer/Answer2/Answer3
+        // Room3_Minigame2 - FORMAT: Type(Q-Question or P-Picture)/Question/Right Answer/Answer2/Answer3
         // Text Questions - Q0-Q15
-        PlayerPrefs.SetString("Q0", "T/Welches Element ist Sauerstoff?/O2/NaOH/O3,");
-        PlayerPrefs.SetString("Q1", "T/?/1/2/3");
-        PlayerPrefs.SetString("Q2", "T/?/1/2/3");
-        PlayerPrefs.SetString("Q3", "T/?/1/2/3");
-        PlayerPrefs.SetString("Q4", "T/?/1/2/3");
-        PlayerPrefs.SetString("Q5", "T/?/1/2/3");
-        PlayerPrefs.SetString("Q6", "T/?/1/2/3");
-        PlayerPrefs.SetString("Q7", "T/?/1/2/3");
-        PlayerPrefs.SetString("Q8", "T/?/1/2/3");
-        PlayerPrefs.SetString("Q9", "T/?/1/2/3");
-        PlayerPrefs.SetString("Q10", "T/?/1/2/3");
-        PlayerPrefs.SetString("Q11", "T/?/1/2/3");
-        PlayerPrefs.SetString("Q12", "T/?/1/2/3");
-        PlayerPrefs.SetString("Q13", "T/?/1/2/3");
-        PlayerPrefs.SetString("Q14", "T/?/1/2/3");
-        PlayerPrefs.SetString("Q15", "T/?/1/2/3");
+        PlayerPrefs.SetString("Q0", "T/Welches Element ist Sauerstoff?/O2/NaOH/O3");
+        PlayerPrefs.SetString("Q1", "T/Welches Element ist Natronlauge?/NaOH/HNO3/HCl");
+        PlayerPrefs.SetString("Q2", "T/Welches Element ist Wasser?/H2O/H3O/HO");
+        PlayerPrefs.SetString("Q3", "T/Welches Element ist Chlor?/Cl/K/C");
+        PlayerPrefs.SetString("Q4", "T/Welches Element ist Eisen?/Fe/Ce/Pb");
+        PlayerPrefs.SetString("Q5", "T/Welches Element ist Blei?/Pb/Be/Zn");
+        PlayerPrefs.SetString("Q6", "T/?/Richtig/2/3");
+        PlayerPrefs.SetString("Q7", "T/?/Richtig/2/3");
+        PlayerPrefs.SetString("Q8", "T/?/Richtig/2/3");
+        PlayerPrefs.SetString("Q9", "T/?/Richtig/2/3");
+        PlayerPrefs.SetString("Q10", "T/?/Richtig/2/3");
+        PlayerPrefs.SetString("Q11", "T/?/Richtig/2/3");
+        PlayerPrefs.SetString("Q12", "T/?/Richtig/2/3");
+        PlayerPrefs.SetString("Q13", "T/?/Richtig/2/3");
+        PlayerPrefs.SetString("Q14", "T/?/Richtig/2/3");
+        PlayerPrefs.SetString("Q15", "T/?/Richtig/2/3");
         // Image Questions - Q16-Q20
         PlayerPrefs.SetString("Q16", "erlenmeyerkolben/Welches Utensil ist das?/Erlenmeyerkolben/Reagenzglas/Messzylinder");
         PlayerPrefs.SetString("Q17", "spatellöffel/Welches Utensil ist das?/Spatellöffel/Pipette/Stopfen");

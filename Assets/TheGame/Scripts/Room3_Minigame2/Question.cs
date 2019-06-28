@@ -5,96 +5,198 @@ using UnityEngine.UI;
 
 public class Question : MonoBehaviour
 {
-    // answer 1 is right
-    private string singleQuest, answer1, answer2, answer3;
-
     // all quests in a 2-dimensional array
     // quest[0][0] = Quest 0 - Question
     // quest[0][1] = Quest 0 - Answer 1
     // quest[0][2] = Quest 0 - Answer 2
     // quest[0][3] = Quest 0 - Answer 3
-    private string[][] quests;
+    private string[][] quests, rQuests;
 
     private int[] alreadyAsked;
 
+    private int points;
+    private int mistakes;
     private int questionCounter;
+    // Button 1/2/3
+    private int pressed;
+
+    // Settings
+    public int questionAmount = 21;
+    public int maxQuestions = 16;
+    public int maxMistakes = 3;
+
+    // Objects
     public GameObject pictureQuestionCanvas;
     public SpriteRenderer questionSprite;
-    public Text questionNumber, textQuestion, pictureQuestion;
+    public Text questionNumberText, textQuestionText, pictureQuestionText, pointsText;
     public Button answerButton1, answerButton2, answerButton3;
+    public GameObject professor;
+    public Text professorText;
+
     private Button confirmButton;
     private int random;
 
     void Start()
     {
         // setup
-        questionCounter = 1;
+        questionCounter = 0;
+        points = 0;
+        mistakes = 0;
+        answerButton1.interactable = true;
+        answerButton2.interactable = true;
+        answerButton3.interactable = true;
 
         // include Button
-        answerButton1.onClick.AddListener(delegate { setAnswer(answerButton1); });
-        answerButton2.onClick.AddListener(delegate { setAnswer(answerButton2); });
-        answerButton3.onClick.AddListener(delegate { setAnswer(answerButton3); });
+        answerButton1.onClick.AddListener(delegate {
+            // pressed = 2, because of Button 1 = Answer 1 = quests[i][2]
+            pressed = 2;
+            setAnswer(answerButton1); });
+        answerButton2.onClick.AddListener(delegate {
+            pressed = 3;
+            setAnswer(answerButton2); });
+        answerButton3.onClick.AddListener(delegate {
+            pressed = 4;
+            setAnswer(answerButton3); });
         confirmButton = GetComponent<Button>();
         confirmButton.interactable = false;
         confirmButton.onClick.AddListener(proofAnswer);
 
         initializeQuests();
+        shuffleQuests();
 
-        setText(quests[19]);
-        
+        setText(rQuests[questionCounter]);
     }
 
     private void initializeQuests()
     {
-        quests = new string[21][];
+        // read quests in PlayerPrefs and split in an 2-dimensional array
+        quests = new string[questionAmount][];
+        rQuests = new string[questionAmount][];
 
-        for (int i = 0; i <= 20; i++)
+        for (int i = 0; i <= quests.Length-1; i++)
         {
             // split Quests in format Type/Question/RightAnswer/Answer2/Answer3 to Array containing seperate strings
             // Type: Q for Text Question, P for Picture Question
-            quests[i] = PlayerPrefs.GetString("Q" + i).Split('/'); ;
+            quests[i] = PlayerPrefs.GetString("Q" + i).Split('/');
+            rQuests[i] = PlayerPrefs.GetString("Q" + i).Split('/');
+            Debug.Log("Frage: " + quests[i][1] + " mit Antwort 1: " + quests[i][2] + " und Antwort 2: " + quests[i][3] + " und Antwort 3: " + quests[i][4] + " wurde erstellt.");
         }
-        Debug.Log("Letzte Frage: " + quests[20][0] + " mit Antwort 1: " + quests[20][1] + " und Antwort 2: " + quests[20][2] + " und Antwort 3: " + quests[20][3]);
+        Debug.Log("Letzte Frage: " + quests[20][1] + " mit Antwort 1: " + quests[20][2] + " und Antwort 2: " + quests[20][3] + " und Antwort 3: " + quests[20][4]);
     }
 
     private void setText(string[] quest)
     {
-        questionNumber.text = "Frage " + questionCounter;
-        Debug.Log("Frage: " + quest[0] + " mit Antwort 1: " + quest[1] + " und Antwort 2: " + quest[2] + " und Antwort 3: " + quest[3] + " wurde gesetzt.");
+        // set all texts or/and pictures
+        questionNumberText.text = "Frage " + (questionCounter+1);
+        Debug.Log("Frage: " + quest[1] + " mit Antwort 1: " + quest[2] + " und Antwort 2: " + quest[3] + " und Antwort 3: " + quest[4] + " wurde gesetzt.");
         if (quest[0] == "T")
         {
             // if text question
             pictureQuestionCanvas.SetActive(false);
-            textQuestion.text = quest[1];
-            textQuestion.enabled = true;
+            textQuestionText.text = quest[1];
+            textQuestionText.enabled = true;
         }
         else
         {
             // if picture question
-            textQuestion.enabled = false;
-            pictureQuestion.text = quest[1];
+            textQuestionText.enabled = false;
+            pictureQuestionText.text = quest[1];
             questionSprite.sprite = Resources.Load<Sprite>("Images/Utensils/" + quest[0]);
             pictureQuestionCanvas.SetActive(true);
         }
         answerButton1.GetComponentInChildren<Text>().text = quest[2];
         answerButton2.GetComponentInChildren<Text>().text = quest[3];
         answerButton3.GetComponentInChildren<Text>().text = quest[4];
+        pointsText.text = "Punkte: " + points;
     }
 
-    private void setAnswer(Button pressed)
+    private void setAnswer(Button button)
     {
+        // reset all buttons to color white
+        paintButtonsWhite();
+
         confirmButton.interactable = true;
-        // todo
-        questionCounter++;
+
+        // paint pressed button
+        Color col = button.GetComponent<Image>().color;
+        col.a = 0.60f;
+        button.GetComponent<Image>().color = col;
     }
 
     private void proofAnswer()
     {
-        // todo
+        // reset all buttons to color white
+        paintButtonsWhite();
+
+        // calculate points and mistakes
+        if (rQuests[questionCounter][pressed] == quests[questionCounter][2])
+        {
+            points++;
+        }
+        else
+        {
+            mistakes++;
+        }
+
+        // reset pressed button and confirm button
+        pressed = 1;
+        confirmButton.interactable = false;
+
+        // calculate question counter
+        questionCounter++;
+
+        // if maxQuestions reached -> finish()
+        if (questionCounter+1 <= maxQuestions)
+        {
+            // set new quest, answers, etc.
+            setText(rQuests[questionCounter]);
+        }
+        else finish();
     }
 
-    private int getRandom()
+    // Fisher-Yates-Shuffle
+    private void shuffleQuests()
     {
-        return 0; //Random.Range(0, 20);
+        // shuffle answers in rQuests[i][2] to rQuests[i][4]
+        for (int i = 0; i <= rQuests.Length-1; i++)
+        {
+            for (int j = 2; j <= 4; j++)
+            {
+                int r = Random.Range(j, 5);
+                string tmp = rQuests[i][j];
+                rQuests[i][j] = rQuests[i][r];
+                rQuests[i][r] = tmp;
+            }
+        }
+
+        // shuffle quests (with correct answer at quests[i][2]) and rQuests (with randomized answers)
+        for (int i = 0; i <= rQuests.Length-1; i++)
+        {
+            int r = Random.Range(i, rQuests.Length);
+            string[] tmp1 = quests[i];
+            quests[i] = quests[r];
+            quests[r] = tmp1;
+            string[] tmp2 = rQuests[i];
+            rQuests[i] = rQuests[r];
+            rQuests[r] = tmp2;
+        }
+    }
+
+    private void paintButtonsWhite()
+    {
+        answerButton1.GetComponent<Image>().color = Color.white;
+        answerButton2.GetComponent<Image>().color = Color.white;
+        answerButton3.GetComponent<Image>().color = Color.white;
+    }
+
+    private void finish()
+    {
+        answerButton1.interactable = false;
+        answerButton2.interactable = false;
+        answerButton3.interactable = false;
+
+        if (mistakes <= maxMistakes) professorText.text = PlayerPrefs.GetString("R3M2_W");
+        else professorText.text = PlayerPrefs.GetString("R3M2_L");
+        professor.SetActive(true);
     }
 }
