@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class DoorClosedOrOpened : MonoBehaviour
+public class OpenDoor : MonoBehaviour
 {
     private Button button;
     public GameObject foxOverlay;
@@ -22,7 +22,15 @@ public class DoorClosedOrOpened : MonoBehaviour
     {
         if (PlayerPrefs.GetInt(scene) == 0)
         {
-            foxText.text = PlayerPrefs.GetString("Door_locked");
+            if (PlayerPrefs.GetInt(scene + "-Key") == 0)
+            {
+                foxText.text = PlayerPrefs.GetString("Door_locked");
+            }
+            else
+            {
+                foxText.text = PlayerPrefs.GetString("Door_unlock");
+                PlayerPrefs.SetInt(scene, 1);
+            }
             foxOverlay.SetActive(true);
         }
         else
