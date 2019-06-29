@@ -28,8 +28,8 @@ public class InitializeText : MonoBehaviour
             "Mit Reinfassen ist da wohl nichts... zuerst müssen wir herausfinden, ob die Stoffe sauer oder basisch sind.");
 
         // Room2_Minigame2
-        PlayerPrefs.SetString("R2M2_T", "");
-        // Room2_Minigame3
+        PlayerPrefs.SetString("R2M2_T", "Das könnte uns vielleicht helfen, die Schwefelsäure in dem Reagenzglas zu neutralisieren. Aber da fehlt ja etwas! Da musst du die Reaktionsgleichung wohl selber ausgleichen...");
+        // Room2_Minigame3 
         PlayerPrefs.SetString("R2M3_T", "");
         // Room3
         PlayerPrefs.SetString("R3_T", "Du bist im letzten Raum!\nSchau dir mal die Tafel an!\nWas wohl der Professor hier möchte?");
