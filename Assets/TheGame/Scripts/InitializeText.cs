@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Initialize all text
+/// </summary>
+
 public class InitializeText : MonoBehaviour
 {
     void Start()
@@ -83,5 +87,7 @@ public class InitializeText : MonoBehaviour
 
         // Door is locked
         PlayerPrefs.SetString("Door_locked", "Oh, die Tür ist verschlossen.\nDu brauchst wohl einen Schlüssel!\nVielleicht findest du ihn in einem offenen Raum?");
+        PlayerPrefs.SetString("Door_unlock", "Ah, du hast ja einen Schlüssel!\nDann schließen wir sie mal auf...");
+
     }
 }

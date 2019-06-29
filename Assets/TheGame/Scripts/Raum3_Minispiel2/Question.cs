@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// implements the game logic of a quiz
+/// </summary>
+
 public class Question : MonoBehaviour
 {
     // all quests in a 2-dimensional array
@@ -195,12 +199,15 @@ public class Question : MonoBehaviour
         answerButton2.interactable = false;
         answerButton3.interactable = false;
 
+        // if win
         if (mistakes <= maxMistakes)
         {
             professorText.text = PlayerPrefs.GetString("R3M2_W");
-            PlayerPrefs.SetInt("Minigame6", 1);
+            PlayerPrefs.SetInt("Room3_Minigame6", 1);
             PlayerPrefs.SetInt("Elements", (PlayerPrefs.GetInt("Elements") + 1));
+            PlayerPrefs.SetString("ElementsInventory", PlayerPrefs.GetString("ElementsInventory") + "54-Xe" + ",");
         }
+        // else lose
         else professorText.text = PlayerPrefs.GetString("R3M2_L");
         professor.SetActive(true);
     }

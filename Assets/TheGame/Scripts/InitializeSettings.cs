@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Initialize all settings and progress
+/// </summary>
+
 public class InitializeSettings : MonoBehaviour
 {
     void Start()
@@ -39,8 +43,14 @@ public class InitializeSettings : MonoBehaviour
         PlayerPrefs.SetInt("Room3", 1);
         PlayerPrefs.SetInt("Exit", 0);
 
-        // collected elements
+        // Collected elements - in format "number-Element" e.g. "1-H" or "2-He"
         PlayerPrefs.SetInt("Elements", 5);
+        // Collected elements - in format "number-Element" e.g. "1-H" seperated through ',' e.g. "1-H,2-He,"
+        PlayerPrefs.SetString("ElementsInventory", "");
+
+        // Keys in inventory
+        PlayerPrefs.SetInt("Room2-Key", 0);
+        PlayerPrefs.SetInt("Room3-Key", 0);
 
         // SETTINGS
         PlayerPrefs.SetInt("Sound", 1);

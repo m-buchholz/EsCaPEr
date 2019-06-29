@@ -55,7 +55,8 @@ public class CheckForGameCompletion : MonoBehaviour
     {
         PlayerPrefs.SetInt("Room1_Minigame1", 1);
         PlayerPrefs.SetInt("Elements", (PlayerPrefs.GetInt("Elements") + 1));
-        SceneManager.LoadScene("Room1", LoadSceneMode.Single);
+        PlayerPrefs.SetString("ElementsInventory", (PlayerPrefs.GetString("ElementsInventory") + "1-H,"));
+        Initiate.Fade("Room1", Color.black, 10f);
     }
 
     private void Sort()
