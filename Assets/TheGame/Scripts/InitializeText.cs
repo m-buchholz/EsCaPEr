@@ -16,14 +16,16 @@ public class InitializeText : MonoBehaviour
         PlayerPrefs.SetString("F_E_T", "Willkommen im Labor!\nEs scheint, als hätte uns hier jemand eingesperrt! Ich glaube, wir müssen die fehlenden Elemente aus dem Periodensystems finden.");
         // Foyer_Rooms
         PlayerPrefs.SetString("F_R_T", "Hier sind mehrere Räume. Vielleicht ist ja einer davon offen?");
+        
         // Room1
-        PlayerPrefs.SetString("R1_T", "Schau dir mal den Labortisch an, dort liegt irgendetwas!");
+        PlayerPrefs.SetString("R1_T", "Schau dir mal den Labortisch an!\nUnd was liegt denn da auf dem Boden? Sieht als lägen dort verschiedene Metalle.");
         // Room1_Minigame1
         PlayerPrefs.SetString("R1M1_T", "Deine Aufgabe ist es, alle Utensilien richtig zuzuordnen.");
         // Room1_Minigame2
-        PlayerPrefs.SetString("R1M2_T", "");
+        PlayerPrefs.SetString("R1M2_T", "Ein Ofen und eine Gussform? Scheinbar sollst du etwas Metall schmelzen.");
         // Room1_Minigame3
-        PlayerPrefs.SetString("R1M3_T", "");
+        // PlayerPrefs.SetString("R1M3_T", "");
+        
         // Room2
         PlayerPrefs.SetString("R2_T", "Du hast es in den nächsten Raum geschafft, klasse! In diesem Raum geht es um Säuren und Basen. Ganz schön ÄTZEND, was? Schau mal, dort stehen Reagenzgläser!");
 
@@ -32,9 +34,10 @@ public class InitializeText : MonoBehaviour
             "Mit Reinfassen ist da wohl nichts... zuerst müssen wir herausfinden, ob die Stoffe sauer oder basisch sind.");
 
         // Room2_Minigame2
-        PlayerPrefs.SetString("R2M2_T", "");
+        PlayerPrefs.SetString("R2M2_T", "Sieht aus, als müssten wir wieder zuordnen. Dann lass uns loslegen!");
         // Room2_Minigame3
-        PlayerPrefs.SetString("R2M3_T", "");
+        // PlayerPrefs.SetString("R2M3_T", "");
+        
         // Room3
         PlayerPrefs.SetString("R3_T", "Du bist im letzten Raum!\nSchau dir mal die Tafel an!\nWas wohl der Professor hier möchte?");
         // Room3 Professor - if not all Quests are finished
@@ -51,6 +54,7 @@ public class InitializeText : MonoBehaviour
         PlayerPrefs.SetString("R3M2_W", "Gibt's nicht!\nDu hast es tatsächlich gemeistert.\nDu hast dir das letzte Element verdient!");
         // Room3_Minigame2 Lose
         PlayerPrefs.SetString("R3M2_L", "Hahahaha, das war nichts!\nVielleicht schaffst du es beim nächsten mal?\nSchau dir lieber nochmal alles an!");
+        
         // Minigame already finished
         PlayerPrefs.SetString("Minigame_finished", "Sieht aus, als hättest du dieses Rätsel bereits gemeistert. Bestimmt gibt es noch mehr zu tun!");
         // Failure

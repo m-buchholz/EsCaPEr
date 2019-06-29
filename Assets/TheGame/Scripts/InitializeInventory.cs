@@ -22,7 +22,7 @@ public class InitializeInventory : MonoBehaviour
 
        for (int i = 0; i <= ElementsInventory.Length-1 && i <= (maxInventorySpace-1); i++)
         {
-            Debug.Log(ElementsInventory[i]);
+
             // Element Sprites starts at 1 to 6 (not 0 to 5)
             if (ElementsInventory[i] != "")
             {
