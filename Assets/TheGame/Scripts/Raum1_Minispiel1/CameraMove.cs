@@ -9,6 +9,7 @@ public class CameraMove : MonoBehaviour
 
     public GameObject toPosition;
 
+    int i = 0;
     public bool check = false;
     public void StartMoving()
     {

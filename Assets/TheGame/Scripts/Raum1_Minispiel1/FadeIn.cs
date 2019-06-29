@@ -5,6 +5,7 @@ using UnityEngine;
 public class FadeIn : MonoBehaviour
 {
     private float alphaLevel;
+    private Color origin;
 
 /// <summary>
 /// Change color to green/red if the assignment is true/false
