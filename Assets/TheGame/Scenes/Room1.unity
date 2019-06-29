@@ -242,6 +242,11 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1351884934}
+    - target: {fileID: 4157194194394939019, guid: bfd84433eab1e354c96561166765132d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfd84433eab1e354c96561166765132d, type: 3}
 --- !u!224 &200871195 stripped
@@ -1289,7 +1294,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -353.3, y: -179.1}
+  m_AnchoredPosition: {x: -342.5, y: -134.69998}
   m_SizeDelta: {x: 44, y: 39}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &539456886
@@ -1685,7 +1690,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -594, y: -255}
+  m_AnchoredPosition: {x: -583.2001, y: -210.59998}
   m_SizeDelta: {x: 733, y: 446}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &883149317
@@ -1742,10 +1747,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 883149315}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11c1498d54f841f4d8e2e63bd9f683ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 870f5b4f82d2f4f4ebcc0b57029fb910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scene: Room1_Minigame1
+  fox: {fileID: 200871203}
+  foxText: {fileID: 200871202}
 --- !u!114 &883149319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2820,7 +2827,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -808.8, y: -163.4}
+  m_AnchoredPosition: {x: -798, y: -119}
   m_SizeDelta: {x: 90, y: 56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2049866761

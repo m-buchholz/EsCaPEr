@@ -37,6 +37,8 @@ public class InitializeText : MonoBehaviour
         PlayerPrefs.SetString("Prof", "Hey, da bist du ja endlich!\nAber was ist das?\nScheinbar fehlen dir noch einige Kenntnisse.\nSchau dich nochmal in den Räumen um!");
         // Room3 Professor - if all Quests are finished
         PlayerPrefs.SetString("Prof_End", "Du hast alle Aufgaben bewältigt?\nDoch nun musst du noch meine Prüfung bestehen!\nMuhahahahaha...");
+        // Room3 Professor - if all Quests are finished
+        PlayerPrefs.SetString("Prof_Finished", "Du hast bereits bestanden!\nFreiversuche gibts hier nicht.\nGeh mir aus den Augen!");
         // Room3_Minigame1
         PlayerPrefs.SetString("R3M1_T", "");
         // Room3_Minigame2
@@ -44,7 +46,9 @@ public class InitializeText : MonoBehaviour
         // Room3_Minigame2 Win
         PlayerPrefs.SetString("R3M2_W", "Gibt's nicht!\nDu hast es tatsächlich gemeistert.\nDu hast dir das letzte Element verdient!");
         // Room3_Minigame2 Lose
-        PlayerPrefs.SetString("R3M2_L", "Hahahaha, das war nichts!\nVielleicht schaffst du es beim nächsten mal? Also falls du dich anstrengst!");
+        PlayerPrefs.SetString("R3M2_L", "Hahahaha, das war nichts!\nVielleicht schaffst du es beim nächsten mal?\nSchau dir lieber nochmal alles an!");
+        // Minigame already finished
+        PlayerPrefs.SetString("Minigame_finished", "Sieht aus, als hättest du dieses Rätsel bereits gemeistert. Bestimmt gibt es noch mehr zu tun!");
         // Failure
         PlayerPrefs.SetString("Fail_T", "Ups, da ist etwas schief gelaufen...");
 

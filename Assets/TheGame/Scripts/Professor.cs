@@ -20,19 +20,23 @@ public class Professor : MonoBehaviour
         button.onClick.AddListener(openProf);
 
         // enter text
-        if (PlayerPrefs.GetInt("Elements") != 5)
+        if (PlayerPrefs.GetInt("Elements") < 5 && PlayerPrefs.GetInt("Minigame6") == 0)
         {
             profSay = PlayerPrefs.GetString("Prof");
         }
-        else
+        else if (PlayerPrefs.GetInt("Elements") == 5 && PlayerPrefs.GetInt("Minigame6") == 0)
         {
             profSay = PlayerPrefs.GetString("Prof_End");
+        }
+        else if (PlayerPrefs.GetInt("Minigame6") == 1)
+        {
+            profSay = PlayerPrefs.GetString("Prof_Finished");
         }
     }
 
     private void openProf()
     {
-        prof.SetActive(true);
         profText.text = profSay;
+        prof.SetActive(true);
     }
 }

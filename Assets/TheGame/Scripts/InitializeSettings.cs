@@ -26,6 +26,14 @@ public class InitializeSettings : MonoBehaviour
 
         // PROGRESS
 
+        // Minigames: 0 - todo, 1 - finished;
+        PlayerPrefs.SetInt("Room1_Minigame1", 0);
+        PlayerPrefs.SetInt("Room1_Minigame2", 0);
+        PlayerPrefs.SetInt("Room2_Minigame1", 0);
+        PlayerPrefs.SetInt("Room2_Minigame2", 0);
+        PlayerPrefs.SetInt("Room3_Minigame1", 0);
+        PlayerPrefs.SetInt("Room3_Minigame2", 0);
+
         // Door: 0 - closed, 1 - opened
         PlayerPrefs.SetInt("Room2", 1);
         PlayerPrefs.SetInt("Room3", 1);

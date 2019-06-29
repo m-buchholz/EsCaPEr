@@ -195,7 +195,12 @@ public class Question : MonoBehaviour
         answerButton2.interactable = false;
         answerButton3.interactable = false;
 
-        if (mistakes <= maxMistakes) professorText.text = PlayerPrefs.GetString("R3M2_W");
+        if (mistakes <= maxMistakes)
+        {
+            professorText.text = PlayerPrefs.GetString("R3M2_W");
+            PlayerPrefs.SetInt("Minigame6", 1);
+            PlayerPrefs.SetInt("Elements", (PlayerPrefs.GetInt("Elements") + 1));
+        }
         else professorText.text = PlayerPrefs.GetString("R3M2_L");
         professor.SetActive(true);
     }
