@@ -13,6 +13,11 @@ public class AutoGenUtensils : MonoBehaviour
         new Vector2(0, 0.5f),
         new Vector2(4, 0.5f),
         new Vector2(8, 0.5f),
+        new Vector2(-8 + 28, 0.5f),
+        new Vector2(-4 + 28, 0.5f),
+        new Vector2(0 + 28, 0.5f),
+        new Vector2(4 + 28, 0.5f),
+        new Vector2(8 + 28, 0.5f)
     };
 
     List<Vector2> UtensilPos = new List<Vector2>()
@@ -22,36 +27,57 @@ public class AutoGenUtensils : MonoBehaviour
         new Vector2(8, -3),
         new Vector2(0, -3),
         new Vector2(-4, -3),
-        
-        
-        
+        new Vector2(4 + 28, -3),
+        new Vector2(-8 + 28, -3),
+        new Vector2(8 + 28, -3),
+        new Vector2(0 + 28, -3),
+        new Vector2(-4 + 28, -3)
+
+
+
+    };
+
+    List<string> UtensilList = new List<string>()
+    {
+        "Stopfen",
+        "Messzylinder",
+        "Erlenmeyerkolben",
+        "Reagenzglas",
+        "Bunsenbrenner",
+        "Pipette",
+        "Rundkolben",
+        "Spatellöffel",
+        "Stehkolben",
+        "Thermometer"
     };
     int n = 0;
 
 
-    // Start is called before the first frame update
     void Start()
     {
-        GenerateObj("Stopfen");
-        GenerateObj("Messzylinder");
-        GenerateObj("Erlenmeyerkolben");
-        GenerateObj("Reagenzglas");
-        GenerateObj("Bunsenbrenner");
+        int i = 0;
+        while(i < UtensilList.Count)
+        {
+            Debug.Log(" i = " + i);
+            GenerateObj(UtensilList[i]);
+            UtensilList.RemoveAt(i);
+        }
+
 
     }
 
     private void GenerateObj(string uten)
     {
         int i = Random.Range(0, BoxPos.Count);
-        GameObject spawn = (GameObject)Instantiate(Resources.Load("Prefabs/Spawn"));
-        GameObject utensil = (GameObject)Instantiate(Resources.Load("Prefabs/" + uten));
+        GameObject spawn = (GameObject)Instantiate(Resources.Load("Prefabs/Room1Minigame1/Spawn"));
+        GameObject utensil = (GameObject)Instantiate(Resources.Load("Prefabs/Room1Minigame1/" + uten));
 
         GameObject boxObject = GenerateBox("Box" + uten, BoxPos[i]);
-        GameObject text = (GameObject)Instantiate(Resources.Load("Prefabs/UtensilText"));
+        GameObject text = (GameObject)Instantiate(Resources.Load("Prefabs/Room1Minigame1/UtensilText"));
         GameObject parentOfText = GameObject.Find("Text");
         GameObject check = GameObject.Find("Completion Button");
 
-        text.transform.parent = parentOfText.transform;
+        text.transform.SetParent(parentOfText.transform);
         text.transform.position = new Vector2(boxObject.transform.position.x, boxObject.transform.position.y - 0.7f);
         text.transform.localScale = new Vector3(1, 1, 1);
         text.transform.GetComponent<Text>().text = uten;
@@ -69,7 +95,7 @@ public class AutoGenUtensils : MonoBehaviour
 
     private GameObject GenerateBox(string uten, Vector2 pos)
     {
-        GameObject utensil = (GameObject)Instantiate(Resources.Load("Prefabs/" + uten));
+        GameObject utensil = (GameObject)Instantiate(Resources.Load("Prefabs/Room1Minigame1/" + uten));
         utensil.transform.position = pos;
         return utensil;
     }

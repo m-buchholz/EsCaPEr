@@ -10,11 +10,21 @@ public class CameraMove : MonoBehaviour
     public GameObject toPosition;
 
     int i = 0;
-    public void MoveCamera()
+    public bool check = false;
+    public void StartMoving()
+    {
+        check = true;
+    }
+    public void Update()
     {
         GameObject camera = GameObject.Find("Main Camera");
 
 
-        camera.transform.position = Vector3.Lerp(transform.position, toPosition.transform.position, Time.deltaTime);
+        if(check == true){
+            camera.transform.position = Vector3.Lerp(camera.transform.position, toPosition.transform.position, Time.deltaTime);
+        }
+
+
+            
     }
    }
