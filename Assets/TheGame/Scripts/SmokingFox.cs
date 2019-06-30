@@ -89,6 +89,9 @@ public class SmokingFox : MonoBehaviour
             case "Room2_Minigame3":
                 tip = "R2M3";
                 break;
+            case "Room2_Minigame4":
+                tip = "R2M4";
+                break;
             case "Room3":
                 tip = "R3";
                 break;

@@ -34,7 +34,7 @@ public class InitializeSettings : MonoBehaviour
         PlayerPrefs.SetInt("Room1_Minigame1", 0);
         PlayerPrefs.SetInt("Room1_Minigame2", 0);
         PlayerPrefs.SetInt("Room2_Minigame1", 0);
-        PlayerPrefs.SetInt("Room2_Minigame2", 0);
+        PlayerPrefs.SetInt("Room2_Minigame4", 0);
         PlayerPrefs.SetInt("Room3_Minigame1", 0);
         PlayerPrefs.SetInt("Room3_Minigame2", 0);
 

@@ -53,10 +53,10 @@ public class CheckForGameCompletionSymbols : MonoBehaviour
 
     public void CheckForFinish()
     {
-        PlayerPrefs.SetInt("Room1_Minigame1", 1);
+        PlayerPrefs.SetInt("Room2_Minigame4", 1);
         PlayerPrefs.SetInt("Elements", (PlayerPrefs.GetInt("Elements") + 1));
-        PlayerPrefs.SetString("ElementsInventory", (PlayerPrefs.GetString("ElementsInventory") + "1-H,"));
-        Initiate.Fade("Room1", Color.black, 10f);
+        PlayerPrefs.SetString("ElementsInventory", (PlayerPrefs.GetString("ElementsInventory") + "11-Na,"));
+        Initiate.Fade("Room2", Color.black, 10f);
     }
 
     private void Sort()

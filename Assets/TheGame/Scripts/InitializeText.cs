@@ -37,6 +37,8 @@ public class InitializeText : MonoBehaviour
         PlayerPrefs.SetString("R2M2_T", "Das könnte uns vielleicht helfen, die Schwefelsäure in dem Reagenzglas zu neutralisieren. Aber da fehlt ja etwas! Da musst du die Reaktionsgleichung wohl selber ausgleichen...");
         // Room2_Minigame3
         PlayerPrefs.SetString("R2M3_T", "");
+        // Room2_Minigame4
+        PlayerPrefs.SetString("R2M4_T", "Hier musst du wohl die Gefahrensymbole richtig zuordnen. Irgendwo hab ich ein Poster gesehen, auf dem die Symbole abgebildet sind.");
         // Room3
         PlayerPrefs.SetString("R3_T", "Du bist im letzten Raum!\nSchau dir mal die Tafel an!\nWas wohl der Professor hier möchte?");
         // Room3 Professor - if not all Quests are finished
