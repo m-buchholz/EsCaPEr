@@ -54,7 +54,6 @@ public class Level : MonoBehaviour
         //text.text = "Sauerstoff";
         setCountTextO();
         //greenLight.SetActive(false);
-        
 
 
     }
@@ -129,6 +128,12 @@ public class Level : MonoBehaviour
         text2.text = "";
         text3.text = end;
         player.SetActive(false);
+
+        // get element and set win
+        PlayerPrefs.SetInt("Room3_Minigame1", 1);
+        PlayerPrefs.SetInt("Elements", (PlayerPrefs.GetInt("Elements") + 1));
+        PlayerPrefs.SetString("ElementsInventory", (PlayerPrefs.GetString("ElementsInventory") + "17-Cl,"));
+
     }
 
 

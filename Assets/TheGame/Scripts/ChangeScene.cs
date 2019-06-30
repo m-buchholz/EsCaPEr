@@ -21,8 +21,7 @@ public class ChangeScene : MonoBehaviour
     {
         if (scene == "Last_Scene") scene = PlayerPrefs.GetString("Last_Scene");
         Initiate.Fade(scene, Color.black, 10f);
-        // SceneManager.LoadScene(scene);
-
-        PlayerPrefs.SetString("Last_Scene", SceneManager.GetActiveScene().name);        
+        PlayerPrefs.SetString("Last_Scene", SceneManager.GetActiveScene().name);
+        GameObject.Find("Background Audio").GetComponent<AudioSource>().UnPause();
     }
 }

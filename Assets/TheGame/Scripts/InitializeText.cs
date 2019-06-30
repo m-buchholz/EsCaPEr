@@ -46,7 +46,7 @@ public class InitializeText : MonoBehaviour
         // Room3 Professor - if all Quests are finished
         PlayerPrefs.SetString("Prof_Finished", "Du hast bereits bestanden!\nFreiversuche gibts hier nicht.\nGeh mir aus den Augen!");
         // Room3_Minigame1
-        PlayerPrefs.SetString("R3M1_T", "");
+        PlayerPrefs.SetString("R3M1_T", "Sieht aus, als müsstest du hier etwas einsammeln. Sauerstoff zu Beginn? Vielleicht geht es um die einzelnen Bestandteile!");
         // Room3_Minigame2
         PlayerPrefs.SetString("R3M2_T", "Hast du etwa jemand anderes erwartet?\nHier kann dir niemand helfen!\nNun los, zeig mir was du kannst!");
         // Room3_Minigame2 Win

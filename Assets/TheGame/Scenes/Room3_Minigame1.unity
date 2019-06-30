@@ -726,6 +726,7 @@ GameObject:
   - component: {fileID: 497638911}
   - component: {fileID: 497638910}
   - component: {fileID: 497638909}
+  - component: {fileID: 497638915}
   - component: {fileID: 497638914}
   m_Layer: 0
   m_Name: Player
@@ -758,9 +759,9 @@ MonoBehaviour:
   lvl: lvl
   lvl1: Sauerstoff
   lvl2: Wasser
-  lvl3: Platin
+  lvl3: "Salzs\xE4ure"
   lvl4: Natriumhydroxid
-  end: WELL DONE!
+  end: Ende
 --- !u!114 &497638910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -876,6 +877,18 @@ CircleCollider2D:
   m_Offset: {x: -0.18, y: 4.22}
   serializedVersion: 2
   m_Radius: 4.93
+--- !u!114 &497638915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497638908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61456e17a741c5c46a311336026696ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &671751658
 GameObject:
   m_ObjectHideFlags: 0
@@ -1651,8 +1664,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1588663384}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.19, y: -0.09, z: 0}
-  m_LocalScale: {x: 1.3761104, y: 1.17, z: 1}
+  m_LocalPosition: {x: 0, y: -0.08, z: 0}
+  m_LocalScale: {x: 1.265706, y: 1.265706, z: 1.0779817}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -2354,8 +2367,8 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 1287486283
-  m_SortingOrder: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &1987321052
 RectTransform:
