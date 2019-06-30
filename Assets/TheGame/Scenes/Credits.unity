@@ -883,9 +883,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Music: www.bensound.com
-
-    Sounds: soundbible.com'
+  m_Text: "Music: www.bensound.com\n         www.Freesound.org\nSounds: soundbible.com"
 --- !u!222 &1549374547
 CanvasRenderer:
   m_ObjectHideFlags: 0
