@@ -12,32 +12,33 @@ public class FadeIn : MonoBehaviour
 /// </summary>
      public void Fade()
     {
+            
 
-
-            GameObject overlayBox = gameObject.transform.parent.gameObject.transform.GetChild(0).gameObject;
-            overlayBox.transform.position = gameObject.transform.position;
+            GameObject overlayBox = gameObject.transform.parent.gameObject;
+        GameObject check = overlayBox.transform.GetChild(2).gameObject;
+        GameObject cross = overlayBox.transform.GetChild(1).gameObject;
             if (gameObject.GetComponent<CollisionControllerForAssignment>().isCorrect() == true)
             {
 
-                overlayBox.GetComponent<SpriteRenderer>().color = origin;
-                overlayBox.transform.position = gameObject.transform.position;
+                gameObject.GetComponent<SpriteRenderer>().color = origin;
+                check.transform.position = gameObject.transform.position;
                 alphaLevel = 0f;
-                ChangeColor(0, 1, 0, alphaLevel, overlayBox);
+                ChangeColor(0, 1, 0, alphaLevel, gameObject);
 
 
 
                 FadeOutSymbol(1, overlayBox);
-                FadeInSymbol(0, overlayBox);
+                FadeInSymbol(2, overlayBox);
 
 
             }
             else if (gameObject.GetComponent<CollisionControllerForAssignment>().isCorrect() == false && gameObject.GetComponent<CollisionControllerForAssignment>().isAssign() == true)
             {
-                Color normal = overlayBox.GetComponent<SpriteRenderer>().color;
-                overlayBox.transform.position = gameObject.transform.position;
-                ChangeColor(1, 0, 0, alphaLevel, overlayBox);
+                Color normal = gameObject.GetComponent<SpriteRenderer>().color;
+                cross.transform.position = gameObject.transform.position;
+                ChangeColor(1, 0, 0, alphaLevel, gameObject);
 
-                FadeOutSymbol(0, overlayBox);
+                FadeOutSymbol(2, overlayBox);
                 FadeInSymbol(1, overlayBox);
 
             }
@@ -55,7 +56,7 @@ public class FadeIn : MonoBehaviour
     /// </summary>
     /// <param name="i"></param>
     /// <param name="gameObject"></param>
-    private void FadeInSymbol(int i, GameObject gameObject)
+    public void FadeInSymbol(int i, GameObject gameObject)
     {
         gameObject.transform.GetChild(i).gameObject.GetComponent<SpriteRenderer>().color = new Color(gameObject.transform.GetChild(i).gameObject.GetComponent<SpriteRenderer>().color.r,
             gameObject.transform.GetChild(i).gameObject.GetComponent<SpriteRenderer>().color.g,
@@ -67,7 +68,7 @@ public class FadeIn : MonoBehaviour
     /// </summary>
     /// <param name="i"></param>
     /// <param name="gameObject"></param>
-    private void FadeOutSymbol(int i, GameObject gameObject)
+    public void FadeOutSymbol(int i, GameObject gameObject)
     {
         gameObject.transform.GetChild(i).gameObject.GetComponent<SpriteRenderer>().color = new Color(gameObject.transform.GetChild(i).gameObject.GetComponent<SpriteRenderer>().color.r,
             gameObject.transform.GetChild(i).gameObject.GetComponent<SpriteRenderer>().color.g,
@@ -84,7 +85,7 @@ public class FadeIn : MonoBehaviour
     /// <param name="gameObject"></param>
     private void ChangeColor(float r, float g, float b, float a, GameObject gameObject)
     {
-        while (a < 0.5)
+        while (a < 1)
         {
             a = a + 0.1f;
             gameObject.GetComponent<SpriteRenderer>().color = new Color(r, g, b, a);

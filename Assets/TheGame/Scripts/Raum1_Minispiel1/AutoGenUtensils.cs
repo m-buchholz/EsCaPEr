@@ -56,38 +56,45 @@ public class AutoGenUtensils : MonoBehaviour
     void Start()
     {
         int i = 0;
-        while(i < UtensilList.Count)
+        /*while(i < UtensilList.Count)
         {
             Debug.Log(" i = " + i);
             GenerateObj(UtensilList[i]);
             UtensilList.RemoveAt(i);
+        }*/
+
+        List<GameObject> utensils = GetComponent<prefabs>().PrefabsUtensils();
+
+        foreach(GameObject utensil in utensils)
+        {
+            GenerateObj(utensil);
         }
 
 
     }
 
-    private void GenerateObj(string uten)
+    private void GenerateObj(GameObject utensil)
     {
         int i = Random.Range(0, BoxPos.Count);
         GameObject spawn = (GameObject)Instantiate(Resources.Load("Prefabs/Room1_Minigame1/Spawn"));
-        GameObject utensil = (GameObject)Instantiate(Resources.Load("Prefabs/Room1_Minigame1/" + uten));
 
-        GameObject boxObject = GenerateBox("Box" + uten, BoxPos[i]);
+        GameObject boxObject = GenerateBox(utensil.name, BoxPos[i]);
         GameObject text = (GameObject)Instantiate(Resources.Load("Prefabs/Room1_Minigame1/UtensilText"));
-        GameObject parentOfText = GameObject.Find("Text");
+        GameObject parentOfText = GameObject.Find("Discription");
         GameObject check = GameObject.Find("Completion Button");
 
         text.transform.SetParent(parentOfText.transform);
         text.transform.position = new Vector2(boxObject.transform.position.x, boxObject.transform.position.y - 0.7f);
         text.transform.localScale = new Vector3(1, 1, 1);
-        text.transform.GetComponent<Text>().text = uten;
+        text.transform.GetComponent<Text>().text = utensil.name;
         utensil.transform.position = UtensilPos[i];
         spawn.transform.position = UtensilPos[i];
 
-        utensil.transform.GetChild(1).GetComponent<JumpBackToAnAnchor>().anchor = spawn;
-        utensil.transform.GetChild(1).GetComponent<CollisionControllerForAssignment>().box = boxObject;
-        check.GetComponent<CheckForGameCompletion>().utensils[n] = utensil.transform.GetChild(1).gameObject;
+        utensil.transform.GetChild(0).GetComponent<JumpBackToAnAnchor>().anchor = spawn;
+        utensil.transform.GetChild(0).GetComponent<CollisionControllerForAssignment>().box = boxObject;
 
+        check.GetComponent<CheckForGameCompletion>().utensils[n] = utensil.transform.GetChild(0).gameObject;
+        Debug.Log("so sachen : " + check.GetComponent<CheckForGameCompletion>().utensils[0].GetComponent<CollisionControllerForAssignment>().isCorrect());
         n++;
         BoxPos.RemoveAt(i);
         UtensilPos.RemoveAt(i);
@@ -95,7 +102,9 @@ public class AutoGenUtensils : MonoBehaviour
 
     private GameObject GenerateBox(string uten, Vector2 pos)
     {
-        GameObject utensil = (GameObject)Instantiate(Resources.Load("Prefabs/Room1_Minigame1/" + uten));
+        GameObject utensil = (GameObject)Instantiate(Resources.Load("Prefabs/Room1_Minigame1/box"));
+        Debug.Log(utensil.name + "   " + uten);
+        utensil.name = "box" + uten;
         utensil.transform.position = pos;
         return utensil;
     }

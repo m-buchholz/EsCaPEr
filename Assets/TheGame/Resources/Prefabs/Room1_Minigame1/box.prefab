@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1595639034962090745}
   - component: {fileID: 1595639034962090744}
   m_Layer: 0
-  m_Name: BoxStopfen
+  m_Name: box
   m_TagString: AssignmentBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

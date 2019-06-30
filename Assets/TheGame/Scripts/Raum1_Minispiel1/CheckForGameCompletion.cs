@@ -44,7 +44,7 @@ public class CheckForGameCompletion : MonoBehaviour
                     utensil.GetComponent<FadeIn>().Fade();
                 }
                 utensil.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0;
-                utensil.gameObject.GetComponent<PolygonCollider2D>().enabled = false;
+                utensil.gameObject.GetComponent<BoxCollider2D>().enabled = false;
                 utensil.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
             }
             i++;
@@ -68,43 +68,43 @@ public class CheckForGameCompletion : MonoBehaviour
             GameObject obj = utensils[i].transform.parent.gameObject;
             if(obj.transform.position.x == -8)
             {
-                util[0] = obj.transform.GetChild(1).gameObject;
+                util[0] = obj.transform.GetChild(0).gameObject;
             }
             else if(obj.transform.position.x == -4)
             {
-                util[1] = obj.transform.GetChild(1).gameObject;
+                util[1] = obj.transform.GetChild(0).gameObject;
             }
             else if (obj.transform.position.x == 0)
             {
-                util[2] = obj.transform.GetChild(1).gameObject;
+                util[2] = obj.transform.GetChild(0).gameObject;
             }
             else if (obj.transform.position.x == 4)
             {
-                util[3] = obj.transform.GetChild(1).gameObject;
+                util[3] = obj.transform.GetChild(0).gameObject;
             }
             else if (obj.transform.position.x == 8)
             {
-                util[4] = obj.transform.GetChild(1).gameObject;
+                util[4] = obj.transform.GetChild(0).gameObject;
             }
             else if (obj.transform.position.x == 20)
             {
-                util[5] = obj.transform.GetChild(1).gameObject;
+                util[5] = obj.transform.GetChild(0).gameObject;
             }
             else if (obj.transform.position.x == 24)
             {
-                util[6] = obj.transform.GetChild(1).gameObject;
+                util[6] = obj.transform.GetChild(0).gameObject;
             }
             else if (obj.transform.position.x == 28)
             {
-                util[7] = obj.transform.GetChild(1).gameObject;
+                util[7] = obj.transform.GetChild(0).gameObject;
             }
             else if (obj.transform.position.x == 32)
             {
-                util[8] = obj.transform.GetChild(1).gameObject;
+                util[8] = obj.transform.GetChild(0).gameObject;
             }
             else if (obj.transform.position.x == 36)
             {
-                util[9] = obj.transform.GetChild(1).gameObject;
+                util[9] = obj.transform.GetChild(0).gameObject;
             }
             i++;
         }

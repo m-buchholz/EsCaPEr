@@ -152,7 +152,7 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.03, y: 0.57}
+  m_Offset: {x: 0.27, y: 0.57}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -377,11 +377,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2269306095787755108}
     m_Modifications:
-    - target: {fileID: 2629705894900528378, guid: bddf45149ddf63240a5efc37d3f8fada,
-        type: 3}
-      propertyPath: m_Name
-      value: GreenBox
-      objectReference: {fileID: 0}
     - target: {fileID: 8172811442998473597, guid: bddf45149ddf63240a5efc37d3f8fada,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -447,6 +442,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.152
       objectReference: {fileID: 0}
+    - target: {fileID: 2629705894900528378, guid: bddf45149ddf63240a5efc37d3f8fada,
+        type: 3}
+      propertyPath: m_Name
+      value: GreenBox
+      objectReference: {fileID: 0}
     - target: {fileID: 8196127349581575159, guid: bddf45149ddf63240a5efc37d3f8fada,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -456,16 +456,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 3.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8749717226810699166, guid: bddf45149ddf63240a5efc37d3f8fada,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 5.992
-      objectReference: {fileID: 0}
-    - target: {fileID: 8749717226810699166, guid: bddf45149ddf63240a5efc37d3f8fada,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 5.992
       objectReference: {fileID: 0}
     - target: {fileID: 7798283312621671426, guid: bddf45149ddf63240a5efc37d3f8fada,
         type: 3}
@@ -477,6 +467,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.a
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8749717226810699166, guid: bddf45149ddf63240a5efc37d3f8fada,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5.992
+      objectReference: {fileID: 0}
+    - target: {fileID: 8749717226810699166, guid: bddf45149ddf63240a5efc37d3f8fada,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5.992
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bddf45149ddf63240a5efc37d3f8fada, type: 3}
