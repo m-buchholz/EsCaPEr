@@ -55,7 +55,6 @@ public class Level : MonoBehaviour
         setCountTextO();
         //greenLight.SetActive(false);
 
-        GameObject.Find("Background Audio").GetComponent<AudioSource>().Pause();
 
     }
 
