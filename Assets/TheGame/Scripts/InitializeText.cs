@@ -30,8 +30,8 @@ public class InitializeText : MonoBehaviour
         PlayerPrefs.SetString("R2_T", "Du hast es in den nächsten Raum geschafft, klasse! In diesem Raum geht es um Säuren und Basen. Ganz schön ÄTZEND, was? Schau mal, dort stehen Reagenzgläser!");
 
         // Room2_Minigame1
-        PlayerPrefs.SetString("R2M1_T", "Sieht so aus, als wäre ein Elementteil in diesen Gläsern versteckt. Doch Vorsicht, diese Lösungen sind stark ätzend! " +
-            "Mit Reinfassen ist da wohl nichts... zuerst müssen wir herausfinden, ob die Stoffe sauer oder basisch sind.");
+        PlayerPrefs.SetString("R2M1_T", "Sieht so aus, als wäre ein Schlüssel in einem dieser Gläser versteckt. Doch Vorsicht, diese Lösungen sind stark ätzend! " +
+            "Zuerst müssen wir herausfinden, ob die Stoffe sauer oder basisch sind. Benutze dafür den Universaindikator");
 
         // Room2_Minigame2
         PlayerPrefs.SetString("R2M2_T", "Das könnte uns vielleicht helfen, die Schwefelsäure in dem Reagenzglas zu neutralisieren. Aber da fehlt ja etwas! Da musst du die Reaktionsgleichung wohl selber ausgleichen...");

@@ -33,6 +33,7 @@ public class CheckCorrect : MonoBehaviour
         number3.GetComponent<CollisionControllerForEquation>().isCorrect() &&
         number4.GetComponent<CollisionControllerForEquation>().isCorrect())
         {
+            PlayerPrefs.SetInt("Room2_Minigame2", 1);
             SceneManager.LoadScene("Room2_Minigame3", LoadSceneMode.Single);
         }
     }
