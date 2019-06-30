@@ -69,11 +69,11 @@ public class AutoGenUtensils : MonoBehaviour
     private void GenerateObj(string uten)
     {
         int i = Random.Range(0, BoxPos.Count);
-        GameObject spawn = (GameObject)Instantiate(Resources.Load("Prefabs/Room1Minigame1/Spawn"));
-        GameObject utensil = (GameObject)Instantiate(Resources.Load("Prefabs/Room1Minigame1/" + uten));
+        GameObject spawn = (GameObject)Instantiate(Resources.Load("Prefabs/Room1_Minigame1/Spawn"));
+        GameObject utensil = (GameObject)Instantiate(Resources.Load("Prefabs/Room1_Minigame1/" + uten));
 
         GameObject boxObject = GenerateBox("Box" + uten, BoxPos[i]);
-        GameObject text = (GameObject)Instantiate(Resources.Load("Prefabs/Room1Minigame1/UtensilText"));
+        GameObject text = (GameObject)Instantiate(Resources.Load("Prefabs/Room1_Minigame1/UtensilText"));
         GameObject parentOfText = GameObject.Find("Text");
         GameObject check = GameObject.Find("Completion Button");
 
@@ -95,7 +95,7 @@ public class AutoGenUtensils : MonoBehaviour
 
     private GameObject GenerateBox(string uten, Vector2 pos)
     {
-        GameObject utensil = (GameObject)Instantiate(Resources.Load("Prefabs/Room1Minigame1/" + uten));
+        GameObject utensil = (GameObject)Instantiate(Resources.Load("Prefabs/Room1_Minigame1/" + uten));
         utensil.transform.position = pos;
         return utensil;
     }
