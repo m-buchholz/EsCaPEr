@@ -758,9 +758,9 @@ MonoBehaviour:
   lvl: lvl
   lvl1: Sauerstoff
   lvl2: Wasser
-  lvl3: Platin
+  lvl3: "Salzs\xE4ure"
   lvl4: Natriumhydroxid
-  end: WELL DONE!
+  end: Ende
 --- !u!114 &497638910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1651,8 +1651,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1588663384}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.19, y: -0.09, z: 0}
-  m_LocalScale: {x: 1.3761104, y: 1.17, z: 1}
+  m_LocalPosition: {x: 0, y: -0.05, z: 0}
+  m_LocalScale: {x: 1.4834219, y: 1.2612387, z: 1.0779817}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
