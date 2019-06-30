@@ -54,8 +54,8 @@ public class Level : MonoBehaviour
         //text.text = "Sauerstoff";
         setCountTextO();
         //greenLight.SetActive(false);
-        
 
+        GameObject.Find("Background Audio").GetComponent<AudioSource>().Pause();
 
     }
 
@@ -134,6 +134,7 @@ public class Level : MonoBehaviour
         PlayerPrefs.SetInt("Room3_Minigame1", 1);
         PlayerPrefs.SetInt("Elements", (PlayerPrefs.GetInt("Elements") + 1));
         PlayerPrefs.SetString("ElementsInventory", (PlayerPrefs.GetString("ElementsInventory") + "17-Cl,"));
+
     }
 
 
