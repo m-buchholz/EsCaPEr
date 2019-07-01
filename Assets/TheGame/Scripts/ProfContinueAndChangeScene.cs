@@ -25,7 +25,7 @@ public class ProfContinueAndChangeScene : MonoBehaviour
 
     private void changeScene()
     {
-        if (PlayerPrefs.GetInt("Minigame6") == 0)
+        if (PlayerPrefs.GetInt("Minigame6") == 0 && PlayerPrefs.GetInt("Elements") >= 5)
         {
             Initiate.Fade(scene, Color.black, 10f);
         }

@@ -6,7 +6,6 @@ public class PauseBackgroundAudio : MonoBehaviour
 {
     void Start()
     {
-        GameObject.Find("Background Audio").GetComponent<AudioSource>().Pause();
+        if (GameObject.Find("Background Audio")) GameObject.Find("Background Audio").GetComponent<AudioSource>().Pause();
     }
-
 }

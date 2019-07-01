@@ -44,9 +44,10 @@ public class InitializeSettings : MonoBehaviour
         PlayerPrefs.SetInt("Exit", 0);
 
         // Collected elements - in format "number-Element" e.g. "1-H" or "2-He"
-        PlayerPrefs.SetInt("Elements", 5);
+        PlayerPrefs.SetInt("Elements", 0);
         // Collected elements - in format "number-Element" e.g. "1-H" seperated through ',' e.g. "1-H,2-He,"
         PlayerPrefs.SetString("ElementsInventory", "");
+        PlayerPrefs.SetString("ElementsInventoryLast", "");
 
         // Keys in inventory
         PlayerPrefs.SetInt("Room2-Key", 0);

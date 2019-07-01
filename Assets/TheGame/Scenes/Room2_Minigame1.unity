@@ -2569,6 +2569,7 @@ GameObject:
   - component: {fileID: 1425938712}
   - component: {fileID: 1425938711}
   - component: {fileID: 1425938710}
+  - component: {fileID: 1425938714}
   m_Layer: 0
   m_Name: raum2_minispiel2_zettel
   m_TagString: Untagged
@@ -2738,6 +2739,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1425938707}
   m_CullTransparentMesh: 0
+--- !u!114 &1425938714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425938707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db7d01bc933f27143a65ab22c43e8d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioSource: {fileID: 2011288819}
+  ClickSound: {fileID: 8300000, guid: 7c28010b3d75c134b8433efe965f8d0b, type: 3}
 --- !u!224 &1549605527 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5088902745703835532, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
@@ -2871,18 +2886,98 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 1089259947264554717, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4632915668415800715, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
         type: 3}
       propertyPath: scene
       value: Room2
       objectReference: {fileID: 0}
+    - target: {fileID: 1089259947264554717, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e, type: 3}
+--- !u!1 &1708898993 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5341447838498110398, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1708898992}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1708898994 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6692299955396257539, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1708898992}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1708898995 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3360657611890980553, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1708898992}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1708898996 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5088902745808304079, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1708898992}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1708898997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708898993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db7d01bc933f27143a65ab22c43e8d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioSource: {fileID: 2011288819}
+  ClickSound: {fileID: 8300000, guid: 7c28010b3d75c134b8433efe965f8d0b, type: 3}
+--- !u!114 &1708898998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708898994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db7d01bc933f27143a65ab22c43e8d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioSource: {fileID: 2011288819}
+  ClickSound: {fileID: 8300000, guid: 7c28010b3d75c134b8433efe965f8d0b, type: 3}
+--- !u!114 &1708898999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708898995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db7d01bc933f27143a65ab22c43e8d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioSource: {fileID: 2011288819}
+  ClickSound: {fileID: 8300000, guid: 7c28010b3d75c134b8433efe965f8d0b, type: 3}
+--- !u!114 &1708899000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708898996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db7d01bc933f27143a65ab22c43e8d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioSource: {fileID: 2011288819}
+  ClickSound: {fileID: 8300000, guid: 7c28010b3d75c134b8433efe965f8d0b, type: 3}
 --- !u!1 &1730880559
 GameObject:
   m_ObjectHideFlags: 0
@@ -3791,7 +3886,8 @@ AudioSource:
   m_GameObject: {fileID: 2011288818}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -4802124711002403577, guid: 2df2090e3c6fce1408c73f88d947ccd3,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1

@@ -182,7 +182,8 @@ AudioSource:
   m_GameObject: {fileID: 386991911}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -4802124711002403577, guid: 2df2090e3c6fce1408c73f88d947ccd3,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -852,6 +853,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1989003624}
     m_Modifications:
+    - target: {fileID: 8895362953586419463, guid: 9ce98ca49dab63c4d9b8fdf3d2ba9779,
+        type: 3}
+      propertyPath: m_Name
+      value: SmokingFox
+      objectReference: {fileID: 0}
     - target: {fileID: 1755688878120998621, guid: 9ce98ca49dab63c4d9b8fdf3d2ba9779,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -890,7 +896,7 @@ PrefabInstance:
     - target: {fileID: 1755688878120998621, guid: 9ce98ca49dab63c4d9b8fdf3d2ba9779,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1755688878120998621, guid: 9ce98ca49dab63c4d9b8fdf3d2ba9779,
         type: 3}
@@ -956,11 +962,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8895362953586419463, guid: 9ce98ca49dab63c4d9b8fdf3d2ba9779,
-        type: 3}
-      propertyPath: m_Name
-      value: SmokingFox
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ce98ca49dab63c4d9b8fdf3d2ba9779, type: 3}

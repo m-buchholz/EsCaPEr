@@ -788,15 +788,15 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 7689593396279811945, guid: 9ce98ca49dab63c4d9b8fdf3d2ba9779,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 7689593394957172459, guid: 9ce98ca49dab63c4d9b8fdf3d2ba9779,
         type: 3}
       propertyPath: m_SortingOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689593396279811945, guid: 9ce98ca49dab63c4d9b8fdf3d2ba9779,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ce98ca49dab63c4d9b8fdf3d2ba9779, type: 3}

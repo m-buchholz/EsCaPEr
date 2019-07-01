@@ -24,13 +24,17 @@ public class Professor : MonoBehaviour
         {
             profSay = PlayerPrefs.GetString("Prof");
         }
-        else if (PlayerPrefs.GetInt("Elements") == 5 && PlayerPrefs.GetInt("Minigame6") == 0)
+        else if (PlayerPrefs.GetInt("Elements") >= 5 && PlayerPrefs.GetInt("Minigame6") == 0)
         {
             profSay = PlayerPrefs.GetString("Prof_End");
         }
         else if (PlayerPrefs.GetInt("Minigame6") == 1)
         {
             profSay = PlayerPrefs.GetString("Prof_Finished");
+        }
+        else
+        {
+            profSay = PlayerPrefs.GetString("Fail_T");
         }
     }
 
