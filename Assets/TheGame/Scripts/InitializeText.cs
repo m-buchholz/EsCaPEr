@@ -18,11 +18,11 @@ public class InitializeText : MonoBehaviour
         PlayerPrefs.SetString("F_R_T", "Hier sind mehrere Räume. Vielleicht ist ja einer davon offen?");
 
         // Room1
-        PlayerPrefs.SetString("R1_T", "Schau dir mal den Labortisch an!\nUnd was liegt denn da auf dem Boden? Sieht als lägen dort verschiedene Metalle.");
+        PlayerPrefs.SetString("R1_T", "Schau dir mal den Labortisch etwas genauer an! Und was liegt denn da auf dem Boden? Sieht aus, als wären das verschiedene Metalle. Ob die Poster an der Wand möglicherweise einen Nutzen haben?");
         // Room1_Minigame1
-        PlayerPrefs.SetString("R1M1_T", "Deine Aufgabe ist es, alle Utensilien richtig zuzuordnen.");
+        PlayerPrefs.SetString("R1M1_T", "Sieht aus, als wäre dein Wissen gefragt! Irgendwo hab ich diese Utensilien schonmal gesehen...");
         // Room1_Minigame2
-        PlayerPrefs.SetString("R1M2_T", "Ein Ofen und eine Gussform? Scheinbar sollst du etwas Metall schmelzen.");
+        PlayerPrefs.SetString("R1M2_T", "Ein Ofen und eine Gussform?\nScheinbar sollst du etwas Metall schmelzen. Wozu ist denn dieses Thermometer? Vielleicht für das Schloss an der Tür? Das glüht ja förmlich!");
         // Room1_Minigame3
         // PlayerPrefs.SetString("R1M3_T", "");
 
