@@ -65,6 +65,9 @@ public class SmokingFox : MonoBehaviour
             case "Foyer_Rooms":
                 tip = "F_R";
                 break;
+            case "Exit":
+                tip = "E";
+                break;
             case "Room1":
                 tip = "R1";
                 break;

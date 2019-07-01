@@ -26,11 +26,11 @@ public class InitializeInventory : MonoBehaviour
             if (GameObject.Find("RewardSound")) GameObject.Find("RewardSound").GetComponent<AudioSource>().enabled = true;
             PlayerPrefs.SetString("ElementsInventoryLast", PlayerPrefs.GetString("ElementsInventory"));
             GameObject.Find("Explosion").GetComponentInChildren<Animator>().SetBool("play", true);
-            GameObject.Find("ElementsHUD").GetComponent<Animator>().SetBool("Fade", true);
+            GameObject.Find("ElementsHUD").GetComponent<Animator>().SetBool("FadeIn", true);
         }
         else
         {
-            GameObject.Find("ElementsHUD").GetComponent<Animator>().SetBool("Fade", false);
+            GameObject.Find("ElementsHUD").GetComponent<Animator>().SetBool("FadeIn", false);
         }
 
         for (int i = 0; i <= ElementsInventory.Length - 1 && i <= (maxInventorySpace - 1); i++)

@@ -14,6 +14,12 @@ public class InitializeText : MonoBehaviour
 
          // Introduction + Foyer_Exit
         PlayerPrefs.SetString("F_E_T", "Willkommen im Labor!\nEs scheint, als hätte uns hier jemand eingesperrt! Ich glaube, wir müssen die fehlenden Elemente aus dem Periodensystems finden.");
+        // Exit (open)
+        PlayerPrefs.SetString("Exit_O", "Wow, sind das etwa alle fehlenden Elemente? Klasse, dann können wir endlich dieses Labor verlassen! Lass uns die Tür öffnen!");
+        // Exit (closed)
+        PlayerPrefs.SetString("Exit_C", "Du hast noch nicht alle fehlenden Elemente. Schau dich doch mal in den Räumen um!");
+        // Exit
+        PlayerPrefs.SetString("E_T", "Und die Moral von der Geschicht:\nDu bist eingesperrt oder nicht.\n\nHauste rein, aber nicht so feste!");
         // Foyer_Rooms
         PlayerPrefs.SetString("F_R_T", "Hier sind mehrere Räume. Vielleicht ist ja einer davon offen?");
 
@@ -55,6 +61,7 @@ public class InitializeText : MonoBehaviour
         PlayerPrefs.SetString("R3M2_W", "Gibt's nicht!\nDu hast es tatsächlich gemeistert.\nDu hast dir das letzte Element verdient!");
         // Room3_Minigame2 Lose
         PlayerPrefs.SetString("R3M2_L", "Hahahaha, das war nichts!\nVielleicht schaffst du es beim nächsten mal?\nSchau dir lieber nochmal alles an!");
+
 
         // Minigame already finished
         PlayerPrefs.SetString("Minigame_finished", "Sieht aus, als hättest du dieses Rätsel bereits gemeistert. Bestimmt gibt es noch mehr zu tun!");
