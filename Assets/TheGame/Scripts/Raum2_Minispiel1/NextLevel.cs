@@ -16,6 +16,8 @@ public class NextLevel : MonoBehaviour
 
         button = GetComponent<Button>();
         button.onClick.AddListener(nextLevel);
+
+        Debug.Log(elementO.isCollected());
     }
 
     void nextLevel()

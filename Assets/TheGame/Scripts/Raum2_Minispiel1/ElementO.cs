@@ -11,10 +11,19 @@ public class ElementO : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        elementCollected = false;
-
         button = GetComponent<Button>();
         button.onClick.AddListener(takeElement);
+
+        if (PlayerPrefs.GetString("ElementsInventory").Contains("8-O"))
+        {
+            GameObject.Find("element_o").SetActive(false);
+            elementCollected = true;
+            Debug.Log(elementCollected);
+        }
+        else
+        {
+            elementCollected = false;
+        }
     }
 
     void takeElement()
