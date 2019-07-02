@@ -1550,6 +1550,7 @@ MonoBehaviour:
   answerButton3: {fileID: 759072102}
   professor: {fileID: 7767809027050588719}
   professorText: {fileID: 1397422890915881364}
+  profResume: {fileID: 2680592545027860240}
 --- !u!114 &1403835199
 MonoBehaviour:
   m_ObjectHideFlags: 0
