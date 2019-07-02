@@ -36,6 +36,7 @@ public class Question : MonoBehaviour
     public Button answerButton1, answerButton2, answerButton3;
     public GameObject professor;
     public Text professorText;
+    public Button profResume;
 
     private Button confirmButton;
     private int random;
@@ -205,9 +206,15 @@ public class Question : MonoBehaviour
             PlayerPrefs.SetInt("Room3_Minigame6", 1);
             PlayerPrefs.SetInt("Elements", (PlayerPrefs.GetInt("Elements") + 1));
             PlayerPrefs.SetString("ElementsInventory", PlayerPrefs.GetString("ElementsInventory") + "54-Xe" + ",");
+            profResume.onClick.AddListener(fadeOut);
         }
         // else lose
         else professorText.text = PlayerPrefs.GetString("R3M2_L");
         professor.SetActive(true);
+    }
+
+    private void fadeOut()
+    {
+        Initiate.Fade("Room3", Color.black, 10f);
     }
 }

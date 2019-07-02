@@ -127,7 +127,9 @@ public class Level : MonoBehaviour
         text.text = "";
         text2.text = "";
         text3.text = end;
+        yield return new WaitForSeconds(1);
         player.SetActive(false);
+        Initiate.Fade("Room3", Color.black, 10f);
 
         // get element and set win
         PlayerPrefs.SetInt("Room3_Minigame1", 1);

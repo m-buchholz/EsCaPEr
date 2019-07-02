@@ -8,15 +8,15 @@ public class AutoGenSymbols : MonoBehaviour
 
     List<Vector2> BoxPos = new List<Vector2>()
     {
-        new Vector2(-6, 0.5f),
-        new Vector2(-2, 0.5f),
-        new Vector2(2, 0.5f),
-        new Vector2(6, 0.5f),
-        new Vector2(-8 + 28, 0.5f),
-        new Vector2(-4 + 28, 0.5f),
-        new Vector2(0 + 28, 0.5f),
-        new Vector2(4 + 28, 0.5f),
-        new Vector2(8 + 28, 0.5f)
+        new Vector2(-6, 2.5f),
+        new Vector2(-2, 2.5f),
+        new Vector2(2, 2.5f),
+        new Vector2(6, 2.5f),
+        new Vector2(-8 + 28, 2.5f),
+        new Vector2(-4 + 28, 2.5f),
+        new Vector2(0 + 28, 2.5f),
+        new Vector2(4 + 28, 2.5f),
+        new Vector2(8 + 28, 2.5f)
     };
 
     List<Vector2> UtensilPos = new List<Vector2>()
@@ -67,7 +67,7 @@ public class AutoGenSymbols : MonoBehaviour
         GameObject check = GameObject.Find("Completion Button");
 
         text.transform.SetParent(parentOfText.transform);
-        text.transform.position = new Vector2(boxObject.transform.position.x, boxObject.transform.position.y - 0.7f);
+        text.transform.position = new Vector2(boxObject.transform.position.x, boxObject.transform.position.y - 2.5f);
         text.transform.localScale = new Vector3(1, 1, 1);
         text.transform.GetComponent<Text>().text = utensil.name;
         utensil.transform.position = UtensilPos[i];
