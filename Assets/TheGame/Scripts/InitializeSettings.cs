@@ -18,7 +18,6 @@ public class InitializeSettings : MonoBehaviour
         PlayerPrefs.SetInt("R1", 0);
         PlayerPrefs.SetInt("R1M1", 0);
         PlayerPrefs.SetInt("R1M2", 0);
-        PlayerPrefs.SetInt("R1M3", 0);
         PlayerPrefs.SetInt("R2", 0);
         PlayerPrefs.SetInt("R2M1", 0);
         PlayerPrefs.SetInt("R2M2", 0);
@@ -52,8 +51,8 @@ public class InitializeSettings : MonoBehaviour
         // example (end result): "1-H,78-Pt,8-O,11-Na,17-Cl,54-Xe,"
 
         // Keys in inventory
-        PlayerPrefs.SetInt("Room2-Key", 1);
-        PlayerPrefs.SetInt("Room3-Key", 1);
+        PlayerPrefs.SetInt("Room2-Key", 0);
+        PlayerPrefs.SetInt("Room3-Key", 0);
 
         // SETTINGS
         PlayerPrefs.SetInt("Sound", 1);

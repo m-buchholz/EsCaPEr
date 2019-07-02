@@ -47,11 +47,11 @@ public class ShowTemperatureOfLock : MonoBehaviour
             PlayerPrefs.SetInt("Room1_Minigame2", 1);
             PlayerPrefs.SetInt("Elements", (PlayerPrefs.GetInt("Elements") + 1));
             PlayerPrefs.SetString("ElementsInventory", (PlayerPrefs.GetString("ElementsInventory") + "78-Pt,"));
-            // get key for room2
-            PlayerPrefs.SetInt("Room2-Key", 1);
-                     
-            SceneManager.LoadScene("Room1");
-         }                           
+            // open room2
+            PlayerPrefs.SetInt("Room2", 1);
+
+            Initiate.Fade("Room1", Color.black, 10f);
+        }                           
          
     }
     void OnTriggerExit2D (Collider2D collision)

@@ -7,7 +7,18 @@ using UnityEngine.EventSystems;
 public class Lock : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     private bool isPressed;
+    private Button keyLock;
     public GameObject overlay;
+
+    void Start()
+    {
+        keyLock = GetComponent<Button>();
+        if (PlayerPrefs.GetInt("Room2") == 1)
+        {
+            keyLock.GetComponent<Image>().color = Color.clear;
+            keyLock.interactable = false;
+        }
+    }
 
     void Update()
     {
