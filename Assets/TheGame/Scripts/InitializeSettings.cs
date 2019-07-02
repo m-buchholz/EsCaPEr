@@ -27,6 +27,7 @@ public class InitializeSettings : MonoBehaviour
         PlayerPrefs.SetInt("R3M1", 0);
         PlayerPrefs.SetInt("R3M2", 0);
         PlayerPrefs.SetInt("Fail", 0);
+        PlayerPrefs.SetInt("MW", 0);
 
         // PROGRESS
 
@@ -39,20 +40,20 @@ public class InitializeSettings : MonoBehaviour
         PlayerPrefs.SetInt("Room3_Minigame2", 0);
 
         // Door: 0 - closed, 1 - opened
-        PlayerPrefs.SetInt("Room2", 1);
-        PlayerPrefs.SetInt("Room3", 1);
+        PlayerPrefs.SetInt("Room2", 0);
+        PlayerPrefs.SetInt("Room3", 0);
         PlayerPrefs.SetInt("Exit", 0);
 
         // Collected elements - in format "number-Element" e.g. "1-H" or "2-He"
-        PlayerPrefs.SetInt("Elements", 6);
+        PlayerPrefs.SetInt("Elements", 0);
         // Collected elements - in format "number-Element" e.g. "1-H" seperated through ',' e.g. "1-H,2-He,"
         PlayerPrefs.SetString("ElementsInventory", "");
         PlayerPrefs.SetString("ElementsInventoryLast", "");
-        // example: "1-H,2-He,3-Li,4-Be,5-B,6-C,"
+        // example (end result): "1-H,78-Pt,8-O,11-Na,17-Cl,54-Xe,"
 
         // Keys in inventory
-        PlayerPrefs.SetInt("Room2-Key", 0);
-        PlayerPrefs.SetInt("Room3-Key", 0);
+        PlayerPrefs.SetInt("Room2-Key", 1);
+        PlayerPrefs.SetInt("Room3-Key", 1);
 
         // SETTINGS
         PlayerPrefs.SetInt("Sound", 1);

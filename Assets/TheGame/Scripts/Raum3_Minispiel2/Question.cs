@@ -83,16 +83,13 @@ public class Question : MonoBehaviour
             // Type: Q for Text Question, P for Picture Question
             quests[i] = PlayerPrefs.GetString("Q" + i).Split('/');
             rQuests[i] = PlayerPrefs.GetString("Q" + i).Split('/');
-            Debug.Log("Frage: " + quests[i][1] + " mit Antwort 1: " + quests[i][2] + " und Antwort 2: " + quests[i][3] + " und Antwort 3: " + quests[i][4] + " wurde erstellt.");
         }
-        Debug.Log("Letzte Frage: " + quests[20][1] + " mit Antwort 1: " + quests[20][2] + " und Antwort 2: " + quests[20][3] + " und Antwort 3: " + quests[20][4]);
     }
 
     private void setText(string[] quest)
     {
         // set all texts or/and pictures
         questionNumberText.text = "Frage " + (questionCounter+1);
-        Debug.Log("Frage: " + quest[1] + " mit Antwort 1: " + quest[2] + " und Antwort 2: " + quest[3] + " und Antwort 3: " + quest[4] + " wurde gesetzt.");
         if (quest[0] == "T")
         {
             // if text question
@@ -105,7 +102,9 @@ public class Question : MonoBehaviour
             // if picture question
             textQuestionText.enabled = false;
             pictureQuestionText.text = quest[1];
-            questionSprite.sprite = Resources.Load<Sprite>("Images/Utensils/" + quest[0]);
+            if (Resources.Load<Sprite>("Images/Utensils/" + quest[0]) != null)
+                questionSprite.sprite = Resources.Load<Sprite>("Images/Utensils/" + quest[0]);
+            else questionSprite.sprite = Resources.Load<Sprite>("Images/Symbols/" + quest[0]);
             pictureQuestionCanvas.SetActive(true);
         }
         answerButton1.GetComponentInChildren<Text>().text = quest[2];

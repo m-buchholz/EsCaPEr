@@ -63,6 +63,8 @@ public class InitializeText : MonoBehaviour
         PlayerPrefs.SetString("R3M2_L", "Hahahaha, das war nichts!\nVielleicht schaffst du es beim nächsten mal?\nSchau dir lieber nochmal alles an!");
 
 
+        // Minigame Pause Warning
+        PlayerPrefs.SetString("MW_T", "Vorsicht, wenn du in einem Minispiel Pause drückst, wird dieses zurückgesetzt. Das ist aber kein Problem, schließlich hast du alles in deinem Kopf gespeichert!");
         // Minigame already finished
         PlayerPrefs.SetString("Minigame_finished", "Sieht aus, als hättest du dieses Rätsel bereits gemeistert. Bestimmt gibt es noch mehr zu tun!");
         // Failure
@@ -73,27 +75,27 @@ public class InitializeText : MonoBehaviour
         // Room3_Minigame2 - FORMAT: Type(Q-Question or P-Picture)/Question/Right Answer/Answer2/Answer3
         // Text Questions - Q0-Q15
         PlayerPrefs.SetString("Q0", "T/Welches Element ist Sauerstoff?/O2/NaOH/O3");
-        PlayerPrefs.SetString("Q1", "T/Welches Element ist Natronlauge?/NaOH/HNO3/HCl");
+        PlayerPrefs.SetString("Q1", "T/Welches Element ist Natriumhydroxid?/NaOH/HNO3/HCl");
         PlayerPrefs.SetString("Q2", "T/Welches Element ist Wasser?/H2O/H3O/HO");
         PlayerPrefs.SetString("Q3", "T/Welches Element ist Chlor?/Cl/K/C");
         PlayerPrefs.SetString("Q4", "T/Welches Element ist Eisen?/Fe/Ce/Pb");
         PlayerPrefs.SetString("Q5", "T/Welches Element ist Blei?/Pb/Be/Zn");
-        PlayerPrefs.SetString("Q6", "T/?/Richtig/2/3");
-        PlayerPrefs.SetString("Q7", "T/?/Richtig/2/3");
-        PlayerPrefs.SetString("Q8", "T/?/Richtig/2/3");
-        PlayerPrefs.SetString("Q9", "T/?/Richtig/2/3");
-        PlayerPrefs.SetString("Q10", "T/?/Richtig/2/3");
-        PlayerPrefs.SetString("Q11", "T/?/Richtig/2/3");
-        PlayerPrefs.SetString("Q12", "T/?/Richtig/2/3");
-        PlayerPrefs.SetString("Q13", "T/?/Richtig/2/3");
-        PlayerPrefs.SetString("Q14", "T/?/Richtig/2/3");
-        PlayerPrefs.SetString("Q15", "T/?/Richtig/2/3");
+        PlayerPrefs.SetString("Q6", "T/Was gibt der pH-Wert an?/Wie sauer oder basisch ein Stoff ist/Wie warm oder kalt ein Stoff ist/Wie fest oder flüssig ein Stoff ist");
+        PlayerPrefs.SetString("Q7", "T/Welcher pH-Wert beschreibt am ehesten einen basischen Stoff?/12/7/2");
+        PlayerPrefs.SetString("Q8", "T/Was trifft am ehesten auf Natriumhydroxid zu?/Basisch/Neutral/Sauer");
+        PlayerPrefs.SetString("Q9", "T/Was trifft am ehesten auf Wasser zu?/Neutral/Basisch/Sauer");
+        PlayerPrefs.SetString("Q10", "T/Was trifft am ehesten auf Salzsäure zu?/Sauer/Neutral/Basisch");
+        PlayerPrefs.SetString("Q11", "Brandfördernd/Was bedeutet dieses Symbol?/Brandfördernd/Leicht entzündlich/Explosiv");
+        PlayerPrefs.SetString("Q12", "Giftig/Was bedeutet dieses Symbol?/Giftig/Umweltschädlich/Gesundheitsschädlich");
+        PlayerPrefs.SetString("Q13", "Leicht entzündlich/Was bedeutet dieses Symbol?/Leicht entzündlich/Brandfördernd/Explosiv");
+        PlayerPrefs.SetString("Q14", "Gesundheitsschädlich/Was bedeutet dieses Symbol?/Gesundheitsschädlich/Giftig/Ätzend");
+        PlayerPrefs.SetString("Q15", "Umweltschädlich/Was bedeutet dieses Symbol?/Umweltschädlich/Gesundheitsgefährdend/Giftig");
         // Image Questions - Q16-Q20
-        PlayerPrefs.SetString("Q16", "erlenmeyerkolben/Welches Utensil ist das?/Erlenmeyerkolben/Reagenzglas/Messzylinder");
-        PlayerPrefs.SetString("Q17", "spatellöffel/Welches Utensil ist das?/Spatellöffel/Pipette/Stopfen");
-        PlayerPrefs.SetString("Q18", "stehkolben/Welches Utensil ist das?/Stehkolben/Erlenmeyerkolben/Rundkolben");
-        PlayerPrefs.SetString("Q19", "pipette/Welches Utensil ist das?/Pipette/Stopfen/Reagenzglas");
-        PlayerPrefs.SetString("Q20", "stopfen/Welches Utensil ist das?/Stopfen/Messbecher/Rundkolben");
+        PlayerPrefs.SetString("Q16", "Erlenmeyerkolben/Welches Utensil ist das?/Erlenmeyerkolben/Reagenzglas/Messzylinder");
+        PlayerPrefs.SetString("Q17", "Spatellöffel/Welches Utensil ist das?/Spatellöffel/Pipette/Stopfen");
+        PlayerPrefs.SetString("Q18", "Stehkolben/Welches Utensil ist das?/Stehkolben/Erlenmeyerkolben/Rundkolben");
+        PlayerPrefs.SetString("Q19", "Pipette/Welches Utensil ist das?/Pipette/Stopfen/Reagenzglas");
+        PlayerPrefs.SetString("Q20", "Stopfen/Welches Utensil ist das?/Stopfen/Messbecher/Rundkolben");
 
         // OTHER
 

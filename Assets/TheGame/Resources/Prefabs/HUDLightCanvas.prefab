@@ -321,7 +321,7 @@ GameObject:
   - component: {fileID: 5088902745808304075}
   - component: {fileID: 5088902745808304074}
   - component: {fileID: 5088902745808304073}
-  - component: {fileID: 4891935610740260051}
+  - component: {fileID: 7517083345768555681}
   m_Layer: 5
   m_Name: Pause Menu Button
   m_TagString: Untagged
@@ -430,7 +430,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &4891935610740260051
+--- !u!114 &7517083345768555681
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -439,10 +439,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5088902745808304079}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11c1498d54f841f4d8e2e63bd9f683ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 4919ec99a69522a4292779789dda7634, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scene: Pause
+  fox: {fileID: 7767809028615827615}
+  foxText: {fileID: 1397422891415493412}
 --- !u!1 &5106469669597030440
 GameObject:
   m_ObjectHideFlags: 0
