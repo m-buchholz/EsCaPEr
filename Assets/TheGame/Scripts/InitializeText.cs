@@ -29,8 +29,6 @@ public class InitializeText : MonoBehaviour
         PlayerPrefs.SetString("R1M1_T", "Sieht aus, als wäre dein Wissen gefragt! Irgendwo hab ich diese Utensilien schonmal gesehen...");
         // Room1_Minigame2
         PlayerPrefs.SetString("R1M2_T", "Ein Ofen und eine Gussform?\nScheinbar sollst du etwas Metall schmelzen. Wozu ist denn dieses Thermometer? Vielleicht für das Schloss an der Tür? Das glüht ja förmlich!");
-        // Room1_Minigame3
-        // PlayerPrefs.SetString("R1M3_T", "");
 
         // Room2
         PlayerPrefs.SetString("R2_T", "Du hast es in den nächsten Raum geschafft, klasse! In diesem Raum geht es um Säuren und Basen. Ganz schön ÄTZEND, was? Schau mal, dort stehen Reagenzgläser!");
@@ -74,12 +72,12 @@ public class InitializeText : MonoBehaviour
 
         // Room3_Minigame2 - FORMAT: Type(Q-Question or P-Picture)/Question/Right Answer/Answer2/Answer3
         // Text Questions - Q0-Q15
-        PlayerPrefs.SetString("Q0", "T/Welches Element ist Sauerstoff?/O2/NaOH/O3");
-        PlayerPrefs.SetString("Q1", "T/Welches Element ist Natriumhydroxid?/NaOH/HNO3/HCl");
-        PlayerPrefs.SetString("Q2", "T/Welches Element ist Wasser?/H2O/H3O/HO");
-        PlayerPrefs.SetString("Q3", "T/Welches Element ist Chlor?/Cl/K/C");
-        PlayerPrefs.SetString("Q4", "T/Welches Element ist Eisen?/Fe/Ce/Pb");
-        PlayerPrefs.SetString("Q5", "T/Welches Element ist Blei?/Pb/Be/Zn");
+        PlayerPrefs.SetString("Q0", "T/Welcher Stoff ist Sauerstoff?/O2/NaOH/O3");
+        PlayerPrefs.SetString("Q1", "T/Welcher Stoff ist Natriumhydroxid?/NaOH/HNO3/HCl");
+        PlayerPrefs.SetString("Q2", "T/Welcher Stoff ist Wasser?/H2O/H3O/HO");
+        PlayerPrefs.SetString("Q3", "T/Welcher Stoff ist Chlor?/Cl/K/C");
+        PlayerPrefs.SetString("Q4", "T/Welcher Stoff ist Eisen?/Fe/Ce/Pb");
+        PlayerPrefs.SetString("Q5", "T/Welcher Stoff ist Platin?/Pt/Ni/Ti");
         PlayerPrefs.SetString("Q6", "T/Was gibt der pH-Wert an?/Wie sauer oder basisch ein Stoff ist/Wie warm oder kalt ein Stoff ist/Wie fest oder flüssig ein Stoff ist");
         PlayerPrefs.SetString("Q7", "T/Welcher pH-Wert beschreibt am ehesten einen basischen Stoff?/12/7/2");
         PlayerPrefs.SetString("Q8", "T/Was trifft am ehesten auf Natriumhydroxid zu?/Basisch/Neutral/Sauer");
