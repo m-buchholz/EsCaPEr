@@ -32,17 +32,16 @@ public class InitializeText : MonoBehaviour
 
         // Room2
         PlayerPrefs.SetString("R2_T", "Du hast es in den nächsten Raum geschafft, klasse! In diesem Raum geht es um Säuren und Basen. Ganz schön ÄTZEND, was? Schau mal, dort stehen Reagenzgläser!");
-
         // Room2_Minigame1
         PlayerPrefs.SetString("R2M1_T", "Sieht so aus, als wäre ein Schlüssel in einem dieser Gläser versteckt. Doch Vorsicht, diese Lösungen sind stark ätzend! " +
-            "Zuerst müssen wir herausfinden, ob die Stoffe sauer oder basisch sind. Benutze dafür den Universaindikator.");
-
+            "Zuerst müssen wir herausfinden, ob die Stoffe sauer oder basisch sind. Benutze dafür den Universalindikator.");
         // Room2_Minigame2
         PlayerPrefs.SetString("R2M2_T", "Das könnte uns vielleicht helfen, die Schwefelsäure in dem Reagenzglas zu neutralisieren. Aber da fehlt ja etwas! Da musst du die Reaktionsgleichung wohl selber ausgleichen...");
         // Room2_Minigame3
         PlayerPrefs.SetString("R2M3_T", "Jetzt können wir die Schwefelsäure neutralisieren! Nimm dazu das Glas mit der Natronlauge (NaOH) und benutze es mit der Schwefelsäure. Die Oxoniumionen der Natronlauge werden mit den Hydroxidionen der Schwefelsäure zu Wasser reagieren.");
         // Room2_Minigame4
         PlayerPrefs.SetString("R2M4_T", "Hier musst du wohl die Gefahrensymbole richtig zuordnen. Irgendwo hab ich ein Poster gesehen, auf dem die Symbole abgebildet sind.");
+        
         // Room3
         PlayerPrefs.SetString("R3_T", "Du bist im letzten Raum!\nSchau dir mal die Tafel an!\nWas wohl der Professor hier möchte?");
         // Room3 Professor - if not all Quests are finished
