@@ -849,8 +849,8 @@ MonoBehaviour:
   continueToEnd: {fileID: 5283946499900316155}
   pseLeft: {fileID: 635895113}
   pseRight: {fileID: 359223860}
-  pseLeftFull: {fileID: 21300000, guid: afcfa49591bd8c64f9066f5ffba5d65e, type: 3}
-  pseRightFull: {fileID: 21300000, guid: 8bba329198d3e874eba792b4cdf02d62, type: 3}
+  pseLeftFull: {fileID: 21300000, guid: 41f44ee5a20ccfd48b8fc17b15605f05, type: 3}
+  pseRightFull: {fileID: 21300000, guid: 186df183e672bc34999bac9ac2b204f3, type: 3}
 --- !u!1 &1525681592
 GameObject:
   m_ObjectHideFlags: 0
