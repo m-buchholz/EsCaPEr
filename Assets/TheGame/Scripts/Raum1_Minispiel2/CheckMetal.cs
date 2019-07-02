@@ -28,7 +28,25 @@ void OnTriggerEnter2D (Collider2D collision)
            metaltype = 1;
          }
          
-         
-         
+          if (collision.transform == eisen)
+         {
+           metalinoven = true;
+           metaltype = 2;
+         }
+          if (collision.transform == titan)
+         {
+           metalinoven = aluminium;
+           metaltype = 3;
+         }
+          if (collision.transform == nickel)
+         {
+           metalinoven = true;
+           metaltype = 4;
+         }
+          if (collision.transform == platin)
+         {
+           metalinoven = true;
+           metaltype = 5;
+         }     
     }
-       }
+}

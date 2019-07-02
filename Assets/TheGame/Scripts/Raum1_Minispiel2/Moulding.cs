@@ -36,19 +36,13 @@ public class Moulding : MonoBehaviour
                {
                key.SetActive (true);
                time = 1.0f;
-               }
-               
-               
-               
-               
+               }   
             }
-            if (ofenknopf.GetComponent<ClickOverlayOven>().active == false )
+        
+        if (ofenknopf.GetComponent<ClickOverlayOven>().active == false )
             {
                m_Animator.SetBool("ButtonIsPressed", false);
                m_Animator.SetBool("KeyTaken", true); 
-            }
-            
-             
-            
+            }       
     }
 }
