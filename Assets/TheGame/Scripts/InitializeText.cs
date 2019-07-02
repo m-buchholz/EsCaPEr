@@ -26,24 +26,24 @@ public class InitializeText : MonoBehaviour
         // Room1
         PlayerPrefs.SetString("R1_T", "Schau dir mal den Labortisch etwas genauer an! Und was liegt denn da auf dem Boden? Sieht aus, als wären das verschiedene Metalle. Ob die Poster an der Wand möglicherweise einen Nutzen haben?");
         // Room1_Minigame1
-        PlayerPrefs.SetString("R1M1_T", "Sieht aus, als wäre dein Wissen gefragt! Irgendwo hab ich diese Utensilien schonmal gesehen...");
+        PlayerPrefs.SetString("R1M1_T", "Sieht aus, als wäre dein Wissen gefragt! Irgendwo hab ich diese Utensilien schonmal gesehen. Schau dir das Poster im ersten Raum nochmal an, wenn du es nicht genau weißt.");
         // Room1_Minigame2
-        PlayerPrefs.SetString("R1M2_T", "Ein Ofen und eine Gussform?\nScheinbar sollst du etwas Metall schmelzen. Wozu ist denn dieses Thermometer? Vielleicht für das Schloss an der Tür? Das glüht ja förmlich!");
+        PlayerPrefs.SetString("R1M2_T", "Hier hast du einen Ofen und eine Gussform. Auf dem Tisch liegen Metalle, welche genau, findest du mit Rechtsklick heraus! Halte doch mal das Thermometer an das Schloss! Scheinbar ist nicht jedes Metall geeignet um daraus einen Schlüssel für dieses Schloss zu fertigen.");
 
         // Room2
-        PlayerPrefs.SetString("R2_T", "Du hast es in den nächsten Raum geschafft, klasse! In diesem Raum geht es um Säuren und Basen. Ganz schön ÄTZEND, was? Schau mal, dort stehen Reagenzgläser!");
+        PlayerPrefs.SetString("R2_T", "Du hast es in den nächsten Raum geschafft, klasse! In diesem Raum geht es um Säuren und Basen. Ganz schön ÄTZEND, was? Schau mal, dort stehen Reagenzgläser und auf der Tafel kleben irgendwelche Symbole!");
         // Room2_Minigame1
-        PlayerPrefs.SetString("R2M1_T", "Sieht so aus, als wäre ein Schlüssel in einem dieser Gläser versteckt. Doch Vorsicht, diese Lösungen sind stark ätzend! " +
-            "Zuerst müssen wir herausfinden, ob die Stoffe sauer oder basisch sind. Benutze dafür den Universalindikator.");
+        PlayerPrefs.SetString("R2M1_T", "Ich sehe einen Schlüssel! Doch Vorsicht, diese Lösungen sind stark ätzend! " +
+            "Zuerst müssen wir herausfinden, ob die Stoffe sauer oder basisch sind, um sie später zu neutralisieren. Benutze dafür den Universalindikator. So erhälst du den Code für den Tresor.");
         // Room2_Minigame2
-        PlayerPrefs.SetString("R2M2_T", "Das könnte uns vielleicht helfen, die Schwefelsäure in dem Reagenzglas zu neutralisieren. Aber da fehlt ja etwas! Da musst du die Reaktionsgleichung wohl selber ausgleichen...");
+        PlayerPrefs.SetString("R2M2_T", "Das könnte uns vielleicht helfen, die Schwefelsäure in dem Reagenzglas zu neutralisieren. Aber da fehlt ja etwas! Da musst du die Reaktionsgleichung wohl selbst ausgleichen...");
         // Room2_Minigame3
         PlayerPrefs.SetString("R2M3_T", "Jetzt können wir die Schwefelsäure neutralisieren! Nimm dazu das Glas mit der Natronlauge (NaOH) und benutze es mit der Schwefelsäure. Die Oxoniumionen der Natronlauge werden mit den Hydroxidionen der Schwefelsäure zu Wasser reagieren.");
         // Room2_Minigame4
-        PlayerPrefs.SetString("R2M4_T", "Hier musst du wohl die Gefahrensymbole richtig zuordnen. Irgendwo hab ich ein Poster gesehen, auf dem die Symbole abgebildet sind.");
+        PlayerPrefs.SetString("R2M4_T", "Hier musst du wohl die Gefahrensymbole richtig zuordnen. Im ersten Raum habe ich ein Poster gesehen, auf dem die Symbole abgebildet sind.");
         
         // Room3
-        PlayerPrefs.SetString("R3_T", "Du bist im letzten Raum!\nSchau dir mal die Tafel an!\nWas wohl der Professor hier möchte?");
+        PlayerPrefs.SetString("R3_T", "Du bist im letzten Raum!\nSchau dir mal die Tafel an, darunter klebt auch eine Notiz! Was wohl der Professor hier möchte?");
         // Room3 Professor - if not all Quests are finished
         PlayerPrefs.SetString("Prof", "Hey, da bist du ja endlich!\nAber was ist das?\nScheinbar fehlen dir noch einige Kenntnisse.\nSchau dich nochmal in den Räumen um!");
         // Room3 Professor - if all Quests are finished
@@ -51,7 +51,7 @@ public class InitializeText : MonoBehaviour
         // Room3 Professor - if all Quests are finished
         PlayerPrefs.SetString("Prof_Finished", "Du hast bereits bestanden!\nFreiversuche gibts hier nicht.\nGeh mir aus den Augen!");
         // Room3_Minigame1
-        PlayerPrefs.SetString("R3M1_T", "Sieht aus, als müsstest du hier etwas einsammeln. Sauerstoff zu Beginn? Vielleicht geht es um die einzelnen Bestandteile!");
+        PlayerPrefs.SetString("R3M1_T", "Sieht aus, als müsstest du hier die einzelnen Bestandteile der Stoffe in den richtigen Mengen einsammeln. War da nicht eine Notiz unter der Tafel?");
         // Room3_Minigame2
         PlayerPrefs.SetString("R3M2_T", "Hast du etwa jemand anderes erwartet?\nHier kann dir niemand helfen!\nNun los, zeig mir was du kannst!");
         // Room3_Minigame2 Win
