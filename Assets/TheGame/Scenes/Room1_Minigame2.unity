@@ -2092,10 +2092,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1279882853}
   - component: {fileID: 1279882854}
-  - component: {fileID: 1279882855}
   - component: {fileID: 1279882857}
   - component: {fileID: 1279882856}
   - component: {fileID: 1279882858}
+  - component: {fileID: 1279882855}
   m_Layer: 0
   m_Name: titan
   m_TagString: Untagged
@@ -3188,6 +3188,7 @@ MonoBehaviour:
   key: {fileID: 1942003421}
   keytype: {fileID: 1942003419}
   ofen: {fileID: 486857000}
+  over: {fileID: 1508200045}
   keyspawn: {fileID: 1860676670}
 --- !u!1 &1749124141
 GameObject:
@@ -3304,6 +3305,8 @@ MonoBehaviour:
   ofenknopf: {fileID: 259012995}
   ofen: {fileID: 486857000}
   key: {fileID: 1942003419}
+  keyspawn: {fileID: 1860676670}
+  over: {fileID: 1508200045}
 --- !u!1 &1749741801
 GameObject:
   m_ObjectHideFlags: 0
