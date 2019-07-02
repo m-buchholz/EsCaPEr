@@ -18,7 +18,7 @@ public class CollisionControllerForNeutralization : MonoBehaviour
         glass_h2so4 = GameObject.Find("glass_h2so4");
         glass_naoh = GameObject.Find("glass_naoh");
 
-        key = GameObject.Find("raum2_Key");
+        key = GameObject.Find("key");
 
         key.GetComponent<Image>().color = new Color(1, 1, 1, 0.5f);
     }
@@ -41,8 +41,8 @@ public class CollisionControllerForNeutralization : MonoBehaviour
 
             key.GetComponent<Image>().color = new Color(1, 1, 1, 1);
 
-            if (key.GetComponent<Key>().getNeutralized() == false)
-                key.GetComponent<Key>().setNeutralized(true);
+            if (key.GetComponent<TakeKey>().getNeutralized() == false)
+                key.GetComponent<TakeKey>().setNeutralized(true);
         }
         else
         {

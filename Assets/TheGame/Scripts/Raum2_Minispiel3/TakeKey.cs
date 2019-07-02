@@ -4,7 +4,7 @@ using System.Collections;
 using System;
 using UnityEngine.SceneManagement;
 
-public class Key : MonoBehaviour
+public class TakeKey : MonoBehaviour
 {
     private Button button;
     Boolean isNeutralized;
@@ -24,6 +24,7 @@ public class Key : MonoBehaviour
             SceneManager.LoadScene("Room2", LoadSceneMode.Single);
             PlayerPrefs.SetInt("Room2_Minigame3", 1);
             PlayerPrefs.SetInt("Room2", 1);
+            PlayerPrefs.SetInt("Room3-Key", 1);
             Initiate.Fade("Room1", Color.black, 10f);
         }
     }

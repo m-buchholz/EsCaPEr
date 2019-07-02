@@ -18,7 +18,6 @@ public class SafeSubmit : MonoBehaviour
     private int pin;
     private Boolean locked;
     
-    // Use this for initialization
     void Start()
     {
         button = GetComponent<Button>();
@@ -34,7 +33,6 @@ public class SafeSubmit : MonoBehaviour
         locked = theSafe.getLocked();
     }
 
-    // Update is called once per frame
     void SubmitSafeInput()
     {
         int input = Int32.Parse(safeInput.text);
