@@ -22,7 +22,7 @@ public class CollisionControllerForAssignmentSymbols : MonoBehaviour
             if (collision.bounds.Contains(transform.position))
             {
                 assign = true;
-                transform.position = collision.transform.position + new Vector3(0, 2.2f, 0);
+                transform.position = collision.transform.position + new Vector3(0, 0f, 0);
 
             }
 
