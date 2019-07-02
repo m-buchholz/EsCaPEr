@@ -12,6 +12,8 @@ public class ShowTemperatureOfLock : MonoBehaviour
     public Transform key;
     public GameObject keytype;
     public GameObject ofen; 
+    public GameObject over;
+    
     
     public GameObject keyspawn; 
     
@@ -19,6 +21,7 @@ public class ShowTemperatureOfLock : MonoBehaviour
      void Start ()
      {
          temperatur.SetActive (false);
+         over.SetActive (false);
      }
      
      void OnTriggerEnter2D (Collider2D collision)
@@ -31,12 +34,14 @@ public class ShowTemperatureOfLock : MonoBehaviour
          if (collision.transform == key && ofen.GetComponent<CheckMetal>().metaltype <= 4)
          {
             keytype.SetActive (false); 
-            Respawn();  
+            over.SetActive (true);    
+            Respawn ();   
          }     
          
          if (collision.transform == key && ofen.GetComponent<CheckMetal>().metaltype == 5)
          {
             keytype.SetActive (false);
+            over.SetActive (false); 
             Respawn ();
             // set win and get PSE element
             PlayerPrefs.SetInt("Room1_Minigame2", 1);
@@ -55,15 +60,14 @@ public class ShowTemperatureOfLock : MonoBehaviour
          if (collision.transform == Thermometer)
          {
             temperatur.SetActive (false);
-         }
-         
-         if (collision.transform == key && ofen.GetComponent<CheckMetal>().metaltype <= 4)
-         {
-            keytype.SetActive (false);   
-         }      
+            
+         }       
+          
     }   
     void Respawn ()
     {
-        keytype.transform.position =  keyspawn.transform.position;
+        keytype.transform.position = keyspawn.transform.position;
+          
     }
+
 }

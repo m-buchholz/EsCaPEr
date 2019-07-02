@@ -10,6 +10,10 @@ public class Moulding : MonoBehaviour
     public GameObject ofenknopf;
     public GameObject ofen;
     public GameObject key;
+    public GameObject keyspawn;
+    
+    public GameObject over;
+    
     float time = 1.0f;
     
     void Start ()
@@ -26,6 +30,7 @@ public class Moulding : MonoBehaviour
             {
                m_Animator.SetBool("ButtonIsPressed", true);
                m_Animator.SetBool("KeyTaken", false);  
+               over.SetActive (false);
                
                if(time >= 0)
                {
