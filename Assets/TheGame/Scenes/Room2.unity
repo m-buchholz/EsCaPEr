@@ -1412,7 +1412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scene: Room2_Minigame4
-  fox: {fileID: 0}
+  fox: {fileID: 1103396470}
 --- !u!114 &1300709847
 MonoBehaviour:
   m_ObjectHideFlags: 0
