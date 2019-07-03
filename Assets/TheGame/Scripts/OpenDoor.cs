@@ -7,8 +7,7 @@ using UnityEngine.UI;
 public class OpenDoor : MonoBehaviour
 {
     private Button button;
-    public GameObject foxOverlay;
-    public Text foxText;
+    public GameObject fox;
     public string scene;
 
     void Start()
@@ -24,14 +23,14 @@ public class OpenDoor : MonoBehaviour
         {
             if (PlayerPrefs.GetInt(scene + "-Key") == 0)
             {
-                foxText.text = PlayerPrefs.GetString("Door_locked");
+                fox.GetComponentInChildren<Text>().text = PlayerPrefs.GetString("Door_locked");
             }
             else
             {
-                foxText.text = PlayerPrefs.GetString("Door_unlock");
+                fox.GetComponentInChildren<Text>().text = PlayerPrefs.GetString("Door_unlock");
                 PlayerPrefs.SetInt(scene, 1);
             }
-            foxOverlay.SetActive(true);
+            fox.SetActive(true);
         }
         else
         {

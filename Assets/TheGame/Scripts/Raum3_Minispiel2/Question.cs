@@ -203,14 +203,14 @@ public class Question : MonoBehaviour
         if (mistakes <= maxMistakes)
         {
             professorText.text = PlayerPrefs.GetString("R3M2_W");
-            PlayerPrefs.SetInt("Room3_Minigame6", 1);
+            PlayerPrefs.SetInt("Room3_Minigame2", 1);
             PlayerPrefs.SetInt("Elements", (PlayerPrefs.GetInt("Elements") + 1));
             PlayerPrefs.SetString("ElementsInventory", PlayerPrefs.GetString("ElementsInventory") + "54-Xe" + ",");
-            profResume.onClick.AddListener(fadeOut);
         }
         // else lose
         else professorText.text = PlayerPrefs.GetString("R3M2_L");
         professor.SetActive(true);
+        profResume.onClick.AddListener(fadeOut);
     }
 
     private void fadeOut()

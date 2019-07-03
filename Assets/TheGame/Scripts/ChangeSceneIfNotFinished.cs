@@ -10,11 +10,11 @@ public class ChangeSceneIfNotFinished : MonoBehaviour
     private Button button;
     public string scene;
     public GameObject fox;
-    public Text foxText;
 
     // Start is called before the first frame update
     void Start()
     {
+        // include buttons
         button = GetComponent<Button>();
         button.onClick.AddListener(changeScene);
     }
@@ -29,7 +29,7 @@ public class ChangeSceneIfNotFinished : MonoBehaviour
         }
         else
         {
-            foxText.text = PlayerPrefs.GetString("Minigame_finished");
+            fox.GetComponentInChildren<Text>().text = PlayerPrefs.GetString("Minigame_finished");
             fox.SetActive(true);
         }
     }

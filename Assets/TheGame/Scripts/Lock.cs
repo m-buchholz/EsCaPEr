@@ -15,8 +15,7 @@ public class Lock : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         keyLock = GetComponent<Button>();
         if (PlayerPrefs.GetInt("Room2") == 1)
         {
-            keyLock.GetComponent<Image>().color = Color.clear;
-            keyLock.interactable = false;
+            keyLock.gameObject.SetActive(false);
         }
     }
 

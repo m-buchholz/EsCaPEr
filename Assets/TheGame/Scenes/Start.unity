@@ -994,7 +994,7 @@ GameObject:
   - component: {fileID: 1758933759}
   - component: {fileID: 1758933761}
   m_Layer: 0
-  m_Name: start_hg_elemente
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

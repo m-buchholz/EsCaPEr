@@ -381,7 +381,7 @@ GameObject:
   - component: {fileID: 267222306}
   - component: {fileID: 267222305}
   m_Layer: 0
-  m_Name: foyer_tueren_hg
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -546,8 +546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 262d4bc393ef8a742bc64a8b8c9522c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foxOverlay: {fileID: 1518645534}
-  foxText: {fileID: 1518645533}
+  fox: {fileID: 0}
   scene: Room3
 --- !u!114 &318589157
 MonoBehaviour:
@@ -825,8 +824,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 262d4bc393ef8a742bc64a8b8c9522c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foxOverlay: {fileID: 1518645534}
-  foxText: {fileID: 1518645533}
+  fox: {fileID: 0}
   scene: Room2
 --- !u!114 &392449842
 MonoBehaviour:
@@ -1410,6 +1408,26 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 27827400}
+    - target: {fileID: 5633080853608902328, guid: bfd84433eab1e354c96561166765132d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2082724468387346943, guid: bfd84433eab1e354c96561166765132d,
+        type: 3}
+      propertyPath: AudioSource
+      value: 
+      objectReference: {fileID: 348120310}
+    - target: {fileID: 2082724470165769408, guid: bfd84433eab1e354c96561166765132d,
+        type: 3}
+      propertyPath: AudioSource
+      value: 
+      objectReference: {fileID: 348120310}
+    - target: {fileID: 2082724470328215152, guid: bfd84433eab1e354c96561166765132d,
+        type: 3}
+      propertyPath: AudioSource
+      value: 
+      objectReference: {fileID: 348120310}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfd84433eab1e354c96561166765132d, type: 3}
 --- !u!1 &1518645527 stripped
@@ -1472,24 +1490,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AudioSource: {fileID: 348120310}
   ClickSound: {fileID: 8300000, guid: 7c28010b3d75c134b8433efe965f8d0b, type: 3}
---- !u!114 &1518645533 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4690845945294738736, guid: bfd84433eab1e354c96561166765132d,
+--- !u!1 &1518645533 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7197886704461641966, guid: bfd84433eab1e354c96561166765132d,
     type: 3}
   m_PrefabInstance: {fileID: 1518645526}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+--- !u!114 &1518645534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518645533}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: db7d01bc933f27143a65ab22c43e8d6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1518645534 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4157194194394939019, guid: bfd84433eab1e354c96561166765132d,
-    type: 3}
-  m_PrefabInstance: {fileID: 1518645526}
-  m_PrefabAsset: {fileID: 0}
+  AudioSource: {fileID: 348120310}
+  ClickSound: {fileID: 8300000, guid: 7c28010b3d75c134b8433efe965f8d0b, type: 3}
 --- !u!1 &1530402828
 GameObject:
   m_ObjectHideFlags: 0

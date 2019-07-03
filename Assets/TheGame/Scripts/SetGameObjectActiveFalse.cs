@@ -16,7 +16,7 @@ public class SetGameObjectActiveFalse : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("Jump")) hideObj(); 
+        if (Input.GetButtonDown("Jump")) hideObj();
     }
 
     private void hideObj()

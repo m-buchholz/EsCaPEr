@@ -18,17 +18,26 @@ public class Professor : MonoBehaviour
         // include Button
         button = GetComponent<Button>();
         button.onClick.AddListener(openProf);
+    }
 
-        // enter text
-        if (PlayerPrefs.GetInt("Elements") < 5 && PlayerPrefs.GetInt("Minigame6") == 0)
+    private void openProf()
+    {
+        getText();
+        profText.text = profSay;
+        prof.SetActive(true);
+    }
+
+    private void getText()
+    {
+        if (PlayerPrefs.GetInt("Elements") < 5)
         {
             profSay = PlayerPrefs.GetString("Prof");
         }
-        else if (PlayerPrefs.GetInt("Elements") >= 5 && PlayerPrefs.GetInt("Minigame6") == 0)
+        else if (PlayerPrefs.GetInt("Elements") >= 5 && PlayerPrefs.GetInt("Room3_Minigame2") == 0)
         {
             profSay = PlayerPrefs.GetString("Prof_End");
         }
-        else if (PlayerPrefs.GetInt("Minigame6") == 1)
+        else if (PlayerPrefs.GetInt("Room3_Minigame2") == 1)
         {
             profSay = PlayerPrefs.GetString("Prof_Finished");
         }
@@ -36,11 +45,5 @@ public class Professor : MonoBehaviour
         {
             profSay = PlayerPrefs.GetString("Fail_T");
         }
-    }
-
-    private void openProf()
-    {
-        profText.text = profSay;
-        prof.SetActive(true);
     }
 }

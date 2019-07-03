@@ -12,8 +12,10 @@ public class InitializeText : MonoBehaviour
     {
         // SMOKINGFOX INSTRUCTIONS
 
-         // Introduction + Foyer_Exit
-        PlayerPrefs.SetString("F_E_T", "Willkommen im Labor!\nEs scheint, als hätte uns hier jemand eingesperrt! Ich glaube, wir müssen die fehlenden Elemente aus dem Periodensystems finden.");
+        // Introduction
+        PlayerPrefs.SetString("Intro_T", "Willkommen im Chemie-Labor!\nEs scheint, als hätte uns hier jemand eingesperrt! Dort am Periodensystem fehlen einige Elemente. Ich glaube wir müssen sie finden, um hier raus zu kommen! Wenn du Hilfe brauchst, ich bin jederzeit dort oben rechts!");
+        // Foyer_Exit
+        PlayerPrefs.SetString("F_E_T", "An den schwarzen Stellen im Periodensystem waren wohl auch mal Elemente...\nWenn du auf die Fläche über der Tür drückst, kannst du die andere Hälfte des Raumes sehen.");
         // Exit (open)
         PlayerPrefs.SetString("Exit_O", "Wow, sind das etwa alle fehlenden Elemente? Klasse, dann können wir endlich dieses Labor verlassen! Lass uns die Tür öffnen!");
         // Exit (closed)
@@ -26,15 +28,15 @@ public class InitializeText : MonoBehaviour
         // Room1
         PlayerPrefs.SetString("R1_T", "Schau dir mal den Labortisch etwas genauer an! Und was liegt denn da auf dem Boden? Sieht aus, als wären das verschiedene Metalle. Ob die Poster an der Wand möglicherweise einen Nutzen haben?");
         // Room1_Minigame1
-        PlayerPrefs.SetString("R1M1_T", "Sieht aus, als wäre dein Wissen gefragt! Irgendwo hab ich diese Utensilien schonmal gesehen. Schau dir das Poster im ersten Raum nochmal an, wenn du es nicht genau weißt.");
+        PlayerPrefs.SetString("R1M1_T", "Sieht aus, als wäre dein Wissen gefragt! Irgendwo hab ich diese Utensilien schon mal gesehen. Schau dir das Poster im ersten Raum nochmal an, wenn du es nicht genau weißt.");
         // Room1_Minigame2
-        PlayerPrefs.SetString("R1M2_T", "Hier hast du einen Ofen und eine Gussform. Auf dem Tisch liegen Metalle, welche genau, findest du mit Rechtsklick heraus! Halte doch mal das Thermometer an das Schloss! Scheinbar ist nicht jedes Metall geeignet um daraus einen Schlüssel für dieses Schloss zu fertigen.");
+        PlayerPrefs.SetString("R1M2_T", "Hier hast du einen Ofen und eine Gussform. Auf dem Tisch liegen Metalle, welche genau, findest du mit Rechtsklick heraus! Halte doch mal das Thermometer an das Schloss! Scheinbar ist nicht jedes Metall geeignet, um daraus einen Schlüssel für dieses Schloss zu fertigen.");
 
         // Room2
         PlayerPrefs.SetString("R2_T", "Du hast es in den nächsten Raum geschafft, klasse! In diesem Raum geht es um Säuren und Basen. Ganz schön ÄTZEND, was? Schau mal, dort stehen Reagenzgläser und auf der Tafel kleben irgendwelche Symbole!");
         // Room2_Minigame1
         PlayerPrefs.SetString("R2M1_T", "Ich sehe einen Schlüssel! Doch Vorsicht, diese Lösungen sind stark ätzend! " +
-            "Zuerst müssen wir herausfinden, ob die Stoffe sauer oder basisch sind, um sie später zu neutralisieren. Benutze dafür den Universalindikator. So erhälst du den Code für den Tresor.");
+            "Zuerst müssen wir herausfinden, ob die Stoffe sauer oder basisch sind, um sie später zu neutralisieren. Benutze dafür den Universalindikator. So erhältst du den Code für den Tresor.");
         // Room2_Minigame2
         PlayerPrefs.SetString("R2M2_T", "Das könnte uns vielleicht helfen, die Schwefelsäure in dem Reagenzglas zu neutralisieren. Aber da fehlt ja etwas! Da musst du die Reaktionsgleichung wohl selbst ausgleichen...");
         // Room2_Minigame3
@@ -59,9 +61,6 @@ public class InitializeText : MonoBehaviour
         // Room3_Minigame2 Lose
         PlayerPrefs.SetString("R3M2_L", "Hahahaha, das war nichts!\nVielleicht schaffst du es beim nächsten mal?\nSchau dir lieber nochmal alles an!");
 
-
-        // Minigame Pause Warning
-        PlayerPrefs.SetString("MW_T", "Vorsicht, wenn du in einem Minispiel Pause drückst, wird dieses zurückgesetzt. Das ist aber kein Problem, schließlich hast du alles in deinem Kopf gespeichert!");
         // Minigame already finished
         PlayerPrefs.SetString("Minigame_finished", "Sieht aus, als hättest du dieses Rätsel bereits gemeistert. Bestimmt gibt es noch mehr zu tun!");
         // Failure

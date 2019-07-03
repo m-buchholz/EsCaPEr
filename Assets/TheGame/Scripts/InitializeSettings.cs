@@ -13,6 +13,7 @@ public class InitializeSettings : MonoBehaviour
         // READING STATUS
 
         // Tip: 0 - not readed, 1 - readed
+        PlayerPrefs.SetInt("Intro", 0);
         PlayerPrefs.SetInt("F_E", 0);
         PlayerPrefs.SetInt("F_R", 0);
         PlayerPrefs.SetInt("R1", 0);
@@ -40,11 +41,11 @@ public class InitializeSettings : MonoBehaviour
 
         // Door: 0 - closed, 1 - opened
         PlayerPrefs.SetInt("Room2", 0);
-        PlayerPrefs.SetInt("Room3", 0);
+        PlayerPrefs.SetInt("Room3", 1);
         PlayerPrefs.SetInt("Exit", 0);
 
         // Collected elements - in format "number-Element" e.g. "1-H" or "2-He"
-        PlayerPrefs.SetInt("Elements", 0);
+        PlayerPrefs.SetInt("Elements", 5);
         // Collected elements - in format "number-Element" e.g. "1-H" seperated through ',' e.g. "1-H,2-He,"
         PlayerPrefs.SetString("ElementsInventory", "");
         PlayerPrefs.SetString("ElementsInventoryLast", "");

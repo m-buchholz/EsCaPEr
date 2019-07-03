@@ -21,7 +21,8 @@ public class ShowObject : MonoBehaviour
 
     private void show()
     {
-        showObject.GetComponentInChildren<Image>().sprite = sourceImage;
-        showObject.SetActive(true);
+        if (sourceImage != null) showObject.GetComponentInChildren<Image>().sprite = sourceImage;
+        if (!showObject.activeSelf) showObject.SetActive(true);
+        else showObject.SetActive(false);
     }
 }
