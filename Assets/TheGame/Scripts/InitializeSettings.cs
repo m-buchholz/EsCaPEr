@@ -41,11 +41,11 @@ public class InitializeSettings : MonoBehaviour
 
         // Door: 0 - closed, 1 - opened
         PlayerPrefs.SetInt("Room2", 0);
-        PlayerPrefs.SetInt("Room3", 1);
+        PlayerPrefs.SetInt("Room3", 0);
         PlayerPrefs.SetInt("Exit", 0);
 
         // Collected elements - in format "number-Element" e.g. "1-H" or "2-He"
-        PlayerPrefs.SetInt("Elements", 5);
+        PlayerPrefs.SetInt("Elements", 0);
         // Collected elements - in format "number-Element" e.g. "1-H" seperated through ',' e.g. "1-H,2-He,"
         PlayerPrefs.SetString("ElementsInventory", "");
         PlayerPrefs.SetString("ElementsInventoryLast", "");
