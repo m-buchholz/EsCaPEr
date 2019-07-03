@@ -54,8 +54,6 @@ public class Exit : MonoBehaviour
     private void finish()
     {
         GameObject.Find("ElementsHUD").GetComponent<Animator>().SetBool("FadeOut", true);
-        pseLeft.GetComponent<Image>().sprite = pseLeftFull;
-        pseRight.GetComponent<Image>().sprite = pseRightFull;
-        PlayerPrefs.SetInt("Exit", 1);
+        // unlocks in ExitExplosions.cs
     }
 }

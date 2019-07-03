@@ -1000,7 +1000,7 @@ AudioSource:
   m_GameObject: {fileID: 992825864}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 2024771769137371621, guid: 2df2090e3c6fce1408c73f88d947ccd3,
+  OutputAudioMixerGroup: {fileID: -2857391032901870822, guid: 2df2090e3c6fce1408c73f88d947ccd3,
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
@@ -1749,16 +1749,6 @@ PrefabInstance:
       propertyPath: scene
       value: Room2
       objectReference: {fileID: 0}
-    - target: {fileID: 894290402699502463, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
-        type: 3}
-      propertyPath: AudioSource
-      value: 
-      objectReference: {fileID: 875384511}
-    - target: {fileID: 5546768230682173215, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
-        type: 3}
-      propertyPath: AudioSource
-      value: 
-      objectReference: {fileID: 875384511}
     - target: {fileID: 8343897534040413572, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
         type: 3}
       propertyPath: AudioSource
@@ -1769,7 +1759,7 @@ PrefabInstance:
       propertyPath: AudioSource
       value: 
       objectReference: {fileID: 875384511}
-    - target: {fileID: 8458893704039484321, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
+    - target: {fileID: 894290402699502463, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
         type: 3}
       propertyPath: AudioSource
       value: 
@@ -1779,7 +1769,17 @@ PrefabInstance:
       propertyPath: AudioSource
       value: 
       objectReference: {fileID: 875384511}
+    - target: {fileID: 8458893704039484321, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
+        type: 3}
+      propertyPath: AudioSource
+      value: 
+      objectReference: {fileID: 875384511}
     - target: {fileID: 8458893704405414958, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
+        type: 3}
+      propertyPath: AudioSource
+      value: 
+      objectReference: {fileID: 875384511}
+    - target: {fileID: 5546768230682173215, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
         type: 3}
       propertyPath: AudioSource
       value: 
