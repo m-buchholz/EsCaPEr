@@ -885,7 +885,6 @@ GameObject:
   - component: {fileID: 1525681595}
   - component: {fileID: 1525681594}
   - component: {fileID: 1525681598}
-  - component: {fileID: 1525681599}
   m_Layer: 5
   m_Name: Foyer Rooms Button
   m_TagString: Untagged
@@ -1021,19 +1020,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AudioSource: {fileID: 386991912}
   ClickSound: {fileID: 8300000, guid: 7c28010b3d75c134b8433efe965f8d0b, type: 3}
---- !u!114 &1525681599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1525681592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 346ab4c6f748ad243b86bd3171f17a3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fox: {fileID: 5283946499900316154}
 --- !u!1 &1587462547
 GameObject:
   m_ObjectHideFlags: 0
@@ -1506,6 +1492,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2082724468387346943, guid: bfd84433eab1e354c96561166765132d,
+        type: 3}
+      propertyPath: AudioSource
+      value: 
+      objectReference: {fileID: 386991912}
+    - target: {fileID: 2082724470165769408, guid: bfd84433eab1e354c96561166765132d,
+        type: 3}
+      propertyPath: AudioSource
+      value: 
+      objectReference: {fileID: 386991912}
+    - target: {fileID: 2082724470328215152, guid: bfd84433eab1e354c96561166765132d,
+        type: 3}
+      propertyPath: AudioSource
+      value: 
+      objectReference: {fileID: 386991912}
     - target: {fileID: 5677209872841805282, guid: bfd84433eab1e354c96561166765132d,
         type: 3}
       propertyPath: fox
@@ -1636,21 +1637,6 @@ PrefabInstance:
       propertyPath: AudioSource
       value: 
       objectReference: {fileID: 386991912}
-    - target: {fileID: 2082724468387346943, guid: bfd84433eab1e354c96561166765132d,
-        type: 3}
-      propertyPath: AudioSource
-      value: 
-      objectReference: {fileID: 386991912}
-    - target: {fileID: 2082724470165769408, guid: bfd84433eab1e354c96561166765132d,
-        type: 3}
-      propertyPath: AudioSource
-      value: 
-      objectReference: {fileID: 386991912}
-    - target: {fileID: 2082724470328215152, guid: bfd84433eab1e354c96561166765132d,
-        type: 3}
-      propertyPath: AudioSource
-      value: 
-      objectReference: {fileID: 386991912}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfd84433eab1e354c96561166765132d, type: 3}
 --- !u!1 &5283946499900316147 stripped
@@ -1743,3 +1729,16 @@ MonoBehaviour:
   m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5283946499900316156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5283946499900316149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 346ab4c6f748ad243b86bd3171f17a3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fox: {fileID: 5283946499900316154}

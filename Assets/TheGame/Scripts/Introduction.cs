@@ -12,8 +12,8 @@ public class Introduction : MonoBehaviour
         if (PlayerPrefs.GetInt("Intro") == 0)
         {
             fox.GetComponentInChildren<Text>().text = PlayerPrefs.GetString("Intro_T");
-            PlayerPrefs.SetInt("Intro", 1);
             fox.SetActive(true);
+            PlayerPrefs.SetInt("Intro", 1);
         }
     }
 }

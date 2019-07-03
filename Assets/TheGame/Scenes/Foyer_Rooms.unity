@@ -546,7 +546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 262d4bc393ef8a742bc64a8b8c9522c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fox: {fileID: 0}
+  fox: {fileID: 1518645535}
   scene: Room3
 --- !u!114 &318589157
 MonoBehaviour:
@@ -824,7 +824,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 262d4bc393ef8a742bc64a8b8c9522c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fox: {fileID: 0}
+  fox: {fileID: 1518645535}
   scene: Room2
 --- !u!114 &392449842
 MonoBehaviour:
@@ -1510,6 +1510,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AudioSource: {fileID: 348120310}
   ClickSound: {fileID: 8300000, guid: 7c28010b3d75c134b8433efe965f8d0b, type: 3}
+--- !u!1 &1518645535 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4157194194394939019, guid: bfd84433eab1e354c96561166765132d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1518645526}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1530402828
 GameObject:
   m_ObjectHideFlags: 0
