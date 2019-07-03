@@ -28,6 +28,7 @@ public class InitializeSettings : MonoBehaviour
         PlayerPrefs.SetInt("R3M2", 0);
         PlayerPrefs.SetInt("Fail", 0);
         PlayerPrefs.SetInt("MW", 0);
+        PlayerPrefs.SetInt("E", 0);
 
         // PROGRESS
 
