@@ -24,8 +24,7 @@ public class NextLevel : MonoBehaviour
     {
         if (elementO.isCollected())
         {
-            PlayerPrefs.SetInt("Room2_Minigame1", 1);
-            SceneManager.LoadScene("Room2_Minigame2");
+            Initiate.Fade("Room2_Minigame2", Color.black, 10f);
         }
 
     }

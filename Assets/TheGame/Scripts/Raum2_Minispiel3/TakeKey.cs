@@ -21,11 +21,9 @@ public class TakeKey : MonoBehaviour
     {
         if (isNeutralized)
         {
-            SceneManager.LoadScene("Room2", LoadSceneMode.Single);
-            PlayerPrefs.SetInt("Room2_Minigame3", 1);
-            PlayerPrefs.SetInt("Room2", 1);
+            if (PlayerPrefs.GetString("ElementsInventory").Contains("8-O")) PlayerPrefs.SetInt("Room2_Minigame1", 1);
             PlayerPrefs.SetInt("Room3-Key", 1);
-            Initiate.Fade("Room1", Color.black, 10f);
+            Initiate.Fade("Room2", Color.black, 10f);
         }
     }
 
