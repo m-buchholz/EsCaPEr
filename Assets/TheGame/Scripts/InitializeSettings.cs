@@ -57,6 +57,7 @@ public class InitializeSettings : MonoBehaviour
         PlayerPrefs.SetInt("Room3-Key", 0);
 
         // SETTINGS
+        // Sound: 0 - off, 1 - on
         PlayerPrefs.SetInt("Sound", 1);
     }
 }

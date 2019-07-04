@@ -844,6 +844,31 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6045008156822894426, guid: 26827a1994165d644a1f1ba75c6a929b,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6045008156822894426, guid: 26827a1994165d644a1f1ba75c6a929b,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6045008156822894426, guid: 26827a1994165d644a1f1ba75c6a929b,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6655303976670624314, guid: 26827a1994165d644a1f1ba75c6a929b,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6655303976670624314, guid: 26827a1994165d644a1f1ba75c6a929b,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26827a1994165d644a1f1ba75c6a929b, type: 3}
 --- !u!1 &7785856093085992080 stripped
@@ -865,6 +890,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5088902745703835532}
     m_Modifications:
+    - target: {fileID: 8895362953586419463, guid: 9ce98ca49dab63c4d9b8fdf3d2ba9779,
+        type: 3}
+      propertyPath: m_Name
+      value: SmokingFox
+      objectReference: {fileID: 0}
     - target: {fileID: 1755688878120998621, guid: 9ce98ca49dab63c4d9b8fdf3d2ba9779,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -969,11 +999,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8895362953586419463, guid: 9ce98ca49dab63c4d9b8fdf3d2ba9779,
-        type: 3}
-      propertyPath: m_Name
-      value: SmokingFox
       objectReference: {fileID: 0}
     - target: {fileID: 7699203559535036440, guid: 9ce98ca49dab63c4d9b8fdf3d2ba9779,
         type: 3}
