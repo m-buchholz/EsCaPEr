@@ -12,7 +12,7 @@ public class SetVolume : MonoBehaviour
     void Start()
     {
         slider = GetComponent<Slider>();
-        slider.value = PlayerPrefs.GetFloat("Volume");
+        slider.value = PlayerPrefs.GetFloat("Volume", 1f);
     }
 
     void Update()
