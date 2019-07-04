@@ -13,7 +13,7 @@ public class InitializeText : MonoBehaviour
         // SMOKINGFOX INSTRUCTIONS
 
         // Introduction
-        PlayerPrefs.SetString("Intro_T", "Willkommen im Chemie-Labor!\nEs scheint, als hätte uns hier jemand eingesperrt! Dort am Periodensystem fehlen einige Elemente. Ich glaube wir müssen sie finden, um hier raus zu kommen! Wenn du Hilfe brauchst, ich bin jederzeit dort oben rechts!");
+        PlayerPrefs.SetString("Intro_T", "Willkommen im Chemie-Labor!\nEs scheint, als hätte uns hier jemand eingesperrt! Dort am Periodensystem fehlen einige Elemente. Ich glaube wir müssen sie finden, um hier raus zu kommen! Wenn du Hilfe brauchst, bin ich jederzeit oben rechts!");
         // Foyer_Exit
         PlayerPrefs.SetString("F_E_T", "An den schwarzen Stellen im Periodensystem waren wohl auch mal Elemente...\nWenn du auf die Fläche über der Tür drückst, kannst du die andere Hälfte des Raumes sehen.");
         // Exit (open)
