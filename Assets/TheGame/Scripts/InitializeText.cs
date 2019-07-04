@@ -36,11 +36,11 @@ public class InitializeText : MonoBehaviour
         PlayerPrefs.SetString("R2_T", "Du hast es in den nächsten Raum geschafft, klasse! In diesem Raum geht es um Säuren und Basen. Ganz schön ÄTZEND, was? Schau mal, dort stehen Reagenzgläser und auf der Tafel kleben irgendwelche Symbole!");
         // Room2_Minigame1
         PlayerPrefs.SetString("R2M1_T", "Ich sehe einen Schlüssel! Doch Vorsicht, diese Lösungen sind stark ätzend! " +
-            "Zuerst müssen wir herausfinden, ob die Stoffe sauer oder basisch sind, um sie später zu neutralisieren. Benutze dafür den Universalindikator. So erhältst du den Code für den Tresor.");
+            "Zuerst müssen wir herausfinden, ob die Stoffe sauer oder basisch sind, um sie später zu neutralisieren. Benutze dafür den Universalindikator. Damit kannst du den pH-Wert der Lösungen ermitteln. Der pH-Wert gibt an, wie sauer oder basisch ein Stoff ist. Das kannst du bestimmt für den Tresor gebrauchen...");
         // Room2_Minigame2
-        PlayerPrefs.SetString("R2M2_T", "Das könnte uns vielleicht helfen, die Schwefelsäure in dem Reagenzglas zu neutralisieren. Aber da fehlt ja etwas! Da musst du die Reaktionsgleichung wohl selbst ausgleichen...");
+        PlayerPrefs.SetString("R2M2_T", "Das sieht aus wie die Reaktionsgleichung für die Neutralisation von Schwefelsäure - genau das, was wir brauchen! Aber da fehlt ja etwas. Anscheinend musst du die Gleichung selbst ausgleichen. Weißt du noch, wie das geht? Weise die Zahlen den Lücken so zu, dass die Anzahl der Teilchen auf beiden Seiten gleich ist.");
         // Room2_Minigame3
-        PlayerPrefs.SetString("R2M3_T", "Jetzt können wir die Schwefelsäure neutralisieren! Nimm dazu das Glas mit der Natronlauge (NaOH) und benutze es mit der Schwefelsäure. Die Oxoniumionen der Natronlauge werden mit den Hydroxidionen der Schwefelsäure zu Wasser reagieren.");
+        PlayerPrefs.SetString("R2M3_T", "Jetzt können wir die Schwefelsäure neutralisieren! Nimm dazu das Glas mit der Natronlauge (NaOH) und benutze es mit der Schwefelsäure. Die Oxoniumionen der Natronlauge werden mit den Hydroxidionen der Schwefelsäure zu Wasser reagieren. Dadurch heben sich Base und Säure auf und du kannst dir gefahrlos den Schlüssel greifen. Du merkst es daran, dass sich die Lösung gelb-grünlich färbt, der Indikator für den neutralen pH-Wert 7.");
         // Room2_Minigame4
         PlayerPrefs.SetString("R2M4_T", "Hier musst du wohl die Gefahrensymbole richtig zuordnen. Im ersten Raum habe ich ein Poster gesehen, auf dem die Symbole abgebildet sind.");
         

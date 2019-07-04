@@ -1794,6 +1794,16 @@ PrefabInstance:
       propertyPath: AudioSource
       value: 
       objectReference: {fileID: 875384511}
+    - target: {fileID: 1397422891415493412, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1397422891415493412, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e, type: 3}
 --- !u!1 &1708898993 stripped

@@ -16,6 +16,7 @@ public class SafeInit : MonoBehaviour
         pin = 211738;
 
         GameObject.Find("universalindikator").GetComponent<Rigidbody2D>().freezeRotation = true;
+        GameObject.Find("raum2_ph_tabelle").GetComponent<Rigidbody2D>().freezeRotation = true;
     }
     
     public Boolean getLocked()
