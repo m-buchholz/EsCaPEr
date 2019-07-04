@@ -3034,17 +3034,27 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 8887340471465605009, guid: 26827a1994165d644a1f1ba75c6a929b,
-        type: 3}
-      propertyPath: AudioSource
-      value: 
-      objectReference: {fileID: 764557237}
     - target: {fileID: 8887340470559802030, guid: 26827a1994165d644a1f1ba75c6a929b,
         type: 3}
       propertyPath: AudioSource
       value: 
       objectReference: {fileID: 764557237}
+    - target: {fileID: 8887340471465605009, guid: 26827a1994165d644a1f1ba75c6a929b,
+        type: 3}
+      propertyPath: AudioSource
+      value: 
+      objectReference: {fileID: 764557237}
     - target: {fileID: 8887340471546494241, guid: 26827a1994165d644a1f1ba75c6a929b,
+        type: 3}
+      propertyPath: AudioSource
+      value: 
+      objectReference: {fileID: 764557237}
+    - target: {fileID: 474248127093926363, guid: 26827a1994165d644a1f1ba75c6a929b,
+        type: 3}
+      propertyPath: AudioSource
+      value: 
+      objectReference: {fileID: 764557237}
+    - target: {fileID: 3495322217272549097, guid: 26827a1994165d644a1f1ba75c6a929b,
         type: 3}
       propertyPath: AudioSource
       value: 

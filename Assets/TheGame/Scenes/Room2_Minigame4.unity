@@ -2163,11 +2163,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1988080247}
-    - target: {fileID: 7767809028615827615, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4632915668415800715, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
         type: 3}
       propertyPath: scene
@@ -2193,11 +2188,6 @@ PrefabInstance:
       propertyPath: AudioSource
       value: 
       objectReference: {fileID: 859954226}
-    - target: {fileID: 1898759010594487587, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 8458893704039484321, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
         type: 3}
       propertyPath: AudioSource
@@ -2209,6 +2199,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 859954226}
     - target: {fileID: 8458893704405414958, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
+        type: 3}
+      propertyPath: AudioSource
+      value: 
+      objectReference: {fileID: 859954226}
+    - target: {fileID: 1898759010594487587, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7767809028615827615, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 623454133641781460, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
+        type: 3}
+      propertyPath: AudioSource
+      value: 
+      objectReference: {fileID: 859954226}
+    - target: {fileID: 4518178164646336486, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
         type: 3}
       propertyPath: AudioSource
       value: 

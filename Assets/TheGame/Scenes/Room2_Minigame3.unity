@@ -1749,6 +1749,16 @@ PrefabInstance:
       propertyPath: scene
       value: Room2
       objectReference: {fileID: 0}
+    - target: {fileID: 894290402699502463, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
+        type: 3}
+      propertyPath: AudioSource
+      value: 
+      objectReference: {fileID: 875384511}
+    - target: {fileID: 5546768230682173215, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
+        type: 3}
+      propertyPath: AudioSource
+      value: 
+      objectReference: {fileID: 875384511}
     - target: {fileID: 8343897534040413572, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
         type: 3}
       propertyPath: AudioSource
@@ -1759,7 +1769,7 @@ PrefabInstance:
       propertyPath: AudioSource
       value: 
       objectReference: {fileID: 875384511}
-    - target: {fileID: 894290402699502463, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
+    - target: {fileID: 8458893704039484321, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
         type: 3}
       propertyPath: AudioSource
       value: 
@@ -1769,17 +1779,17 @@ PrefabInstance:
       propertyPath: AudioSource
       value: 
       objectReference: {fileID: 875384511}
-    - target: {fileID: 8458893704039484321, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
-        type: 3}
-      propertyPath: AudioSource
-      value: 
-      objectReference: {fileID: 875384511}
     - target: {fileID: 8458893704405414958, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
         type: 3}
       propertyPath: AudioSource
       value: 
       objectReference: {fileID: 875384511}
-    - target: {fileID: 5546768230682173215, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
+    - target: {fileID: 623454133641781460, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
+        type: 3}
+      propertyPath: AudioSource
+      value: 
+      objectReference: {fileID: 875384511}
+    - target: {fileID: 4518178164646336486, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
         type: 3}
       propertyPath: AudioSource
       value: 
