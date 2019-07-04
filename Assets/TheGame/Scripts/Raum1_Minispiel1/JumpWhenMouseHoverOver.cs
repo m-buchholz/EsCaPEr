@@ -40,7 +40,7 @@ public class JumpWhenMouseHoverOver : MonoBehaviour
         {
             if (Input.GetMouseButton(0) != true && GetComponent<CollisionControllerForAssignment>().isAssign() == false)
             {
-                Debug.Log("gedrückt");
+                // Debug.Log("gedrückt");
                 transform.position = new Vector3(transform.position.x, transform.position.y + jump, transform.position.z);
             }
         }

@@ -94,7 +94,7 @@ public class AutoGenUtensils : MonoBehaviour
         utensil.transform.GetChild(0).GetComponent<CollisionControllerForAssignment>().box = boxObject;
 
         check.GetComponent<CheckForGameCompletion>().utensils[n] = utensil.transform.GetChild(0).gameObject;
-        Debug.Log("so sachen : " + check.GetComponent<CheckForGameCompletion>().utensils[0].GetComponent<CollisionControllerForAssignment>().isCorrect());
+        // Debug.Log("so sachen : " + check.GetComponent<CheckForGameCompletion>().utensils[0].GetComponent<CollisionControllerForAssignment>().isCorrect());
         n++;
         BoxPos.RemoveAt(i);
         UtensilPos.RemoveAt(i);
@@ -103,7 +103,7 @@ public class AutoGenUtensils : MonoBehaviour
     private GameObject GenerateBox(string uten, Vector2 pos)
     {
         GameObject utensil = (GameObject)Instantiate(Resources.Load("Prefabs/Room1_Minigame1/box"));
-        Debug.Log(utensil.name + "   " + uten);
+        // Debug.Log(utensil.name + "   " + uten);
         utensil.name = "box" + uten;
         utensil.transform.position = pos;
         return utensil;

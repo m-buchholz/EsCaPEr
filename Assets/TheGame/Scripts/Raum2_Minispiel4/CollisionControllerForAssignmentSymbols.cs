@@ -62,11 +62,11 @@ public class CollisionControllerForAssignmentSymbols : MonoBehaviour
             assign = false;
             correct = false;
 
-        Debug.Log("end Collision");
+        // Debug.Log("end Collision");
     }
     private void Update()
     {
-        Debug.Log("Correct = " + correct + " Assign = " + assign  + " Name: "+ name);
+        // Debug.Log("Correct = " + correct + " Assign = " + assign  + " Name: "+ name);
 
     }
 

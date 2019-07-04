@@ -17,7 +17,7 @@ public class CollisionControllerForAssignment : MonoBehaviour
 
         if (collision.gameObject.tag == box.tag)
             {
-            Debug.Log("Collision!");
+            // Debug.Log("Collision!");
 
             if (collision.bounds.Contains(transform.position))
             {
@@ -62,11 +62,11 @@ public class CollisionControllerForAssignment : MonoBehaviour
             assign = false;
             correct = false;
 
-        Debug.Log("end Collision");
+        // Debug.Log("end Collision");
     }
     private void Update()
     {
-        Debug.Log("Correct = " + correct + " Assign = " + assign  + " Name: "+ name);
+        // Debug.Log("Correct = " + correct + " Assign = " + assign  + " Name: "+ name);
 
     }
 
