@@ -33,24 +33,36 @@ public class SafeSubmit : MonoBehaviour
         locked = theSafe.getLocked();
     }
 
+    void Update()
+    {
+        if (Input.GetButtonDown("Submit"))
+            if(locked)
+                SubmitSafeInput();
+    }
+
     void SubmitSafeInput()
     {
         int input = Int32.Parse(safeInput.text);
 
         Debug.Log(input);
         Debug.Log(pin);
+        Debug.Log(locked);
 
         if (input == pin & locked == true)
         {
             OpenSafeDoor();
+            locked = false;
         }
     }
 
     void OpenSafeDoor()
     {
-        safeDoor.transform.localPosition += new Vector3(-424, 0, 0);
-        safeInput.transform.localScale = new Vector3(0, 0, 0);
-        safeSubmit.transform.localScale = new Vector3(0, 0, 0);
+        if(locked)
+        { 
+            safeDoor.transform.localPosition += new Vector3(-424, 0, 0);
+            safeInput.transform.localScale = new Vector3(0, 0, 0);
+            safeSubmit.transform.localScale = new Vector3(0, 0, 0);
+        }
 
         theSafe.setLocked(false);
 
