@@ -23,6 +23,7 @@ public class InitializeSettings : MonoBehaviour
         PlayerPrefs.SetInt("R2M1", 0);
         PlayerPrefs.SetInt("R2M2", 0);
         PlayerPrefs.SetInt("R2M3", 0);
+        PlayerPrefs.SetInt("R2M4", 0);
         PlayerPrefs.SetInt("R3", 0);
         PlayerPrefs.SetInt("R3M1", 0);
         PlayerPrefs.SetInt("R3M2", 0);
