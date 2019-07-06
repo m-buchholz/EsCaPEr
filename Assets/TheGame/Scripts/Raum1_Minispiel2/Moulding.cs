@@ -26,11 +26,12 @@ public class Moulding : MonoBehaviour
     
     void Update()
     {
-        if (ofenknopf.GetComponent<ClickOverlayOven>().active == true && ofen.GetComponent<CheckMetal>().metalinoven == true)
+        if (ofenknopf.GetComponent<ClickOverlayOven>().active == true && ofen.GetComponent<CheckMetal>().metalinoven == true && key.activeSelf == false)
             {
                m_Animator.SetBool("ButtonIsPressed", true);
                m_Animator.SetBool("MetalInside", false);  
                over.SetActive (false);
+               
                
                if(time >= 0)
                {
@@ -54,5 +55,5 @@ public class Moulding : MonoBehaviour
             {
                 m_Animator.SetBool("MetalInside", false);
             }
-      }    
+      }   
 }
