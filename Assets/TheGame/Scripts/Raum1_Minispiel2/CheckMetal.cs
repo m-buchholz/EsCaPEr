@@ -23,6 +23,8 @@ public class CheckMetal : MonoBehaviour
     public GameObject aluminiumobj;
     public GameObject nickelobj;
     
+    public GameObject key;
+    
     
      void Start ()
      {
@@ -34,29 +36,28 @@ public class CheckMetal : MonoBehaviour
 void OnTriggerEnter2D (Collider2D collision)
     {
         
-         if (collision.transform == titan)
+         if (collision.transform == titan && key.activeSelf == false)
          {
            metalinoven = true;
            metaltype = 1;
-           
          }
          
-          if (collision.transform == eisen)
+          if (collision.transform == eisen && key.activeSelf == false)
          {
            metalinoven = true;
            metaltype = 2;
          }
-          if (collision.transform == aluminium)
+          if (collision.transform == aluminium && key.activeSelf == false)
          {
            metalinoven = true;
            metaltype = 3;
          }
-          if (collision.transform == nickel)
+          if (collision.transform == nickel && key.activeSelf == false)
          {
            metalinoven = true;
            metaltype = 4;
          }
-          if (collision.transform == platin)
+          if (collision.transform == platin && key.activeSelf == false)
          {
            metalinoven = true;
            metaltype = 5;
