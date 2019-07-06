@@ -42,7 +42,7 @@ public class ShowTemperatureOfLock : MonoBehaviour
             if (ofen.GetComponent<CheckMetal>().metaltype == 1)
             {
                 fox.SetActive(true);
-                fox.GetComponentInChildren<Text>().text = "Oh, geschmolzen! Da die Schmelztemperatur von Titan 1668°C beträgt, hält es dem glühenden Schlosses nicht stand.";
+                fox.GetComponentInChildren<Text>().text = "Oh, geschmolzen! Da die Schmelztemperatur von Titan 1668°C beträgt, hält es dem glühenden Schloss nicht stand.";
             }
             
             if (ofen.GetComponent<CheckMetal>().metaltype == 2)
