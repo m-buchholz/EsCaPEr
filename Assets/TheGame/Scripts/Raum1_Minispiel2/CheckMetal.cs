@@ -30,7 +30,6 @@ public class CheckMetal : MonoBehaviour
      {
         metalinoven = false;
         animator = giessform.GetComponent<Animator>();
-        
      }
    
 void OnTriggerEnter2D (Collider2D collision)
@@ -41,7 +40,6 @@ void OnTriggerEnter2D (Collider2D collision)
            metalinoven = true;
            metaltype = 1;           
          }
-         
           if (collision.transform == eisen && key.activeSelf == false)
          {
            metalinoven = true;
@@ -70,68 +68,62 @@ void OnTriggerEnter2D (Collider2D collision)
          if (collision.transform == titan)
          {
            metalinoven = false;
-           metaltype = 0;
          }
          
           if (collision.transform == eisen)
          {
            metalinoven = false;
-           metaltype = 0;
          }
           if (collision.transform == aluminium)
          {
            metalinoven = false;
-           metaltype = 0;
          }
           if (collision.transform == nickel)
          {
            metalinoven = false;
-           metaltype = 0;
          }
           if (collision.transform == platin)
          {
            metalinoven = false;
-           metaltype = 0;
          }     
      }
      
      void Update()
      {          
+             if (key.activeSelf == false && metalinoven == false)
+           {
+                metaltype = 0;
+           }
+            
             if (animator.GetBool("NewKey") && animator.GetBool("MetalInside") && metaltype == 1)
            {
                 titanobj.SetActive (false);
-                metaltype = 0;
                 animator.SetBool("NewKey", false);                 
            }
            
             if (animator.GetBool("NewKey") && animator.GetBool("MetalInside") && metaltype == 2)
            {
                 eisenobj.SetActive (false);
-                metaltype = 0;
                 animator.SetBool("NewKey", false);
-                
            }
            
            if (animator.GetBool("NewKey") && animator.GetBool("MetalInside") && metaltype == 3)
            {
                 aluminiumobj.SetActive (false);
-                metaltype = 0;
-                animator.SetBool("NewKey", false);
-                
+                animator.SetBool("NewKey", false);   
            }
+           
            if (animator.GetBool("NewKey") && animator.GetBool("MetalInside") && metaltype == 4)
            {
                 nickelobj.SetActive (false);
-                metaltype = 0;
-                animator.SetBool("NewKey", false);
-                
+                animator.SetBool("NewKey", false);    
            }
+           
            if (animator.GetBool("NewKey") && animator.GetBool("MetalInside") && metaltype == 5)
            {
                 platinobj.SetActive (false);
                 metaltype = 5;
-                animator.SetBool("NewKey", false);
-                
-           }
+                animator.SetBool("NewKey", false); 
+           }           
      }
 }  

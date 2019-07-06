@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class ShowTemperatureOfLock : MonoBehaviour
 {
+    public bool finished;
     public int metaltype;
     public Transform Thermometer;
     public GameObject temperatur;
@@ -22,6 +23,7 @@ public class ShowTemperatureOfLock : MonoBehaviour
     
      void Start ()
      {
+         finished = false;
          temperatur.SetActive (false);           
      }
      
@@ -37,16 +39,37 @@ public class ShowTemperatureOfLock : MonoBehaviour
             keytype.SetActive (false);     
             Respawn (); 
             
-            fox.SetActive(true);
-            fox.GetComponentInChildren<Text>().text = "Oh, geschmolzen! Dieses Metall hält den Temperaturen wohl nicht stand. Welches eignet sich wohl besser?";
-            // Ausblenden über den Resume Button ist bereits im Prefab hinterlegt
-            // Man kann dem Button einen Listener hinzufügen um dann z. B. gleich auszufaden, über den Resume Button
-            //fox.GetComponentInChildren<Button>().onClick.AddListener(FunktionZumAusfaden);
+            if (ofen.GetComponent<CheckMetal>().metaltype == 1)
+            {
+                fox.SetActive(true);
+                fox.GetComponentInChildren<Text>().text = "Oh, geschmolzen! Da die Schmelztemperatur von Titan 1668°C beträgt, hält es dem glühenden Schlosses nicht stand.";
+            }
+            
+            if (ofen.GetComponent<CheckMetal>().metaltype == 2)
+            {
+                fox.SetActive(true);
+                fox.GetComponentInChildren<Text>().text = "Die Schmelztemperatur von Eisen bertägt 1538°C. Dieses öffnet leider nicht die Tür.";
+            }
+            
+            if (ofen.GetComponent<CheckMetal>().metaltype == 3)
+            {
+                fox.SetActive(true);
+                fox.GetComponentInChildren<Text>().text = "Und geschmolzen! Aluminium hält leider nur 660,3°C aus, bevor es zerfließt.";
+            }
+            
+            if (ofen.GetComponent<CheckMetal>().metaltype == 4)
+            {
+                fox.SetActive(true);
+                fox.GetComponentInChildren<Text>().text = "Das ist Nickel mit einer Schmelztemperatur von 1455°C. Leider hält das dem Schloss nicht stand.";
+            }
             
             }     
          
          if (collision.transform == key && ofen.GetComponent<CheckMetal>().metaltype == 5)
          {
+            fox.SetActive(true);
+            fox.GetComponentInChildren<Text>().text = "Das ist Platin mit einer Schmelztemperatur von 1768°C. Dieser Schlüssel öffnet die Tür! Super!!";
+            
             keytype.SetActive (false); 
             Respawn ();
             // set win and get PSE element
@@ -55,11 +78,20 @@ public class ShowTemperatureOfLock : MonoBehaviour
             PlayerPrefs.SetString("ElementsInventory", (PlayerPrefs.GetString("ElementsInventory") + "78-Pt,"));
             // open room2
             PlayerPrefs.SetInt("Room2", 1);
-
-            Initiate.Fade("Room1", Color.black, 10f);
+            finished = true;
+    
         }                           
          
     }
+    
+    void Update ()
+    {
+          if (fox.activeSelf == false && finished == true)
+            {
+                Initiate.Fade("Room1", Color.black, 10f);
+            }
+    }
+    
     void OnTriggerExit2D (Collider2D collision)
     {
         
