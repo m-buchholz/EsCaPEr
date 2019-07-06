@@ -39,15 +39,7 @@ void OnTriggerEnter2D (Collider2D collision)
          if (collision.transform == titan && key.activeSelf == false)
          {
            metalinoven = true;
-<<<<<<< HEAD
            metaltype = 1;           
-=======
-<<<<<<< HEAD
-           metaltype = 1;           
-=======
-           metaltype = 1;
->>>>>>> d24f73d80ca8f81d2e3e2a9cac81f47f42bb5c9d
->>>>>>> a18283d6223624d0402e3afa17283a9ce47fd80b
          }
          
           if (collision.transform == eisen && key.activeSelf == false)
