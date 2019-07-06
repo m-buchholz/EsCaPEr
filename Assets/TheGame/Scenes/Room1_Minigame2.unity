@@ -1380,11 +1380,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   metalinoven: 0
   metaltype: 0
+  giessform: {fileID: 1749124141}
   titan: {fileID: 1279882853}
   platin: {fileID: 1066414480}
   eisen: {fileID: 2125592063}
   aluminium: {fileID: 907303420}
   nickel: {fileID: 1477014761}
+  titanobj: {fileID: 1279882852}
+  platinobj: {fileID: 1066414479}
+  eisenobj: {fileID: 2125592062}
+  aluminiumobj: {fileID: 907303419}
+  nickelobj: {fileID: 1477014760}
 --- !u!60 &486857003
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1498,6 +1504,12 @@ Transform:
   m_Father: {fileID: 2125592063}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &770018408 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7767809028615827615, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1708898992}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &854558241
 GameObject:
   m_ObjectHideFlags: 0
@@ -1587,13 +1599,13 @@ GameObject:
   m_Component:
   - component: {fileID: 907303420}
   - component: {fileID: 907303421}
-  - component: {fileID: 907303422}
   - component: {fileID: 907303423}
   - component: {fileID: 907303424}
   - component: {fileID: 907303425}
+  - component: {fileID: 907303426}
   m_Layer: 0
   m_Name: aluminium
-  m_TagString: Untagged
+  m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1661,18 +1673,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &907303422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 907303419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0683d65869075342b3bdb78e3ab3575, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!60 &907303423
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1771,6 +1771,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   over: {fileID: 854558241}
+--- !u!114 &907303426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907303419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb16a461e398c7449a4fd8dab51112b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ofen: {fileID: 486857000}
+  thismetal: {fileID: 907303419}
+  othermetals: []
 --- !u!1 &955340448
 GameObject:
   m_ObjectHideFlags: 0
@@ -1894,13 +1909,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1066414480}
   - component: {fileID: 1066414481}
-  - component: {fileID: 1066414482}
   - component: {fileID: 1066414483}
   - component: {fileID: 1066414484}
   - component: {fileID: 1066414485}
+  - component: {fileID: 1066414486}
   m_Layer: 0
   m_Name: platin
-  m_TagString: Untagged
+  m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1968,18 +1983,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1066414482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1066414479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0683d65869075342b3bdb78e3ab3575, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!60 &1066414483
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2082,6 +2085,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   over: {fileID: 1824762680}
+--- !u!114 &1066414486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066414479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb16a461e398c7449a4fd8dab51112b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ofen: {fileID: 486857000}
+  thismetal: {fileID: 1066414479}
+  othermetals: []
 --- !u!1 &1279882852
 GameObject:
   m_ObjectHideFlags: 0
@@ -2098,7 +2116,7 @@ GameObject:
   - component: {fileID: 1279882855}
   m_Layer: 0
   m_Name: titan
-  m_TagString: Untagged
+  m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2175,9 +2193,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1279882852}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0683d65869075342b3bdb78e3ab3575, type: 3}
+  m_Script: {fileID: 11500000, guid: bb16a461e398c7449a4fd8dab51112b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ofen: {fileID: 486857000}
+  thismetal: {fileID: 1279882852}
+  othermetals: []
 --- !u!50 &1279882856
 Rigidbody2D:
   serializedVersion: 4
@@ -2356,13 +2377,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1477014761}
   - component: {fileID: 1477014762}
-  - component: {fileID: 1477014763}
   - component: {fileID: 1477014764}
   - component: {fileID: 1477014765}
   - component: {fileID: 1477014766}
+  - component: {fileID: 1477014763}
   m_Layer: 0
   m_Name: nickel
-  m_TagString: Untagged
+  m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2439,9 +2460,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1477014760}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0683d65869075342b3bdb78e3ab3575, type: 3}
+  m_Script: {fileID: 11500000, guid: bb16a461e398c7449a4fd8dab51112b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ofen: {fileID: 486857000}
+  thismetal: {fileID: 1477014760}
+  othermetals: []
 --- !u!60 &1477014764
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2947,11 +2971,6 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 1089259947264554717, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4632915668415800715, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
         type: 3}
       propertyPath: scene
@@ -2967,6 +2986,11 @@ PrefabInstance:
       propertyPath: AudioSource
       value: 
       objectReference: {fileID: 1558130078}
+    - target: {fileID: 1089259947264554717, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8343897534040413572, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e, type: 3}
     - {fileID: 1956594594097692183, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e, type: 3}
@@ -3245,7 +3269,7 @@ MonoBehaviour:
   key: {fileID: 1942003421}
   keytype: {fileID: 1942003419}
   ofen: {fileID: 486857000}
-  over: {fileID: 1508200045}
+  fox: {fileID: 770018408}
   keyspawn: {fileID: 1860676670}
 --- !u!1 &1749124141
 GameObject:
@@ -4062,13 +4086,13 @@ GameObject:
   m_Component:
   - component: {fileID: 2125592063}
   - component: {fileID: 2125592064}
-  - component: {fileID: 2125592065}
   - component: {fileID: 2125592066}
   - component: {fileID: 2125592067}
   - component: {fileID: 2125592068}
+  - component: {fileID: 2125592069}
   m_Layer: 0
   m_Name: eisen
-  m_TagString: Untagged
+  m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4136,18 +4160,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2125592065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2125592062}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0683d65869075342b3bdb78e3ab3575, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!60 &2125592066
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4239,3 +4251,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   over: {fileID: 580164341}
+--- !u!114 &2125592069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125592062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb16a461e398c7449a4fd8dab51112b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ofen: {fileID: 486857000}
+  thismetal: {fileID: 2125592062}
+  othermetals: []
