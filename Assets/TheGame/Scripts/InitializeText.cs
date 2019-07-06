@@ -30,7 +30,7 @@ public class InitializeText : MonoBehaviour
         // Room1_Minigame1
         PlayerPrefs.SetString("R1M1_T", "Sieht aus, als wäre dein Wissen gefragt! Irgendwo hab ich diese Utensilien schon mal gesehen. Schau dir das Poster im ersten Raum nochmal an, wenn du es nicht genau weißt.");
         // Room1_Minigame2
-        PlayerPrefs.SetString("R1M2_T", "Hier hast du einen Ofen und eine Gussform. Auf dem Tisch liegen Metalle, welche genau, findest du mit Rechtsklick heraus! Halte doch mal das Thermometer an das Schloss! Scheinbar ist nicht jedes Metall geeignet, um daraus einen Schlüssel für dieses Schloss zu fertigen.");
+        PlayerPrefs.SetString("R1M2_T", "Hier hast du einen Ofen und eine Gussform. Auf dem Tisch liegen Metalle, schau sie dir genauer an! Halte doch mal das Thermometer an das Schloss. Scheinbar ist nicht jedes Metall geeignet, um daraus einen Schlüssel für dieses Schloss zu fertigen.");
 
         // Room2
         PlayerPrefs.SetString("R2_T", "Du hast es in den nächsten Raum geschafft, klasse! In diesem Raum geht es um Säuren und Basen. Ganz schön ÄTZEND, was? Schau mal, dort stehen Reagenzgläser und auf der Tafel kleben irgendwelche Symbole!");

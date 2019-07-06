@@ -47,13 +47,13 @@ public class ShowTemperatureOfLock : MonoBehaviour
             
             if (ofen.GetComponent<CheckMetal>().metaltype == 2)
             {
-                fox.GetComponentInChildren<Text>().text = "Oh, dein Schlüssel ist geschmolzen! Eisen ist für so hohe Temperaturen scheinbar nicht geeignet!";
+                fox.GetComponentInChildren<Text>().text = "Oh, dein Schlüssel ist geschmolzen! Eisen ist für so hohe Temperaturen scheinbar nicht geeignet! Schau doch nochmal ins Foyer, dort war eine kleine Notiz zu den Metallen.";
                 fox.SetActive(true);
             }
             
             if (ofen.GetComponent<CheckMetal>().metaltype == 3)
             {
-                fox.GetComponentInChildren<Text>().text = "Oh, dein Schlüssel ist geschmolzen! Aluminium ist für so hohe Temperaturen scheinbar nicht geeignet! Schau doch nochmal ins Foyer, dort war eine kleine Notiz zu den Metallen.";
+                fox.GetComponentInChildren<Text>().text = "Oh, dein Schlüssel ist geschmolzen! Aluminium ist für so hohe Temperaturen scheinbar nicht geeignet!";
                 fox.SetActive(true);
             }
             
