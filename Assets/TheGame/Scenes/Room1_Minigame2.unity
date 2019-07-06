@@ -1391,6 +1391,7 @@ MonoBehaviour:
   eisenobj: {fileID: 2125592062}
   aluminiumobj: {fileID: 907303419}
   nickelobj: {fileID: 1477014760}
+  key: {fileID: 1942003419}
 --- !u!60 &486857003
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1786,6 +1787,7 @@ MonoBehaviour:
   ofen: {fileID: 486857000}
   thismetal: {fileID: 907303419}
   othermetals: []
+  key: {fileID: 1942003419}
 --- !u!1 &955340448
 GameObject:
   m_ObjectHideFlags: 0
@@ -2100,6 +2102,7 @@ MonoBehaviour:
   ofen: {fileID: 486857000}
   thismetal: {fileID: 1066414479}
   othermetals: []
+  key: {fileID: 1942003419}
 --- !u!1 &1279882852
 GameObject:
   m_ObjectHideFlags: 0
@@ -2199,6 +2202,7 @@ MonoBehaviour:
   ofen: {fileID: 486857000}
   thismetal: {fileID: 1279882852}
   othermetals: []
+  key: {fileID: 1942003419}
 --- !u!50 &1279882856
 Rigidbody2D:
   serializedVersion: 4
@@ -2466,6 +2470,7 @@ MonoBehaviour:
   ofen: {fileID: 486857000}
   thismetal: {fileID: 1477014760}
   othermetals: []
+  key: {fileID: 1942003419}
 --- !u!60 &1477014764
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4266,3 +4271,4 @@ MonoBehaviour:
   ofen: {fileID: 486857000}
   thismetal: {fileID: 2125592062}
   othermetals: []
+  key: {fileID: 1942003419}
