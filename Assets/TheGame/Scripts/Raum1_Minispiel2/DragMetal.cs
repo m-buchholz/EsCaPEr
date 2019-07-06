@@ -10,6 +10,8 @@ public GameObject thismetal;
 public GameObject[] othermetals;
 Color thiscolor;
 
+public GameObject key;
+
 
 void Start ()
     {
@@ -22,7 +24,7 @@ void OnMouseDrag()
     {
         if (thismetal.name == "titan")
         {
-           if(ofen.GetComponent<CheckMetal>().metaltype == 0 || ofen.GetComponent<CheckMetal>().metaltype == 1)
+           if(key.activeSelf == false && ofen.GetComponent<CheckMetal>().metaltype == 0 || ofen.GetComponent<CheckMetal>().metaltype == 1)
             {
                 Vector2 mousPosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y);
                 Vector2 newPosition = Camera.main.ScreenToWorldPoint(mousPosition);
@@ -33,7 +35,7 @@ void OnMouseDrag()
         
          if (thismetal.name == "eisen")
         {
-           if(ofen.GetComponent<CheckMetal>().metaltype == 0 || ofen.GetComponent<CheckMetal>().metaltype == 2)
+           if(key.activeSelf == false && ofen.GetComponent<CheckMetal>().metaltype == 0 || ofen.GetComponent<CheckMetal>().metaltype == 2)
             {
                 Vector2 mousPosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y);
                 Vector2 newPosition = Camera.main.ScreenToWorldPoint(mousPosition);
@@ -44,7 +46,7 @@ void OnMouseDrag()
         
          if (thismetal.name == "aluminium")
         {
-           if(ofen.GetComponent<CheckMetal>().metaltype == 0 || ofen.GetComponent<CheckMetal>().metaltype == 3)
+           if(key.activeSelf == false && ofen.GetComponent<CheckMetal>().metaltype == 0 || ofen.GetComponent<CheckMetal>().metaltype == 3)
             {
                 Vector2 mousPosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y);
                 Vector2 newPosition = Camera.main.ScreenToWorldPoint(mousPosition);
@@ -55,7 +57,7 @@ void OnMouseDrag()
         
          if (thismetal.name == "nickel")
         {
-           if(ofen.GetComponent<CheckMetal>().metaltype == 0 || ofen.GetComponent<CheckMetal>().metaltype == 4)
+           if(key.activeSelf == false && ofen.GetComponent<CheckMetal>().metaltype == 0 || ofen.GetComponent<CheckMetal>().metaltype == 4)
             {
                 Vector2 mousPosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y);
                 Vector2 newPosition = Camera.main.ScreenToWorldPoint(mousPosition);
@@ -66,7 +68,7 @@ void OnMouseDrag()
         
          if (thismetal.name == "platin")
         {
-           if(ofen.GetComponent<CheckMetal>().metaltype == 0 || ofen.GetComponent<CheckMetal>().metaltype == 5)
+           if(key.activeSelf == false && ofen.GetComponent<CheckMetal>().metaltype == 0 || ofen.GetComponent<CheckMetal>().metaltype == 5)
             {
                 Vector2 mousPosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y);
                 Vector2 newPosition = Camera.main.ScreenToWorldPoint(mousPosition);
@@ -81,7 +83,7 @@ void Update()
 {
      foreach (GameObject metal in othermetals)
     {
-        if (ofen.GetComponent<CheckMetal>().metaltype == 0)
+        if (key.activeSelf == false && ofen.GetComponent<CheckMetal>().metaltype == 0)
         {
             metal.GetComponent<SpriteRenderer>().color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
         } 
