@@ -41,35 +41,35 @@ public class ShowTemperatureOfLock : MonoBehaviour
             
             if (ofen.GetComponent<CheckMetal>().metaltype == 1)
             {
+                fox.GetComponentInChildren<Text>().text = "Oh, dein Schlüssel ist geschmolzen! Titan ist für so hohe Temperaturen scheinbar nicht geeignet! Schau doch nochmal ins Foyer, dort war eine kleine Notiz zu den Metallen.";
                 fox.SetActive(true);
-                fox.GetComponentInChildren<Text>().text = "Oh, geschmolzen! Da die Schmelztemperatur von Titan 1668°C beträgt, hält es dem glühenden Schloss nicht stand.";
             }
             
             if (ofen.GetComponent<CheckMetal>().metaltype == 2)
             {
+                fox.GetComponentInChildren<Text>().text = "Oh, dein Schlüssel ist geschmolzen! Eisen ist für so hohe Temperaturen scheinbar nicht geeignet!";
                 fox.SetActive(true);
-                fox.GetComponentInChildren<Text>().text = "Die Schmelztemperatur von Eisen bertägt 1538°C. Dieses öffnet leider nicht die Tür.";
             }
             
             if (ofen.GetComponent<CheckMetal>().metaltype == 3)
             {
+                fox.GetComponentInChildren<Text>().text = "Oh, dein Schlüssel ist geschmolzen! Aluminium ist für so hohe Temperaturen scheinbar nicht geeignet! Schau doch nochmal ins Foyer, dort war eine kleine Notiz zu den Metallen.";
                 fox.SetActive(true);
-                fox.GetComponentInChildren<Text>().text = "Und geschmolzen! Aluminium hält leider nur 660,3°C aus, bevor es zerfließt.";
             }
             
             if (ofen.GetComponent<CheckMetal>().metaltype == 4)
             {
+                fox.GetComponentInChildren<Text>().text = "Oh, dein Schlüssel ist geschmolzen! Nickel ist für so hohe Temperaturen scheinbar nicht geeignet!";
                 fox.SetActive(true);
-                fox.GetComponentInChildren<Text>().text = "Das ist Nickel mit einer Schmelztemperatur von 1455°C. Leider hält das dem Schloss nicht stand.";
             }
             
             }     
          
          if (collision.transform == key && ofen.GetComponent<CheckMetal>().metaltype == 5)
          {
+            fox.GetComponentInChildren<Text>().text = "Wow, dein Schlüssel aus Platin hält der Hitze stand. Lass uns die Tür öffnen!";
             fox.SetActive(true);
-            fox.GetComponentInChildren<Text>().text = "Das ist Platin mit einer Schmelztemperatur von 1768°C. Dieser Schlüssel öffnet die Tür! Super!!";
-            
+
             keytype.SetActive (false); 
             Respawn ();
             // set win and get PSE element
