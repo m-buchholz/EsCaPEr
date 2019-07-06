@@ -16,16 +16,11 @@ public class RightClickOverlay : MonoBehaviour
     
     void OnMouseOver()
     {
-        if (Input.GetMouseButtonDown(1))
-            {
-                over.SetActive (true);
-            }
-            
-        if (Input.GetMouseButtonUp(1))
-            {
-                over.SetActive (false);
-            }
-             
-            
+        over.SetActive (true);       
+    }
+    
+    void OnMouseExit()
+    {
+        over.SetActive (false);
     }
 }
