@@ -73,25 +73,28 @@ public class InitializeText : MonoBehaviour
         PlayerPrefs.SetString("Q0", "T/Welcher Stoff ist Sauerstoff?/O2/NaOH/O3");
         PlayerPrefs.SetString("Q1", "T/Welcher Stoff ist Natriumhydroxid?/NaOH/HNO3/HCl");
         PlayerPrefs.SetString("Q2", "T/Welcher Stoff ist Wasser?/H2O/H3O/HO");
-        PlayerPrefs.SetString("Q3", "T/Welcher Stoff ist Chlor?/Cl/K/C");
-        PlayerPrefs.SetString("Q4", "T/Welcher Stoff ist Eisen?/Fe/Ce/Pb");
-        PlayerPrefs.SetString("Q5", "T/Welcher Stoff ist Platin?/Pt/Ni/Ti");
-        PlayerPrefs.SetString("Q6", "T/Was gibt der pH-Wert an?/Wie sauer oder basisch ein Stoff ist/Wie warm oder kalt ein Stoff ist/Wie fest oder flüssig ein Stoff ist");
-        PlayerPrefs.SetString("Q7", "T/Welcher pH-Wert beschreibt am ehesten einen basischen Stoff?/12/7/2");
-        PlayerPrefs.SetString("Q8", "T/Was trifft am ehesten auf Natriumhydroxid zu?/Basisch/Neutral/Sauer");
-        PlayerPrefs.SetString("Q9", "T/Was trifft am ehesten auf Wasser zu?/Neutral/Basisch/Sauer");
-        PlayerPrefs.SetString("Q10", "T/Was trifft am ehesten auf Salzsäure zu?/Sauer/Neutral/Basisch");
-        PlayerPrefs.SetString("Q11", "Brandfördernd/Was bedeutet dieses Symbol?/Brandfördernd/Leicht entzündlich/Explosiv");
-        PlayerPrefs.SetString("Q12", "Giftig/Was bedeutet dieses Symbol?/Giftig/Umweltschädlich/Gesundheitsschädlich");
-        PlayerPrefs.SetString("Q13", "Leicht entzündlich/Was bedeutet dieses Symbol?/Leicht entzündlich/Brandfördernd/Explosiv");
-        PlayerPrefs.SetString("Q14", "Gesundheitsschädlich/Was bedeutet dieses Symbol?/Gesundheitsschädlich/Giftig/Ätzend");
-        PlayerPrefs.SetString("Q15", "Umweltschädlich/Was bedeutet dieses Symbol?/Umweltschädlich/Gesundheitsgefährdend/Giftig");
-        // Image Questions - Q16-Q20
-        PlayerPrefs.SetString("Q16", "Erlenmeyerkolben/Welches Utensil ist das?/Erlenmeyerkolben/Reagenzglas/Messzylinder");
-        PlayerPrefs.SetString("Q17", "Spatellöffel/Welches Utensil ist das?/Spatellöffel/Pipette/Stopfen");
-        PlayerPrefs.SetString("Q18", "Stehkolben/Welches Utensil ist das?/Stehkolben/Erlenmeyerkolben/Rundkolben");
-        PlayerPrefs.SetString("Q19", "Pipette/Welches Utensil ist das?/Pipette/Stopfen/Reagenzglas");
-        PlayerPrefs.SetString("Q20", "Stopfen/Welches Utensil ist das?/Stopfen/Messbecher/Rundkolben");
+        PlayerPrefs.SetString("Q3", "T/Welcher Stoff ist Salzsäure?/HCl/HNO2/HF");
+        PlayerPrefs.SetString("Q4", "T/Welches Element ist Aluminium?/Al/Mn/Au");
+        PlayerPrefs.SetString("Q5", "T/Welches Element ist Titanium?/Ti/Tm/P");
+        PlayerPrefs.SetString("Q6", "T/Welches Element ist Eisen?/Fe/Ce/Pb");
+        PlayerPrefs.SetString("Q7", "T/Welches Element ist Nickel?/Ni/Ne/Co");
+        PlayerPrefs.SetString("Q8", "T/Welcher Element ist Platin?/Pt/Ag/Pb");
+        PlayerPrefs.SetString("Q9", "T/Was gibt der pH-Wert an?/Wie sauer oder basisch ein Stoff ist/Wie warm oder kalt ein Stoff ist/Wie fest oder flüssig ein Stoff ist");
+        PlayerPrefs.SetString("Q10", "T/Welcher pH-Wert beschreibt am ehesten einen basischen Stoff?/12/7/2");
+        PlayerPrefs.SetString("Q11", "T/Was trifft am ehesten auf Natriumhydroxid zu?/Basisch/Neutral/Sauer");
+        PlayerPrefs.SetString("Q12", "T/Was trifft am ehesten auf Wasser zu?/Neutral/Basisch/Sauer");
+        PlayerPrefs.SetString("Q13", "T/Was trifft am ehesten auf Salzsäure zu?/Sauer/Neutral/Basisch");
+        PlayerPrefs.SetString("Q14", "Brandfördernd/Was bedeutet dieses Symbol?/Brandfördernd/Leicht entzündlich/Explosiv");
+        PlayerPrefs.SetString("Q15", "Giftig/Was bedeutet dieses Symbol?/Giftig/Umweltschädlich/Gesundheitsschädlich");
+        PlayerPrefs.SetString("Q16", "Leicht entzündlich/Was bedeutet dieses Symbol?/Leicht entzündlich/Brandfördernd/Explosiv");
+        PlayerPrefs.SetString("Q17", "Gesundheitsschädlich/Was bedeutet dieses Symbol?/Gesundheitsschädlich/Giftig/Ätzend");
+        PlayerPrefs.SetString("Q18", "Umweltschädlich/Was bedeutet dieses Symbol?/Umweltschädlich/Gesundheitsgefährdend/Giftig");
+        // Image Questions
+        PlayerPrefs.SetString("Q19", "Erlenmeyerkolben/Welches Utensil ist das?/Erlenmeyerkolben/Reagenzglas/Messzylinder");
+        PlayerPrefs.SetString("Q20", "Spatellöffel/Welches Utensil ist das?/Spatellöffel/Pipette/Stopfen");
+        PlayerPrefs.SetString("Q21", "Stehkolben/Welches Utensil ist das?/Stehkolben/Erlenmeyerkolben/Rundkolben");
+        PlayerPrefs.SetString("Q22", "Pipette/Welches Utensil ist das?/Pipette/Stopfen/Reagenzglas");
+        PlayerPrefs.SetString("Q23", "Stopfen/Welches Utensil ist das?/Stopfen/Messbecher/Rundkolben");
 
         // OTHER
 

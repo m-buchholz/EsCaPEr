@@ -1536,7 +1536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dde7e6bcf9f5e5b47aa00bfc5c61d5d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questionAmount: 21
+  questionAmount: 24
   maxQuestions: 16
   maxMistakes: 3
   pictureQuestionCanvas: {fileID: 371212052}
@@ -3034,6 +3034,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 474248127093926363, guid: 26827a1994165d644a1f1ba75c6a929b,
+        type: 3}
+      propertyPath: AudioSource
+      value: 
+      objectReference: {fileID: 764557237}
+    - target: {fileID: 3495322217272549097, guid: 26827a1994165d644a1f1ba75c6a929b,
+        type: 3}
+      propertyPath: AudioSource
+      value: 
+      objectReference: {fileID: 764557237}
     - target: {fileID: 8887340470559802030, guid: 26827a1994165d644a1f1ba75c6a929b,
         type: 3}
       propertyPath: AudioSource
@@ -3045,16 +3055,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 764557237}
     - target: {fileID: 8887340471546494241, guid: 26827a1994165d644a1f1ba75c6a929b,
-        type: 3}
-      propertyPath: AudioSource
-      value: 
-      objectReference: {fileID: 764557237}
-    - target: {fileID: 474248127093926363, guid: 26827a1994165d644a1f1ba75c6a929b,
-        type: 3}
-      propertyPath: AudioSource
-      value: 
-      objectReference: {fileID: 764557237}
-    - target: {fileID: 3495322217272549097, guid: 26827a1994165d644a1f1ba75c6a929b,
         type: 3}
       propertyPath: AudioSource
       value: 
