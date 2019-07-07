@@ -129,13 +129,16 @@ public class Level : MonoBehaviour
         text3.text = end;
         yield return new WaitForSeconds(1);
         player.SetActive(false);
-        Initiate.Fade("Room3", Color.black, 10f);
+
+        // unpause background audio
+        if (GameObject.Find("Background Audio") != null) GameObject.Find("Background Audio").GetComponent<AudioSource>().UnPause();
 
         // get element and set win
         PlayerPrefs.SetInt("Room3_Minigame1", 1);
         PlayerPrefs.SetInt("Elements", (PlayerPrefs.GetInt("Elements") + 1));
         PlayerPrefs.SetString("ElementsInventory", (PlayerPrefs.GetString("ElementsInventory") + "17-Cl,"));
 
+        Initiate.Fade("Room3", Color.black, 10f);
     }
 
 
