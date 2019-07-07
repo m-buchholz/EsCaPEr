@@ -59,7 +59,7 @@ public class InitializeText : MonoBehaviour
         // Room3_Minigame2 Win
         PlayerPrefs.SetString("R3M2_W", "Gibt's nicht!\nDu hast es tatsächlich gemeistert.\nDu hast dir das letzte Element verdient!");
         // Room3_Minigame2 Lose
-        PlayerPrefs.SetString("R3M2_L", "Hahahaha, das war nichts!\nVielleicht schaffst du es beim nächsten mal?\nSchau dir lieber nochmal alles an!");
+        PlayerPrefs.SetString("R3M2_L", "Hahahaha, das war nichts!\nVielleicht beim nächsten Mal?\nSchau dir lieber nochmal alles an!");
 
         // Minigame already finished
         PlayerPrefs.SetString("Minigame_finished", "Sieht aus, als hättest du dieses Rätsel bereits gemeistert. Bestimmt gibt es noch mehr zu tun!");

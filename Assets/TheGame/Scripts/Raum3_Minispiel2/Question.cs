@@ -31,7 +31,7 @@ public class Question : MonoBehaviour
 
     // Objects
     public GameObject pictureQuestionCanvas;
-    public SpriteRenderer questionSprite;
+    public SpriteRenderer questionSprite, falseOverlay;
     public Text questionNumberText, textQuestionText, pictureQuestionText, pointsText;
     public Button answerButton1, answerButton2, answerButton3;
     public GameObject professor;
@@ -135,11 +135,15 @@ public class Question : MonoBehaviour
         // calculate points and mistakes
         if (rQuests[questionCounter][pressed] == quests[questionCounter][2])
         {
+            // right
             points++;
         }
         else
         {
+            // false
             mistakes++;
+            falseOverlay.gameObject.SetActive(true);
+            StartCoroutine(DisableOverlay());
         }
 
         // reset pressed button and confirm button
@@ -156,6 +160,13 @@ public class Question : MonoBehaviour
             setText(rQuests[questionCounter]);
         }
         else finish();
+    }
+
+    IEnumerator DisableOverlay()
+    {
+        // wait 0.2s to disable overlay
+        yield return new WaitForSeconds(0.2f);
+        falseOverlay.gameObject.SetActive(false);
     }
 
     // Fisher-Yates-Shuffle
@@ -208,7 +219,7 @@ public class Question : MonoBehaviour
             PlayerPrefs.SetString("ElementsInventory", PlayerPrefs.GetString("ElementsInventory") + "54-Xe" + ",");
         }
         // else lose
-        else professorText.text = PlayerPrefs.GetString("R3M2_L");
+        else professorText.text = PlayerPrefs.GetString("R3M2_L") + "\nDu hast " + mistakes + " Fehler gemacht.\n" + maxMistakes + " sind maximal erlaubt.";
         professor.SetActive(true);
         profResume.onClick.AddListener(fadeOut);
     }
