@@ -21,7 +21,7 @@ public class NextAudioTitle : MonoBehaviour
             AudioSource bAudio = GameObject.Find("Background Audio").GetComponent<AudioSource>();
             if (bAudio.clip == audio1) bAudio.clip = audio2;
             else if (bAudio.clip == audio2) bAudio.clip = audio3;
-            else if (bAudio.clip == audio3) bAudio.clip = audio1;
+            else bAudio.clip = audio1;
             bAudio.Play();
         }
     }

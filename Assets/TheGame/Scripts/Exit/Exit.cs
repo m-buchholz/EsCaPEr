@@ -9,6 +9,7 @@ public class Exit : MonoBehaviour
     public Text foxText;
     public Button continueToEnd, pseLeft, pseRight;
     public Sprite pseLeftFull, pseRightFull;
+    public AudioClip creditsAudio;
 
     private Button button;
 
@@ -47,6 +48,11 @@ public class Exit : MonoBehaviour
         }
         else
         {
+            if (GameObject.Find("Background Audio"))
+            {
+                GameObject.Find("Background Audio").GetComponent<AudioSource>().clip = creditsAudio;
+                GameObject.Find("Background Audio").GetComponent<AudioSource>().Play();
+            }
             Initiate.Fade("Exit", Color.black, 10f);
         }
     }

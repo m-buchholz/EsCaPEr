@@ -304,6 +304,7 @@ GameObject:
   - component: {fileID: 8887340470559802016}
   - component: {fileID: 8887340470559802018}
   - component: {fileID: 8887340470559802019}
+  - component: {fileID: 4980815573152158944}
   - component: {fileID: 8887340470559802030}
   m_Layer: 5
   m_Name: Exit Button
@@ -426,6 +427,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scene: Start
+--- !u!114 &4980815573152158944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8887340470559802020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 669c1cfb0f83eef45ba18ad7de81baaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: edee5921a3f91804bb878f0ba55b2aad, type: 3}
 --- !u!114 &8887340470559802030
 MonoBehaviour:
   m_ObjectHideFlags: 0
