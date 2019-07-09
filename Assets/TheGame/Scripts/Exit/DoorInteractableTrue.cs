@@ -38,5 +38,7 @@ public class DoorInteractableTrue : StateMachineBehaviour
     public override void OnStateEnter(Animator animator, AnimatorStateInfo animatorStateInfo, int layerIndex)
     {
         GameObject.Find("Exit Door Button").GetComponent<Button>().interactable = true;
+        GameObject.Find("PSE Left Button").GetComponent<Button>().interactable = true;
+        GameObject.Find("PSE Right Button").GetComponent<Button>().interactable = true;
     }
 }
