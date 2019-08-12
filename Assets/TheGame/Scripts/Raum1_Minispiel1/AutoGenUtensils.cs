@@ -8,16 +8,16 @@ public class AutoGenUtensils : MonoBehaviour
     
     List<Vector2> BoxPos = new List<Vector2>()
     {
-        new Vector2(-8, 0.5f),
-        new Vector2(-4, 0.5f),
-        new Vector2(0, 0.5f),
-        new Vector2(4, 0.5f),
-        new Vector2(8, 0.5f),
-        new Vector2(-8 + 28, 0.5f),
-        new Vector2(-4 + 28, 0.5f),
-        new Vector2(0 + 28, 0.5f),
-        new Vector2(4 + 28, 0.5f),
-        new Vector2(8 + 28, 0.5f)
+        new Vector2(-8, 1f),
+        new Vector2(-4, 1f),
+        new Vector2(0, 1f),
+        new Vector2(4, 1f),
+        new Vector2(8, 1f),
+        new Vector2(-8 + 28, 1f),
+        new Vector2(-4 + 28, 1f),
+        new Vector2(0 + 28, 1f),
+        new Vector2(4 + 28, 1f),
+        new Vector2(8 + 28, 1f)
     };
 
     List<Vector2> UtensilPos = new List<Vector2>()
