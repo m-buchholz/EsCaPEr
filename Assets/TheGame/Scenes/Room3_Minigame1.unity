@@ -964,7 +964,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 01051ae2b1711274da1c911d16a4bc95, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9433962, g: 0.9433962, b: 0.9433962, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1055,8 +1055,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 671751658}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.03, y: 4.28, z: -5.822794}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -7.06, y: 5, z: -5.822794}
+  m_LocalScale: {x: 0.65, y: 1.09, z: 1}
   m_Children:
   - {fileID: 713626909}
   m_Father: {fileID: 0}
@@ -1116,8 +1116,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 40860ee8cd1342b46ac6ac076dae1da0, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.79607844}
+  m_Sprite: {fileID: 21300000, guid: 500f8251a57925c4fa761a732518901b, type: 3}
+  m_Color: {r: 1, g: 0, b: 0, a: 0.79607844}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1135,8 +1135,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 713626905}
   m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
-  m_LocalPosition: {x: -0.07, y: -1.66, z: 0}
-  m_LocalScale: {x: 0.3236205, y: 0.24963392, z: 1}
+  m_LocalPosition: {x: -0.07, y: -2.11, z: 0}
+  m_LocalScale: {x: 0.3236205, y: 0.22, z: 1}
   m_Children:
   - {fileID: 1122752768}
   m_Father: {fileID: 671751660}
@@ -1293,7 +1293,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 40860ee8cd1342b46ac6ac076dae1da0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 500f8251a57925c4fa761a732518901b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.79607844}
   m_FlipX: 0
   m_FlipY: 0
@@ -2042,11 +2042,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 364212660}
-    - target: {fileID: 1089259947264554717, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4632915668415800715, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
         type: 3}
       propertyPath: scene
@@ -2097,6 +2092,11 @@ PrefabInstance:
       propertyPath: AudioSource
       value: 
       objectReference: {fileID: 61465834}
+    - target: {fileID: 1089259947264554717, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71d91d0d3b4b7eb4c9d5467a54a9327e, type: 3}
 --- !u!1 &1708898993 stripped

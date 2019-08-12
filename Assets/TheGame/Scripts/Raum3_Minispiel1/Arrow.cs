@@ -25,6 +25,10 @@ public class Arrow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            Destroy(arrowDown);
+            Destroy(arrowUp);
+        }
     }
 }
